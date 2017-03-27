@@ -1,10 +1,12 @@
-<div class="w3-hide-large">
-    <a href="javascript:void(0)" onclick="w3_show_nav('menuHome')" class="w3-left w3-theme w3-hover-white w3-padding-16 w3-large" style="width:50%">Home</a>
-    <a href="javascript:void(0)" onclick="w3_show_nav('menuRegistration')" class="w3-left w3-theme w3-hover-white w3-padding-16 w3-large" style="width:50%">Registration</a>
-</div>
-<div class="w3-clear"></div>
-<a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hide-large" title="close menu">×</a>
-<div id="menuHome" class="myMenu">
+<!--<div class="w3-hide-large">-->
+<!--    <a href="javascript:void(0)" onclick="w3_show_nav('sidebarHome')" class="w3-left w3-theme w3-hover-white w3-padding-16 w3-large" style="width:50%">Home</a>-->
+<!--    <a href="javascript:void(0)" onclick="w3_show_nav('sidebarLearn')" class="w3-left w3-theme w3-hover-white w3-padding-16 w3-large" style="width:50%">Learn</a>-->
+<!--    <!--    <a href="javascript:void(0)" onclick="w3_show_nav('menuRegistration')" class="w3-left w3-theme w3-hover-white w3-padding-16 w3-large" style="width:50%">Registration</a>-->
+<!--</div>-->
+<!--<div class="w3-clear"></div>-->
+<!--<a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hide-large" title="close menu">×</a>-->
+
+<div id="sidebarHome" class="myMenu">
     <div class="w3-container w3-padding-top">
         <h3>Donation Information</h3>
     </div>
@@ -13,6 +15,24 @@
         <a href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-green">How can you donate</a>
         <a href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-green">How can you help</a>
         <a href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-green">Why register as a donor</a>
+    </div>
+</div>
+
+<div id="sidebarLearn" class="myMenu">
+    <div class="w3-container w3-padding-top">
+        <h3>Learn Information</h3>
+    </div>
+    <div class="w3-sidebar">
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-green">Learn stuff</a>
+    </div>
+</div>
+
+<div id="sidebarGetInvolved" class="myMenu">
+    <div class="w3-container w3-padding-top">
+        <h3>Getting Involved Information</h3>
+    </div>
+    <div class="w3-sidebar">
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-green">Get Involved</a>
     </div>
 </div>
 

@@ -23,19 +23,21 @@
     </div>
 
     <div class="w3-bar w3-theme w3-large" style="z-index:4;">
+<!--        Left side of the bar-->
         <a class="w3-bar-item w3-button w3-opennav w3-left w3-hide-large w3-hover-white w3-large w3-theme w3-padding-16" href="javascript:void(0)" onclick="w3_open()">☰</a>
-        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-small w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_show_nav('menuHome')">Home</a>
-        <a class="w3-bar-item w3-button w3-hide-medium w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_show_nav('menuLearn')">Learn</a>
-        <a class="w3-bar-item w3-button w3-hide-medium w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_show_nav('menuGetInvolved')">Get Involved</a>
-        <a class="w3-bar-item w3-button w3-hide-medium w3-hover-white w3-padding-16 w3-right" href="javascript:void(0)" onclick="w3_show_nav('menuLogIn')">Log In</a>
-        <a class="w3-bar-item w3-button w3-hide-medium w3-hover-white w3-padding-16 w3-right" href="javascript:void(0)" onclick="w3_show_nav('menuRegistration')">Register</a>
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-small w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_show_sidebar('sidebarHome')">Home</a>
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_show_sidebar('sidebarLearn')">Learn</a>
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_show_sidebar('sidebarGetInvolved')">Get Involved</a>
+<!--        Right side of the bar -->
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hover-white w3-padding-16 w3-right" href="javascript:void(0)" onclick="w3_show_sidebar('menuLogin')">Log In</a>
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hover-white w3-padding-16 w3-right" href="javascript:void(0)" onclick="w3_show_sidebar('menuRegister')">Register</a>
     </div>
 </div>
 
 <!-- Left Sidenav -->
 <nav class="w3-sidenav w3-collapse w3-white w3-animate-left" style="z-index:3;width:270px" id="leftSidenav">
     <?php
-        require "Partials/Sidebars/Home_SideBar.php";
+        require "Partials/Sidebars/Home_Sidebar.php";
     ?>
 </nav>
 
@@ -50,7 +52,7 @@
 <!--        <p class="w3-xlarge">sub title</p>-->
 <!--            <form action="/action_page.php" class="w3-container">-->
 
-            <form method="post" action="FormRegistration.php" enctype="multipart/form-data" class="w3-container" >
+            <form method="post" action="RegisterDonor.php" enctype="multipart/form-data" class="w3-container" >
                 <h2>Donor Registration</h2>
                 <p>sub title stuff.</p>
 <!--                <p>-->
@@ -232,10 +234,12 @@
         document.getElementById("mySidenav").style.display = "none";
         document.getElementById("myOverlay").style.display = "none";
     }
-    function w3_show_nav(name)
+    function w3_show_sidebar(name)
     {
-        document.getElementById("menuHome").style.display = "none";
-        document.getElementById("menuRegistration").style.display = "none";
+        document.getElementById("sidebarHome").style.display = "none";
+        document.getElementById("sidebarLearn").style.display = "none";
+        document.getElementById("sidebarGetInvolved").style.display = "none";
+//        document.getElementById("sidebarRegister").style.display = "none";
         document.getElementById(name).style.display = "block";
 //        w3-open();
     }
