@@ -29,8 +29,8 @@
         <a class="w3-bar-item w3-button w3-hide-medium w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_show_sidebar('sidebarLearn')">Learn</a>
         <a class="w3-bar-item w3-button w3-hide-medium w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_show_sidebar('sidebarGetInvolved')">Get Involved</a>
 <!--        Right side of the bar -->
-        <a class="w3-bar-item w3-button w3-hide-medium w3-hover-white w3-padding-16 w3-right" href="javascript:void(0)" onclick="w3_show_sidebar('menuLogin')">Log In</a>
-        <a class="w3-bar-item w3-button w3-hide-medium w3-hover-white w3-padding-16 w3-right" href="javascript:void(0)" onclick="w3_show_sidebar('menuRegister')">Register</a>
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hover-white w3-padding-16 w3-right" href="javascript:void(0)" onclick="w3_show_main('menuLogin')">Log In</a>
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hover-white w3-padding-16 w3-right" href="javascript:void(0)" onclick="w3_show_main('menuRegister')">Register</a>
     </div>
 </div>
 
@@ -45,153 +45,10 @@
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 <!-- Main content: shift it to the right by 270 pixels when the sidenav is visible -->
-<div class="w3-main w3-container" style="margin-left:270px;margin-top:117px;">
 
-    <div class="w3-container w3-section w3-padding-large w3-card-4 w3-light-grey">
-<!--        <h1 class="w3-jumbo">Donor Registration</h1>-->
-<!--        <p class="w3-xlarge">sub title</p>-->
-<!--            <form action="/action_page.php" class="w3-container">-->
-
-            <form method="post" action="RegisterDonor.php" enctype="multipart/form-data" class="w3-container" >
-                <h2>Donor Registration</h2>
-                <p>sub title stuff.</p>
-<!--                <p>-->
-                <div class="w3-row-padding">
-                    <div class="w3-col" style="width:40%">
-                        <input class="w3-input w3-border" type="text" name="firstName" id="firstName" required placeholder="Insert first name...">
-                        <label class="w3-label w3-validate">First Name</label>
-                    </div>
-                    <div class="w3-col" style="width:20%">
-                        <input class="w3-input w3-border" type="text" name="middleInit" id="middleInit" maxlength="1" placeholder="Insert middle initial...">
-                        <label class="w3-label">Middle Initial</label>
-                    </div>
-                    <div class="w3-col" style="width:40%">
-                        <input class="w3-input w3-border" type="text" name="lastName" id="lastName" required placeholder="Insert last name...">
-                        <label class="w3-label w3-validate">Last Name</label>
-                    </div>
-                </div>
-<!--                </p>-->
-<!--                <p>-->
-<!--                    <input class="w3-input" type="text" name="first" required>-->
-<!--                    <label class="w3-label w3-validate">First Name</label>-->
-<!--                </p>-->
-                <p>
-                <div class="w3-row-padding">
-                    <input class="w3-input" type="email" name="email" required>
-                    <label class="w3-label w3-validate">Email</label>
-                </div>
-                </p>
-                <p>
-                <div class="w3-row-padding">
-                    <input class="w3-radio" type="radio" name="gender" value="male" checked>
-                    <label class="w3-validate">Male</label>
-
-                    <input class="w3-radio" type="radio" name="gender" value="female">
-                    <label class="w3-validate">Female</label>
-                </div>
-                </p>
-                <p>
-                <div class="w3-row-padding">
-                    <input class="w3-input" type="date" name="birthDate" required>
-                    <label class="w3-label w3-validate">Birth date</label>
-                </div>
-                </p>
-                <p>
-                <div class="w3-row-padding">
-                    <input class="w3-input" type="number" name="phoneNum" min="1000000000" max="9999999999" required>
-                    <label class="w3-label w3-validate">Phone Number</label>
-                </div>
-                </p>
-                <p>
-                <div class="w3-row-padding">
-                    <input class="w3-input" type="number" name="weight" min="0" required>
-                    <label class="w3-label w3-validate">Weight</label>
-                </div>
-                </p>
-                <div class="w3-row-padding">
-                    <select class="w3-select" name="bloodType">
-                        <option value="" disabled selected>Select blood type</option>
-                        <option value="1">A+</option>
-                        <option value="2">A-</option>
-                        <option value="3">B+</option>
-                        <option value="4">B-</option>
-                        <option value="5">AB+</option>
-                        <option value="6">AB-</option>
-                        <option value="7">O+</option>
-                        <option value="8">O-</option>
-                    </select>
-                </div>
-                <p>
-                <div class="w3-centered">
-                    <button class="w3-btn w3-green" type="submit" name="submit" value="Submit">Submit</button>
-                </div>
-                </p>
-            </form>
-<!--            <a class="w3-button w3-theme w3-hover-white" href="/css/default.asp">Learn more about donation button</a>-->
-<!--            <a class="w3-button w3-theme w3-hover-white" href="/ccsref/default.asp">button 2</a>-->
-        <p class="w3-large">
-<!--            <p><div class="w3-code cssHigh notranslate">-->
-            <div class="w3-container">
-                <h2>Registered Donors</h2>
-<!--                <p>If you different hover colors, add w3-hover-<em>color</em> classes to each tr element:</p>-->
-                <?php
-                $sql_select = "SELECT * FROM donor";
-                $stmt = $conn->query($sql_select);
-                $donors = $stmt->fetchAll();
-
-                if(count($donors) > 0)
-                {?>
-                    <table class="w3-table-all">
-                        <thead>
-                        <tr class="w3-green">
-                             <th>First Name</th>
-                             <th>Middle Initial</th>
-                             <th>Last Name</th>
-                             <th>Email</th>
-                             <th>Sex</th>
-                             <th>Birthdate</th>
-                             <th>Phone Number</th>
-                             <th>Weight</th>
-                             <th>Blood Type</th>
-                        </tr>
-                        </thead>
-
-                        <?php
-                        foreach($donors as $donor)
-                        {?>
-                             <tr class="w3-hover-green">
-                                <td><?= $donor['FirstName']?></td>
-                                <td><?= $donor['MiddleInitial']?></td>
-                                <td><?= $donor['LastName']?></td>
-                                <td><?= $donor['DEmail']?></td>
-                                <td><?= $donor['Sex']?></td>
-                                <td><?= $donor['DateOfBirth']?></td>
-                                <td><?= $donor['DPhoneNum']?></td>
-                                <td><?= $donor['Weight']?></td>
-                                <td><?= $donor['BloodType']?></td>
-                             </tr>
-                        <?php
-                        }?>
-                    </table>
-                <?php
-                }
-                else
-                {?>
-                    <h3>No one is currently registered.</h3>
-                <?php
-                } ?>
-            </div>
-
-            <!--body {<br>
-                background-color: #d0e4fe;<br>}<br>h1 {<br>
-                color: orange;<br>
-                text-align: center;<br>}<br>p {<br>
-                font-family: "Times New Roman";<br>
-                font-size: 20px;<br>}-->
-        </div>
-        <a class="w3-button w3-theme w3-hover-white" href="/css/tryit.asp?filename=trycss_default" target="_blank">another freaking button</a>
-    </div>
-
+    <?php
+        require "Partials/MainContent/DonorRegistrationForm.php";
+    ?>
 <!--    <div class="w3-container w3-section w3-padding-large w3-card-4 w3-light-grey">-->
 <!--        <h1 class="w3-jumbo">title 2</h1>-->
 <!--        <p class="w3-xlarge">sub title 2</p>-->
@@ -223,23 +80,22 @@
 
 <script>
     // Script to open and close the sidenav
-    function w3_open()
+    function w3_show_main(name)
     {
-        document.getElementById("mySidenav").style.display = "block";
-        document.getElementById("myOverlay").style.display = "block";
-    }
+        //  Hide main content area elements
+        document.getElementById("mainDonorRegistration").style.display = "none";
 
-    function w3_close()
-    {
-        document.getElementById("mySidenav").style.display = "none";
-        document.getElementById("myOverlay").style.display = "none";
+        //  Display element
+        document.getElementById(name).style.display = "block";
     }
     function w3_show_sidebar(name)
     {
+        //  Hide sidebar elements
         document.getElementById("sidebarHome").style.display = "none";
         document.getElementById("sidebarLearn").style.display = "none";
         document.getElementById("sidebarGetInvolved").style.display = "none";
-//        document.getElementById("sidebarRegister").style.display = "none";
+
+        //  Display element
         document.getElementById(name).style.display = "block";
 //        w3-open();
     }
