@@ -28,7 +28,7 @@
         <a class="w3-bar-item w3-button w3-hide-medium w3-hover-white w3-padding-16" id="buttonLearn">Learn</a>
         <a class="w3-bar-item w3-button w3-hide-medium w3-hover-white w3-padding-16" id="buttonGetInvolved">Get Involved</a>
 <!--        Right side of the bar -->
-        <a class="w3-bar-item w3-button w3-hide-medium w3-hover-white w3-padding-16 w3-right" id="buttonLogin">Log In</a>
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hover-white w3-padding-16 w3-right" id="buttonLogin">Login</a>
         <a class="w3-bar-item w3-button w3-hide-medium w3-hover-white w3-padding-16 w3-right" id="buttonRegister">Register</a>
     </div>
 </div>
@@ -48,11 +48,12 @@
         require "WebsiteContent/MainContent/LoginForm.php";
     ?>
 
-    <footer class="w3-container w3-section w3-padding w3-card-4 w3-light-grey w3-center w3-opacity">
+<!--    Footer  -->
+    <footer class="w3-container w3-section w3-padding w3-card-4 w3-light-grey w3-center w3-opacity" style="margin-left:270px;">
         <p><nav>
                 <!--<a href="/forum/default.asp" target="_blank">FORUM</a> |-->
 <!--                <a href="/about/default.asp" target="_top">ABOUT</a>-->
-            <p>Built by Chad Hoang</p>
+            <p>Footer by Chad Hoang</p>
 
             </nav></p>
     </footer>

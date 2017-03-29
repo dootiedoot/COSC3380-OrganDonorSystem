@@ -17,22 +17,24 @@ if(!empty($_POST))
 {
     try
     {
+        //  Assign variables
         $firstName = $_POST['firstName'];
         $middleInit = $_POST['middleInit'];
         $lastName = $_POST['lastName'];
 
-//                    $email = $_POST['email'];
-//                    $sex = $_POST['email'];
-//                    $email = $_POST['email'];
-
-//                    $date = date("Y-m-d");
         // Insert data
-        $sql_insert = "INSERT INTO donor (FirstName, MiddleInitial, LastName) VALUES (?,?,?)";
+        $sql_insert = "
+            INSERT INTO donor (FirstName, MiddleInitial, LastName) 
+            VALUES (?,?,?)
+            ";
+
         $stmt = $conn->prepare($sql_insert);
         $stmt->bindValue(1, $firstName);
         $stmt->bindValue(2, $middleInit);
         $stmt->bindValue(3, $lastName);
         $stmt->execute();
+
+        echo "<h3>Your're registered!</h3>";
     }
     catch (Exception $e)
     {

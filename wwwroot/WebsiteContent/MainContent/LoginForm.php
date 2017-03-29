@@ -10,14 +10,14 @@
 
 <!--        Username input   -->
             <div class="w3-padding" style="width:40%">
+                <input class="w3-input w3-border" type="text" name="username" id="username" required placeholder="Insert username...">
                 <label class="w3-label w3-validate">Username</label>
-                <input class="w3-input w3-border" type="text" name="userUsername" id="userUsername" required placeholder="Insert username...">
             </div>
 
 <!--        Password input    -->
             <div class="w3-padding" style="width:40%">
+                <input class="w3-input w3-border" type="password" name="password" id="password" required placeholder="Insert password...">
                 <label class="w3-label w3-validate">Password</label>
-                <input class="w3-input w3-border" type="text" name="userPassword" id="userPassword" required placeholder="Insert password...">
             </div>
 
             <div class="w3-padding w3-centered">
