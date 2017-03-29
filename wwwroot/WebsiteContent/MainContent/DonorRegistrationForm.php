@@ -5,7 +5,7 @@
         <!--        <p class="w3-xlarge">sub title</p>-->
         <!--            <form action="/action_page.php" class="w3-container">-->
 
-        <form method="post" action="RegisterDonor.php" enctype="multipart/form-data" class="w3-container" >
+        <form method="post" action="../../RegisterDonor.php" enctype="multipart/form-data" class="w3-container" >
             <h2>Donor Registration</h2>
             <p>sub title stuff.</p>
             <!--                <p>-->
@@ -29,13 +29,13 @@
             <!--                    <label class="w3-label w3-validate">First Name</label>-->
             <!--                </p>-->
             <p>
-            <div class="w3-row-padding">
+            <div class="w3-padding">
                 <input class="w3-input" type="email" name="email" required>
                 <label class="w3-label w3-validate">Email</label>
             </div>
             </p>
             <p>
-            <div class="w3-row-padding">
+            <div class="w3-padding">
                 <input class="w3-radio" type="radio" name="gender" value="male" checked>
                 <label class="w3-validate">Male</label>
 
@@ -44,24 +44,24 @@
             </div>
             </p>
             <p>
-            <div class="w3-row-padding">
+            <div class="w3-padding">
                 <input class="w3-input" type="date" name="birthDate" required>
                 <label class="w3-label w3-validate">Birth date</label>
             </div>
             </p>
             <p>
-            <div class="w3-row-padding">
+            <div class="w3-padding">
                 <input class="w3-input" type="number" name="phoneNum" min="1000000000" max="9999999999" required>
                 <label class="w3-label w3-validate">Phone Number</label>
             </div>
             </p>
             <p>
-            <div class="w3-row-padding">
+            <div class="w3-padding">
                 <input class="w3-input" type="number" name="weight" min="0" required>
                 <label class="w3-label w3-validate">Weight</label>
             </div>
             </p>
-            <div class="w3-row-padding">
+            <div class="w3-padding">
                 <select class="w3-select" name="bloodType">
                     <option value="" disabled selected>Select blood type</option>
                     <option value="1">A+</option>
@@ -75,7 +75,7 @@
                 </select>
             </div>
             <p>
-            <div class="w3-centered">
+            <div class="w3-padding w3-centered">
                 <button class="w3-btn w3-green" type="submit" name="submit" value="Submit">Submit</button>
             </div>
             </p>
@@ -93,7 +93,7 @@
     </div>
 
 <!--    Donor table -->
-    <div id="mainDonorTable"class="w3-container">
+    <div id="mainDonorsTable" class="w3-container">
         <h2>Registered Donors</h2>
         <!--                <p>If you different hover colors, add w3-hover-<em>color</em> classes to each tr element:</p>-->
         <?php

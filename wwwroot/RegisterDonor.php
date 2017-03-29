@@ -1,6 +1,6 @@
 <?php
 
-require "Database/config.php";
+require "Database/MySQLconfig.php";
 
 $firstName;
 $middleInit;
