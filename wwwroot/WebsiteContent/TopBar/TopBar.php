@@ -18,7 +18,6 @@
         <!--        Right side of the bar -->
 <!--            <a class="w3-bar-item w3-button w3-hide-medium w3-hover-white w3-padding-16 w3-right" id="buttonLogin">Log out/a>-->
         <?php
-        var_dump($_SESSION);
         if (isset($_SESSION['username']))
         {?>
             <div class="w3-bar-item w3-padding-16 w3-right">Welcome <?=$_SESSION['username']?>!</div>

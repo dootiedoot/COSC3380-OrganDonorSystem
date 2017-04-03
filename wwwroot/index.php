@@ -31,11 +31,11 @@
 
 <!-- Main content: shift it to the right by 270 pixels when the sidebar is visible -->
 
-    <?php
-        require "WebsiteContent/MainContent/Form_DonorRegistration.php";
-        require "WebsiteContent/MainContent/Table_Donors.php";
-        require "WebsiteContent/MainContent/Form_Login.php";
-    ?>
+<?php
+    require "WebsiteContent/MainContent/Form_DonorRegistration.php";
+    require "WebsiteContent/MainContent/Table_Donors.php";
+    require "WebsiteContent/MainContent/Form_Login.php";
+?>
 
 <!--    Footer  -->
     <footer class="w3-container w3-section w3-padding w3-card-4 w3-light-grey w3-center w3-opacity" style="margin-left:270px;">
