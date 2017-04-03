@@ -91,58 +91,5 @@
             font-family: "Times New Roman";<br>
             font-size: 20px;<br>}-->
     </div>
-
-<!--    Donor table -->
-    <div id="mainDonorsTable" class="w3-container">
-        <h2>Registered Donors</h2>
-        <!--                <p>If you different hover colors, add w3-hover-<em>color</em> classes to each tr element:</p>-->
-        <?php
-        $sql_select = "SELECT * FROM donor";
-        $stmt = $conn->query($sql_select);
-        $donors = $stmt->fetchAll();
-
-        if(count($donors) > 0)
-        {?>
-            <table class="w3-table-all">
-                <thead>
-                <tr class="w3-green">
-                    <th>First Name</th>
-                    <th>Middle Initial</th>
-                    <th>Last Name</th>
-                    <th>Email</th>
-                    <th>Sex</th>
-                    <th>Birthdate</th>
-                    <th>Phone Number</th>
-                    <th>Weight</th>
-                    <th>Blood Type</th>
-                </tr>
-                </thead>
-
-                <?php
-                foreach($donors as $donor)
-                {?>
-                    <tr class="w3-hover-green">
-                        <td><?= $donor['FirstName']?></td>
-                        <td><?= $donor['MiddleInitial']?></td>
-                        <td><?= $donor['LastName']?></td>
-                        <td><?= $donor['DEmail']?></td>
-                        <td><?= $donor['Sex']?></td>
-                        <td><?= $donor['DateOfBirth']?></td>
-                        <td><?= $donor['DPhoneNum']?></td>
-                        <td><?= $donor['Weight']?></td>
-                        <td><?= $donor['BloodType']?></td>
-                    </tr>
-                    <?php
-                }?>
-            </table>
-            <?php
-        }
-        else
-        {?>
-            <h3>No one is currently registered.</h3>
-            <?php
-        } ?>
-    </div>
-
     <!--        <a class="w3-button w3-theme w3-hover-white" href="/css/tryit.asp?filename=trycss_default" target="_blank">another freaking button</a>-->
 </div>

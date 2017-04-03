@@ -27,13 +27,14 @@
 ?>
 
 <!-- Overlay effect when opening sidenav on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+<!--<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>-->
 
 <!-- Main content: shift it to the right by 270 pixels when the sidebar is visible -->
 
     <?php
-        require "WebsiteContent/MainContent/DonorRegistrationForm.php";
-        require "WebsiteContent/MainContent/LoginForm.php";
+        require "WebsiteContent/MainContent/Form_DonorRegistration.php";
+        require "WebsiteContent/MainContent/Table_Donors.php";
+        require "WebsiteContent/MainContent/Form_Login.php";
     ?>
 
 <!--    Footer  -->

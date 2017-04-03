@@ -11,21 +11,22 @@
     <div class="w3-bar w3-theme w3-large" style="z-index:4;">
 
         <!--        Left side of the bar-->
-        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-small w3-hover-white w3-padding-16" id="buttonHome">Home</a>
-        <a class="w3-bar-item w3-button w3-hide-medium w3-hover-white w3-padding-16" id="buttonLearn">Learn</a>
-        <a class="w3-bar-item w3-button w3-hide-medium w3-hover-white w3-padding-16" id="buttonGetInvolved">Get Involved</a>
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-small w3-hover-white w3-padding-16" id="Button_Home">Home</a>
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hover-white w3-padding-16" id="Button_Learn">Learn</a>
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hover-white w3-padding-16" id="Button_GetInvolved">Get Involved</a>
 
         <!--        Right side of the bar -->
 <!--            <a class="w3-bar-item w3-button w3-hide-medium w3-hover-white w3-padding-16 w3-right" id="buttonLogin">Log out/a>-->
         <?php
         if ( isset ( $_SESSION["username"] ))
         {?>
-            <a class="w3-bar-item w3-button w3-hide-medium w3-hover-white w3-padding-16 w3-right" id="buttonLogin">Logout</a>
+            <div class="w3-bar-item w3-padding-16 w3-right">Welcome <?=$_SESSION["username"]?>!</div>
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hover-white w3-padding-16 w3-right" id="Button_Logout">Logout</a>
         <?php }
         else
         {?>
-            <a class="w3-bar-item w3-button w3-hide-medium w3-hover-white w3-padding-16 w3-right" id="buttonLogin">Login</a>
-            <a class="w3-bar-item w3-button w3-hide-medium w3-hover-white w3-padding-16 w3-right" id="buttonRegister">Register</a>
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hover-white w3-padding-16 w3-right" id="Button_Login">Login</a>
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hover-white w3-padding-16 w3-right" id="Button_Register">Register</a>
         <?php }
         ?>
     </div>

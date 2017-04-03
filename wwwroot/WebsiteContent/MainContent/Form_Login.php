@@ -5,7 +5,7 @@
         <!--        <p class="w3-xlarge">sub title</p>-->
         <!--            <form action="/action_page.php" class="w3-container">-->
 
-        <form method="post" action="LoginUser.php" enctype="multipart/form-data" class="w3-container">
+        <form method="post" action="FormAction_LoginUser.php" enctype="multipart/form-data" class="w3-container">
             <h2>Login</h2>
 
 <!--        Username input   -->

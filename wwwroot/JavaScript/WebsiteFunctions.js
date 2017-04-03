@@ -28,7 +28,7 @@
     }
 
     //  If the login button was clicked...
-    $("#buttonLogin").click
+    $("#Button_Login").click
     (
         function display_login(name)
         {
@@ -43,8 +43,17 @@
         }
     );
 
+    //  If the login button was clicked...
+    $("#Button_Logout").click
+    (
+        function logout(name)
+        {
+            
+        }
+    );
+
     //  If the register button was clicked...
-    $("#buttonRegister").click
+    $("#Button_Register").click
     (
         function display_login(name)
         {
