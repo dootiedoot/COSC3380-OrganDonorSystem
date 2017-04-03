@@ -5,7 +5,7 @@
         <!--        <p class="w3-xlarge">sub title</p>-->
         <!--            <form action="/action_page.php" class="w3-container">-->
 
-        <form method="post" action="RegisterDonor.php" enctype="multipart/form-data" class="w3-container" >
+        <form method="post" action="Action_RegisterDonor.php" enctype="multipart/form-data" class="w3-container" >
             <h2>Donor Registration</h2>
             <p>sub title stuff.</p>
             <!--                <p>-->

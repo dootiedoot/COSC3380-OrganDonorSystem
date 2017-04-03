@@ -22,8 +22,8 @@ if(!empty($_POST))
         session_start();
 
         // Set session variables
-        $_SESSION["username"] = $username;
-        $_SESSION["password"] = $password;
+        $_SESSION['username'] = $username;
+        $_SESSION['password'] = $password;
 
         ?>
 

@@ -18,10 +18,11 @@
         <!--        Right side of the bar -->
 <!--            <a class="w3-bar-item w3-button w3-hide-medium w3-hover-white w3-padding-16 w3-right" id="buttonLogin">Log out/a>-->
         <?php
-        if ( isset ( $_SESSION["username"] ))
+        var_dump($_SESSION);
+        if (isset($_SESSION['username']))
         {?>
-            <div class="w3-bar-item w3-padding-16 w3-right">Welcome <?=$_SESSION["username"]?>!</div>
-            <a class="w3-bar-item w3-button w3-hide-medium w3-hover-white w3-padding-16 w3-right" id="Button_Logout">Logout</a>
+            <div class="w3-bar-item w3-padding-16 w3-right">Welcome <?=$_SESSION['username']?>!</div>
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hover-white w3-padding-16 w3-right" href="http://organdonorsystem.azurewebsites.net/Action_Logout.php" id="Button_Logout">Logout</a>
         <?php }
         else
         {?>
