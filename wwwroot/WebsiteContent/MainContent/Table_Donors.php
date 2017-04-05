@@ -4,7 +4,7 @@
         <h2>Registered Donors</h2>
         <!--                <p>If you different hover colors, add w3-hover-<em>color</em> classes to each tr element:</p>-->
         <?php
-        $sql_select = "SELECT * FROM donor";
+        $sql_select = "SELECT * FROM donor LIMIT 0, 100";
         $stmt = $conn->query($sql_select);
         $donors = $stmt->fetchAll();
 
