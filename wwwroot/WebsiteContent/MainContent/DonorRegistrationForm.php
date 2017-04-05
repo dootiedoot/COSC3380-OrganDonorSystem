@@ -30,34 +30,34 @@
             <!--                </p>-->
             <p>
             <div class="w3-padding">
-                <input class="w3-input" type="email" name="email" required>
+                <input class="w3-input" type="email" name="email" id="userEmail" required>
                 <label class="w3-label w3-validate">Email</label>
             </div>
             </p>
             <p>
             <div class="w3-padding">
-                <input class="w3-radio" type="radio" name="gender" value="male" checked>
+                <input class="w3-radio" type="radio" name="gender" value="male" id="userIsMale" checked>
                 <label class="w3-validate">Male</label>
 
-                <input class="w3-radio" type="radio" name="gender" value="female">
+                <input class="w3-radio" type="radio" name="gender" value="female" id="userIsFem">
                 <label class="w3-validate">Female</label>
             </div>
             </p>
             <p>
             <div class="w3-padding">
-                <input class="w3-input" type="date" name="birthDate" required>
+                <input class="w3-input" type="date" name="birthDate" id="userBirthDate" required>
                 <label class="w3-label w3-validate">Birth date</label>
             </div>
             </p>
             <p>
             <div class="w3-padding">
-                <input class="w3-input" type="number" name="phoneNum" min="1000000000" max="9999999999" required>
+                <input class="w3-input" type="number" name="phoneNum" min="1000000000" max="9999999999" id="userPhoneNum" required>
                 <label class="w3-label w3-validate">Phone Number</label>
             </div>
             </p>
             <p>
             <div class="w3-padding">
-                <input class="w3-input" type="number" name="weight" min="0" required>
+                <input class="w3-input" type="number" name="weight" min="0" id="userWeight" required>
                 <label class="w3-label w3-validate">Weight</label>
             </div>
             </p>
