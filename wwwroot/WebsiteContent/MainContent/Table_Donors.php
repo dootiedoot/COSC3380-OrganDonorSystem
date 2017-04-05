@@ -13,6 +13,7 @@
             <table class="w3-table-all">
                 <thead>
                 <tr class="w3-green">
+                    <th>#</th>
                     <th>First Name</th>
                     <th>Middle Initial</th>
                     <th>Last Name</th>
@@ -26,9 +27,11 @@
                 </thead>
 
                 <?php
+                $counter = 1;
                 foreach($donors as $donor)
                 {?>
                     <tr class="w3-hover-green">
+                        <td><?= $counter?>.</td>
                         <td><?= $donor['FirstName']?></td>
                         <td><?= $donor['MiddleInitial']?></td>
                         <td><?= $donor['LastName']?></td>
@@ -40,6 +43,8 @@
                         <td><?= $donor['BloodType']?></td>
                     </tr>
                     <?php
+
+                    $counter++;
                 }?>
             </table>
             <?php

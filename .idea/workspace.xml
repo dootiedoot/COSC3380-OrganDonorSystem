@@ -42,13 +42,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Action_RegisterDonor.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Action_RegisterDonor.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wwwroot/Action_RegisterDonor.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="42" column="34" lean-forward="true" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
+            <state relative-caret-position="317">
+              <caret line="42" column="34" lean-forward="false" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
               <folding>
-                <marker date="1491409697056" expanded="true" signature="782:932" ph="INSERT INTO donor... " />
+                <marker date="1491410067478" expanded="true" signature="782:932" ph="INSERT INTO donor... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Table_Donors.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wwwroot/WebsiteContent/MainContent/Table_Donors.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="33" column="42" lean-forward="false" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
+              <folding>
+                <marker date="1491421379655" expanded="true" signature="406:438" ph="SELECT * FRO... donor" />
               </folding>
             </state>
           </provider>
@@ -58,7 +70,7 @@
         <entry file="file://$USER_HOME$/Downloads/COSC3380-OrganDonorSystem-dreBranch/COSC3380-OrganDonorSystem-dreBranch/wwwroot/RegisterDonor.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="612">
-              <caret line="36" column="30" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+              <caret line="36" column="30" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
               <folding>
                 <marker date="1491408848943" expanded="true" signature="901:1049" ph="INSERT INTO donor... " />
               </folding>
@@ -69,7 +81,7 @@
       <file leaf-file-name="Form_DonorRegistration.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wwwroot/WebsiteContent/MainContent/Form_DonorRegistration.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
+            <state relative-caret-position="595">
               <caret line="35" column="16" lean-forward="false" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
               <folding />
             </state>
@@ -99,7 +111,6 @@
         <option value="$PROJECT_DIR$/wwwroot/RegisterDonor.php" />
         <option value="$PROJECT_DIR$/wwwroot/WebsiteContent/MainContent/LoginForm.php" />
         <option value="$PROJECT_DIR$/wwwroot/LoginUser.php" />
-        <option value="$PROJECT_DIR$/wwwroot/WebsiteContent/MainContent/Table_Donors.php" />
         <option value="$PROJECT_DIR$/wwwroot/JavaScript/WebsiteFunctions.js" />
         <option value="$PROJECT_DIR$/wwwroot/WebsiteContent/MainContent/Form_Login.php" />
         <option value="$PROJECT_DIR$/wwwroot/TopBar.php" />
@@ -111,6 +122,7 @@
         <option value="$USER_HOME$/AppData/Local/Temp/Temp1_COSC3380-OrganDonorSystem-dreBranch.zip/COSC3380-OrganDonorSystem-dreBranch/wwwroot/RegisterDonor.php" />
         <option value="$USER_HOME$/Downloads/COSC3380-OrganDonorSystem-dreBranch/COSC3380-OrganDonorSystem-dreBranch/wwwroot/RegisterDonor.php" />
         <option value="$PROJECT_DIR$/wwwroot/Action_RegisterDonor.php" />
+        <option value="$PROJECT_DIR$/wwwroot/WebsiteContent/MainContent/Table_Donors.php" />
       </list>
     </option>
   </component>
@@ -413,7 +425,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15677000" />
+    <option name="totallyTimeSpent" value="15725000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="96" y="12" width="1348" height="872" extended-state="0" />
@@ -472,14 +484,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_COSC3380-OrganDonorSystem-dreBranch.zip/COSC3380-OrganDonorSystem-dreBranch/wwwroot/RegisterDonor.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="42" lean-forward="true" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_COSC3380-OrganDonorSystem-dreBranch.zip/COSC3380-OrganDonorSystem-dreBranch/wwwroot/RegisterDonor.php" />
     <entry file="file://$PROJECT_DIR$/wwwroot/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -756,8 +761,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wwwroot/WebsiteContent/MainContent/Table_Donors.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="100" lean-forward="false" selection-start-line="2" selection-start-column="100" selection-end-line="2" selection-end-column="100" />
+        <state relative-caret-position="357">
+          <caret line="33" column="42" lean-forward="false" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
+          <folding>
+            <marker date="1491421379655" expanded="true" signature="406:438" ph="SELECT * FRO... donor" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -792,25 +800,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_COSC3380-OrganDonorSystem-dreBranch.zip/COSC3380-OrganDonorSystem-dreBranch/wwwroot/RegisterDonor.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="36" column="71" lean-forward="true" selection-start-line="36" selection-start-column="71" selection-end-line="36" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_COSC3380-OrganDonorSystem-dreBranch.zip/COSC3380-OrganDonorSystem-dreBranch/wwwroot/WebsiteContent/MainContent/DonorRegistrationForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="63" column="36" lean-forward="true" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_COSC3380-OrganDonorSystem-dreBranch.zip/COSC3380-OrganDonorSystem-dreBranch/wwwroot/RegisterDonor.php" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_COSC3380-OrganDonorSystem-dreBranch.zip/COSC3380-OrganDonorSystem-dreBranch/wwwroot/WebsiteContent/MainContent/DonorRegistrationForm.php" />
     <entry file="file://$PROJECT_DIR$/wwwroot/WebsiteContent/MainContent/Form_DonorRegistration.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
+        <state relative-caret-position="595">
           <caret line="35" column="16" lean-forward="false" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
           <folding />
         </state>
@@ -819,7 +813,7 @@
     <entry file="file://$USER_HOME$/Downloads/COSC3380-OrganDonorSystem-dreBranch/COSC3380-OrganDonorSystem-dreBranch/wwwroot/RegisterDonor.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
-          <caret line="36" column="30" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <caret line="36" column="30" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
           <folding>
             <marker date="1491408848943" expanded="true" signature="901:1049" ph="INSERT INTO donor... " />
           </folding>
@@ -828,10 +822,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wwwroot/Action_RegisterDonor.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="42" column="34" lean-forward="true" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
+        <state relative-caret-position="317">
+          <caret line="42" column="34" lean-forward="false" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
           <folding>
-            <marker date="1491409697056" expanded="true" signature="782:932" ph="INSERT INTO donor... " />
+            <marker date="1491410067478" expanded="true" signature="782:932" ph="INSERT INTO donor... " />
           </folding>
         </state>
       </provider>
