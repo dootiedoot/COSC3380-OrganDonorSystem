@@ -1,6 +1,7 @@
 <?php
 
 require "Database/MySQLconfig.php";
+require "Database/updateDateAddedtoDB.php";
 
 $firstName;
 $middleInit = null;
@@ -13,15 +14,13 @@ $weight;
 $bloodType;
 
 //             Following the database connection code, add code for inserting registration information into the database.
-if(!empty($_POST))
-{
-    try
-    {
+if (!empty($_POST)) {
+    try {
         //  Assign variables
         $firstName = $_POST['firstName'];
 
         //check for if middle initial has been provided
-        if(isset($_POST['middleInit'])){
+        if (isset($_POST['middleInit'])) {
             $middleInit = $_POST['middleInit'];
         }
 
@@ -31,28 +30,7 @@ if(!empty($_POST))
         $birthDate = $_POST['birthDate'];
         $phoneNum = $_POST['phoneNum'];
         $weight = $_POST['weight'];
-        
-        //switch case that determines bloodtype based on 
-        switch ($_POST['bloodType']){
-            case '1':
-                $bloodType = 'A+';
-            case '2':
-                $bloodType = 'A-';
-            case '3':
-                $bloodType = 'B+';
-            case '4':
-                $bloodType = 'B-';
-            case '5':
-                $bloodType = 'AB+';
-            case '6':
-                $bloodType = 'AB-';
-            case '7':
-                $bloodType = 'O+';
-            case '8':
-                $bloodType = 'O-';
-            default:
-                $bloodType = null;
-        }
+        $bloodType = $_POST['bloodType'];
 
         // Insert data
         $sql_insert = "
@@ -72,9 +50,7 @@ if(!empty($_POST))
         $stmt->execute();
 
         echo "<h3>Your're registered!</h3>";
-    }
-    catch (Exception $e)
-    {
+    } catch (Exception $e) {
         die(var_dump($e));
     }
 
@@ -90,4 +66,3 @@ if(!empty($_POST))
 
     header("Location: /");
 }
-?>
