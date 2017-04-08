@@ -1,3 +1,10 @@
+<?php
+    session_start();
+
+    if($_SESSION['userRole'] != "Admin")
+        header("Location: /");
+?>
+
 <!DOCTYPE html>
 <html>
 <title>Organ Donor System - Team 8</title>

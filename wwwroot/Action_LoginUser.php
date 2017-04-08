@@ -2,6 +2,9 @@
 
 require "Database/MySQLconfig.php";
 
+// Start the session
+session_start();
+
 $username;
 $password;
 
@@ -18,9 +21,6 @@ if(!empty($_POST))
 
     if(count($users) > 0)
     {
-        // Start the session
-        session_start();
-
         foreach($users as $user)
         {
             // Set session variables
@@ -31,20 +31,18 @@ if(!empty($_POST))
         }
     }
     else
-    {?>
-        <h3>No user found.</h3>
-        <?php
-    } ?>
+    {
+        header("Location: /Page_Login.php");
+    }
 
-<?php
     //  Remove from POST array so inputs are not repeated
     unset($_POST['username']);
     unset($_POST['password']);
 
     //  Determine which page to load based on logged in user role
-    if ($_SESSION['userRole'] = "Admin")
+    if ($_SESSION['userRole'] == "Admin")
         header("Location: /Page_Admin_Home.php");
     else
-        header("Location: /index.php");
+        header("Location: /");
 }
 ?>
