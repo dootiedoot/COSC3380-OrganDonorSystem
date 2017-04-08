@@ -1,7 +1,7 @@
 <div class="w3-main w3-container" style="margin-left:270px;margin-top:117px;">
     <!--    Donor table -->
     <div id="mainDonorsTable" class="w3-container w3-section w3-padding-large w3-card-4 w3-light-grey">
-        <h2>Registered Donors</h2>
+        
         <!--                <p>If you different hover colors, add w3-hover-<em>color</em> classes to each tr element:</p>-->
         <!-- Information on How it works: -->
         <h1>Your decision matters</h1>
