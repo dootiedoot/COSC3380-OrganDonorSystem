@@ -12,22 +12,58 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wwwroot/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+            <state relative-caret-position="99">
+              <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Action_Logout.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wwwroot/Action_Logout.php">
+      <file leaf-file-name="LeftSidebar.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wwwroot/WebsiteContent/LeftSidebar/LeftSidebar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state relative-caret-position="340">
+              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#nav#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Action_LogoutUser.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wwwroot/Action_LogoutUser.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="25" lean-forward="false" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Form_Login.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wwwroot/WebsiteContent/MainContent/Form_Login.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="52" lean-forward="false" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Action_LoginUser.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wwwroot/Action_LoginUser.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="575">
+              <caret line="45" column="42" lean-forward="false" selection-start-line="45" selection-start-column="42" selection-end-line="45" selection-end-column="42" />
+              <folding>
+                <marker date="1491662695372" expanded="true" signature="316:386" ph="SELECT * FRO... user" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -35,44 +71,12 @@
       <file leaf-file-name="TopBar.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wwwroot/WebsiteContent/TopBar/TopBar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Action_RegisterDonor.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wwwroot/Action_RegisterDonor.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="42" column="34" lean-forward="false" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
+            <state relative-caret-position="187">
+              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding>
-                <marker date="1491410067478" expanded="true" signature="782:932" ph="INSERT INTO donor... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Table_Donors.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/wwwroot/WebsiteContent/MainContent/Table_Donors.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="33" column="42" lean-forward="false" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
-              <folding>
-                <marker date="1491421379655" expanded="true" signature="406:438" ph="SELECT * FRO... donor" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RegisterDonor.php" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Downloads/COSC3380-OrganDonorSystem-dreBranch/COSC3380-OrganDonorSystem-dreBranch/wwwroot/RegisterDonor.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="36" column="30" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-              <folding>
-                <marker date="1491408848943" expanded="true" signature="901:1049" ph="INSERT INTO donor... " />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="e#2072#2160#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -81,18 +85,40 @@
       <file leaf-file-name="Form_DonorRegistration.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wwwroot/WebsiteContent/MainContent/Form_DonorRegistration.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="35" column="16" lean-forward="false" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+            <state relative-caret-position="-969">
+              <caret line="0" column="76" lean-forward="false" selection-start-line="0" selection-start-column="59" selection-end-line="0" selection-end-column="76" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Footer.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wwwroot/WebsiteContent/Footer.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="118" lean-forward="false" selection-start-line="1" selection-start-column="118" selection-end-line="1" selection-end-column="118" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WebsiteFunctions.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wwwroot/JavaScript/WebsiteFunctions.js">
+      <file leaf-file-name="Page_Admin_Home.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wwwroot/Page_Admin_Home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1003">
-              <caret line="59" column="12" lean-forward="false" selection-start-line="59" selection-start-column="12" selection-end-line="59" selection-end-column="12" />
+            <state relative-caret-position="252">
+              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Page_Login.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wwwroot/Page_Login.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="28" column="27" lean-forward="false" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -106,23 +132,29 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/wwwroot/WebsiteContent/LeftSidebar/Home_Sidebar.php" />
         <option value="$PROJECT_DIR$/wwwroot/WebsiteContent/MainContent/DonorRegistrationForm.php" />
         <option value="$PROJECT_DIR$/wwwroot/RegisterDonor.php" />
         <option value="$PROJECT_DIR$/wwwroot/WebsiteContent/MainContent/LoginForm.php" />
         <option value="$PROJECT_DIR$/wwwroot/LoginUser.php" />
-        <option value="$PROJECT_DIR$/wwwroot/JavaScript/WebsiteFunctions.js" />
-        <option value="$PROJECT_DIR$/wwwroot/WebsiteContent/MainContent/Form_Login.php" />
         <option value="$PROJECT_DIR$/wwwroot/TopBar.php" />
-        <option value="$PROJECT_DIR$/wwwroot/Action_LoginUser.php" />
-        <option value="$PROJECT_DIR$/wwwroot/index.php" />
         <option value="$PROJECT_DIR$/wwwroot/Action_Logout.php" />
-        <option value="$PROJECT_DIR$/wwwroot/WebsiteContent/TopBar/TopBar.php" />
         <option value="$PROJECT_DIR$/wwwroot/WebsiteContent/MainContent/Form_DonorRegistration.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/Temp1_COSC3380-OrganDonorSystem-dreBranch.zip/COSC3380-OrganDonorSystem-dreBranch/wwwroot/RegisterDonor.php" />
         <option value="$USER_HOME$/Downloads/COSC3380-OrganDonorSystem-dreBranch/COSC3380-OrganDonorSystem-dreBranch/wwwroot/RegisterDonor.php" />
         <option value="$PROJECT_DIR$/wwwroot/Action_RegisterDonor.php" />
+        <option value="$PROJECT_DIR$/wwwroot/Footer.php" />
+        <option value="$PROJECT_DIR$/wwwroot/JavaScript/WebsiteFunctions.js" />
+        <option value="$PROJECT_DIR$/wwwroot/Pages/Page_Login.php" />
+        <option value="$PROJECT_DIR$/wwwroot/WebsiteContent/MainContent/Form_Login.php" />
         <option value="$PROJECT_DIR$/wwwroot/WebsiteContent/MainContent/Table_Donors.php" />
+        <option value="$PROJECT_DIR$/wwwroot/WebsiteContent/TopBar/TopBar.php" />
+        <option value="$PROJECT_DIR$/wwwroot/Action_LogoutUser.php" />
+        <option value="$PROJECT_DIR$/wwwroot/WebsiteContent/LeftSidebar/Home_Sidebar.php" />
+        <option value="$PROJECT_DIR$/wwwroot/WebsiteContent/Footer.php" />
+        <option value="$PROJECT_DIR$/wwwroot/Action_LoginUser.php" />
+        <option value="$PROJECT_DIR$/wwwroot/Page_Admin_Home.php" />
+        <option value="$PROJECT_DIR$/wwwroot/Page_Login.php" />
+        <option value="$PROJECT_DIR$/wwwroot/index.php" />
       </list>
     </option>
   </component>
@@ -134,8 +166,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="96" />
-    <option name="y" value="12" />
+    <option name="x" value="435" />
+    <option name="y" value="141" />
     <option name="width" value="1348" />
     <option name="height" value="872" />
   </component>
@@ -155,8 +187,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -180,6 +210,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="wwwroot" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="COSC3380-OrganDonorSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="COSC3380-OrganDonorSystem" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wwwroot" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebsiteContent" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -263,24 +311,6 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="JavaScript" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="COSC3380-OrganDonorSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="COSC3380-OrganDonorSystem" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wwwroot" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="images" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -305,6 +335,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -313,15 +345,17 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\chadh\OneDrive\Documents\GitHub\COSC3380-OrganDonorSystem\wwwroot" />
+      <recent name="C:\Users\chadh\OneDrive\Documents\GitHub\COSC3380-OrganDonorSystem\wwwroot\Pages" />
+      <recent name="C:\Users\chadh\OneDrive\Documents\GitHub\COSC3380-OrganDonorSystem\wwwroot\WebsiteContent" />
+      <recent name="C:\Users\chadh\OneDrive\Documents\GitHub\COSC3380-OrganDonorSystem\wwwroot\WebsiteContent\MainContent" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\chadh\OneDrive\Documents\GitHub\COSC3380-OrganDonorSystem\wwwroot" />
       <recent name="C:\Users\chadh\OneDrive\Documents\GitHub\COSC3380-OrganDonorSystem\wwwroot\FormActions" />
       <recent name="C:\Users\chadh\Documents\GitHub\COSC3380-OrganDonorSystem\wwwroot" />
       <recent name="C:\Users\chadh\OneDrive\Documents\GitHub\COSC3380-OrganDonorSystem\wwwroot\WebsiteContent\LeftSidebar" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\chadh\OneDrive\Documents\GitHub\COSC3380-OrganDonorSystem\wwwroot" />
-      <recent name="C:\Users\chadh\OneDrive\Documents\GitHub\COSC3380-OrganDonorSystem\wwwroot\WebsiteContent\MainContent" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -421,14 +455,15 @@
       <workItem from="1491256507805" duration="241000" />
       <workItem from="1491407204220" duration="86000" />
       <workItem from="1491407624370" duration="1943000" />
+      <workItem from="1491659971675" duration="2981000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15725000" />
+    <option name="totallyTimeSpent" value="18706000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="96" y="12" width="1348" height="872" extended-state="0" />
+    <frame x="435" y="141" width="1348" height="872" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2484985" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -468,32 +503,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wwwroot/WebsiteContent/TopBar/TopBar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wwwroot/JavaScript/WebsiteFunctions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1003">
-          <caret line="59" column="12" lean-forward="false" selection-start-line="59" selection-start-column="12" selection-end-line="59" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_COSC3380-OrganDonorSystem-dreBranch.zip/COSC3380-OrganDonorSystem-dreBranch/wwwroot/RegisterDonor.php" />
-    <entry file="file://$PROJECT_DIR$/wwwroot/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wwwroot/Action_Logout.php">
+    <entry file="file://$PROJECT_DIR$/wwwroot/Action_LogoutUser.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
@@ -513,7 +523,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#2072#2160#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -593,7 +607,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wwwroot/WebsiteContent/LeftSidebar/Home_Sidebar.php">
+    <entry file="file://$PROJECT_DIR$/wwwroot/WebsiteContent/LeftSidebar/LeftSidebar.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="41" lean-forward="true" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
@@ -641,7 +655,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="110" lean-forward="false" selection-start-line="13" selection-start-column="103" selection-end-line="13" selection-end-column="114" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#2072#2160#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -727,13 +745,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wwwroot/WebsiteContent/LeftSidebar/Home_Sidebar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="41" lean-forward="true" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wwwroot/Database/MySQLconfig.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -742,91 +753,137 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/FormActions/FormAction_LoginUser.php" />
+    <entry file="file://$PROJECT_DIR$/wwwroot/TopBar.php" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_COSC3380-OrganDonorSystem-dreBranch.zip/COSC3380-OrganDonorSystem-dreBranch/wwwroot/RegisterDonor.php" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_COSC3380-OrganDonorSystem-dreBranch.zip/COSC3380-OrganDonorSystem-dreBranch/wwwroot/WebsiteContent/MainContent/DonorRegistrationForm.php" />
+    <entry file="file://$USER_HOME$/Downloads/COSC3380-OrganDonorSystem-dreBranch/COSC3380-OrganDonorSystem-dreBranch/wwwroot/RegisterDonor.php" />
     <entry file="file://$PROJECT_DIR$/wwwroot/JavaScript/WebsiteFunctions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1003">
-          <caret line="59" column="12" lean-forward="false" selection-start-line="59" selection-start-column="12" selection-end-line="59" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wwwroot/FormActions/FormAction_LoginUser.php" />
-    <entry file="file://$PROJECT_DIR$/wwwroot/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <caret line="59" column="15" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wwwroot/WebsiteContent/MainContent/Table_Donors.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="33" column="42" lean-forward="false" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
+        <state relative-caret-position="0">
+          <caret line="0" column="73" lean-forward="false" selection-start-line="0" selection-start-column="73" selection-end-line="0" selection-end-column="73" />
           <folding>
-            <marker date="1491421379655" expanded="true" signature="406:438" ph="SELECT * FRO... donor" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wwwroot/TopBar.php" />
-    <entry file="file://$PROJECT_DIR$/wwwroot/WebsiteContent/MainContent/Form_Login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="14" lean-forward="true" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wwwroot/Action_LoginUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="24" column="19" lean-forward="false" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wwwroot/Action_Logout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wwwroot/WebsiteContent/TopBar/TopBar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_COSC3380-OrganDonorSystem-dreBranch.zip/COSC3380-OrganDonorSystem-dreBranch/wwwroot/RegisterDonor.php" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_COSC3380-OrganDonorSystem-dreBranch.zip/COSC3380-OrganDonorSystem-dreBranch/wwwroot/WebsiteContent/MainContent/DonorRegistrationForm.php" />
-    <entry file="file://$PROJECT_DIR$/wwwroot/WebsiteContent/MainContent/Form_DonorRegistration.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="16" lean-forward="false" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/COSC3380-OrganDonorSystem-dreBranch/COSC3380-OrganDonorSystem-dreBranch/wwwroot/RegisterDonor.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="30" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding>
-            <marker date="1491408848943" expanded="true" signature="901:1049" ph="INSERT INTO donor... " />
+            <marker date="1491661098377" expanded="true" signature="408:440" ph="SELECT * FRO... donor" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wwwroot/Action_RegisterDonor.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="42" column="34" lean-forward="false" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
+        <state relative-caret-position="703">
+          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
           <folding>
-            <marker date="1491410067478" expanded="true" signature="782:932" ph="INSERT INTO donor... " />
+            <marker date="1491613934189" expanded="true" signature="782:932" ph="INSERT INTO donor... " />
+            <marker date="1491613934189" expanded="true" signature="1787:1822" ph="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/ApplicationInsights.config">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/Action_LogoutUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="25" lean-forward="false" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/WebsiteContent/TopBar/TopBar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#2072#2160#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/WebsiteContent/MainContent/Form_DonorRegistration.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-969">
+          <caret line="0" column="76" lean-forward="false" selection-start-line="0" selection-start-column="59" selection-end-line="0" selection-end-column="76" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/WebsiteContent/Footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="118" lean-forward="false" selection-start-line="1" selection-start-column="118" selection-end-line="1" selection-end-column="118" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/WebsiteContent/MainContent/Form_Login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="52" lean-forward="false" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/Action_LoginUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="45" column="42" lean-forward="false" selection-start-line="45" selection-start-column="42" selection-end-line="45" selection-end-column="42" />
+          <folding>
+            <marker date="1491662695372" expanded="true" signature="316:386" ph="SELECT * FRO... user" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/Page_Admin_Home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/Page_Login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="28" column="27" lean-forward="false" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/WebsiteContent/LeftSidebar/LeftSidebar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#nav#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -10,7 +10,7 @@ session_start();
 
 unset($_SESSION['username']);
 unset($_SESSION['password']);
-
+unset($_SESSION['userRole']);
 //var_dump($_SESSION);
 
 

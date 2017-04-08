@@ -1,5 +1,5 @@
-<div class="w3-main w3-container" style="margin-left:270px;">
-<!-- Donor registration form -->
+<div class="w3-main w3-container" style="margin-left:270px;margin-top:117px;">
+    <!-- Donor registration form -->
     <div id="mainLoginForm" class="w3-container w3-section w3-padding-large w3-card-4 w3-light-grey">
         <!--        <h1 class="w3-jumbo">Donor Registration</h1>-->
         <!--        <p class="w3-xlarge">sub title</p>-->

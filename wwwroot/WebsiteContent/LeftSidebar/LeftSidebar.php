@@ -7,7 +7,7 @@
 <!--<a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hide-large" title="close menu">×</a>-->
 <nav class="w3-sidenav w3-collapse w3-white w3-animate-left" style="z-index:3;width:270px">
 <!--    Home-->
-    <div class="w3-sidebar w3-bar-block" style="width:265px;" id="sidebarHome">
+    <div class="w3-sidebar w3-bar-block w3-card-4 w3-light-grey" style="width:265px;margin-top:15px;" id="sidebarHome">
         <div class="w3-container w3-padding-top">
             <h3>Donation Information</h3>
         </div>

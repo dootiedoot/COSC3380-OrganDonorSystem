@@ -21,30 +21,14 @@ if(!empty($_POST))
         // Start the session
         session_start();
 
-        // Set session variables
-        $_SESSION['username'] = $username;
-        $_SESSION['password'] = $password;
-
-        ?>
-
-<!--        <table class="w3-table-all">-->
-<!--            <thead>-->
-<!--            <tr class="w3-green">-->
-<!--                <th>Username</th>-->
-<!--                <th>Password</th>-->
-<!--            </tr>-->
-<!--            </thead>-->
-<!---->
-<!--            --><?php
-//            foreach($users as $user)
-//            {?>
-<!--                <td>--><?//= $user['username']?><!--</td>-->
-<!--                <td>--><?//= $user['password']?><!--</td>-->
-<!--                <td>--><?//= $user['role']?><!--</td>-->
-<!--                --><?php
-//            }?>
-<!--        </table>-->
-        <?php
+        foreach($users as $user)
+        {
+            // Set session variables
+            $_SESSION['username'] = $username;
+            $_SESSION['password'] = $password;
+            $_SESSION['userRole'] = $user["role"];
+//            var_dump($_SESSION);
+        }
     }
     else
     {?>
@@ -57,6 +41,10 @@ if(!empty($_POST))
     unset($_POST['username']);
     unset($_POST['password']);
 
-    header("Location: /");
+    //  Determine which page to load based on logged in user role
+    if ($_SESSION['userRole'] = "Admin")
+        header("Location: /Page_Admin_Home.php");
+    else
+        header("Location: /index.php");
 }
 ?>
