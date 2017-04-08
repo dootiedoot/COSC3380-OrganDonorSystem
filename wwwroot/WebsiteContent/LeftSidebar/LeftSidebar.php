@@ -12,7 +12,7 @@
             <h3>Donation Information</h3>
         </div>
 
-        <a id="button_sidebar_HowDonationWorks" class="w3-bar-item w3-button w3-hover-green">How donation works</a>
+        <a href="/How_donation_works.php" id="button_sidebar_HowDonationWorks" class="w3-bar-item w3-button w3-hover-green">How donation works</a>
         <a id="button_sidebar_HowToDonate" class="w3-bar-item w3-button w3-hover-green">How can you donate</a>
         <a id="button_sidebar_HowToHelp" class="w3-bar-item w3-button w3-hover-green">How can you help</a>
         <a id="button_sidebar_WhyRegister" class="w3-bar-item w3-button w3-hover-green">Why register as a donor</a>
