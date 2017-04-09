@@ -4,7 +4,7 @@
         
         <!--                <p>If you different hover colors, add w3-hover-<em>color</em> classes to each tr element:</p>-->
         <!-- Information on How it works: -->
-<div class="w3-container w3-margin-right" style="width:30%" >
+
 	<div class="w3-panel w3-green w3-round">
 		<h1>Your decision matters</h1>
 	</div>
@@ -27,6 +27,6 @@
 		<p>
 			Many people still require transplants, but supply does not meet demand yet. Donating parts of the liver, a kidney, or tissue can help increase the supply of organs and improve the lives of others.
 		</p>
-</div>
-    </div>
+	</div>
+    
 </div>
