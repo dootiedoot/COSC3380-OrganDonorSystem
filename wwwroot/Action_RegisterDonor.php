@@ -87,6 +87,6 @@ if(!empty($_POST))
         die(var_dump($e));
     }
 
-    header("Location: /Page_Admin_RegisterDonorForm.php");
+    header("Location: /Page_RegisterDonorForm.php");
 }
 ?>

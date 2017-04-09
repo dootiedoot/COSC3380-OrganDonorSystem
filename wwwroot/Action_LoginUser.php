@@ -36,7 +36,7 @@ if(!empty($_POST))
 
         //  Determine which page to load based on logged in user role
         if ($_SESSION['userRole'] == "Admin")
-            header("Location: /Page_Admin_Home.php");
+            header("Location: /Page_Admin.php");
         else
             header("Location: /");
     }

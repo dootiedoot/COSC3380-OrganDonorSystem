@@ -47,6 +47,6 @@ if(!empty($_POST))
     unset($_POST['email']);
     unset($_POST['roleType']);
 
-    header("Location: /Page_Admin_RegisterUserForm.php");
+    header("Location: /Page_RegisterUserForm.php");
 }
 ?>
