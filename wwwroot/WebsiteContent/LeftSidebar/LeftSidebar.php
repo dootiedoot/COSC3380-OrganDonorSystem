@@ -1,12 +1,8 @@
-<?php
-    session_start();
-?>
-
 <!--    Home-->
 <div class="w3-sidebar w3-bar-block w3-light-grey w3-card-2 w3-round" style="width:270px;margin-top:15px;">
 
     <div class="w3-green w3-center w3-hover-white w3-bar-item w3-button w3-round" onclick="myAccFunc('dropmenu_General')"> General <i class="fa fa-angle-down"></i>   </div>
-    <div id="dropmenu_General" class="w3-hide w3-show w3-white w3-card-4 w3-round">
+    <div id="dropmenu_General" class="w3-hide w3-white w3-card-4 w3-round">
         <a href="/How_donation_works.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-heartbeat"></i> How Donation Works</a>
         <a href="#" class="w3-bar-item w3-button w3-animate-left w3-round"><i class="fa fa-child"></i> How To Donate</a>
         <a href="#" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-handshake-o"></i> How You Can Help</a>
@@ -14,7 +10,6 @@
     </div>
 
 <!--    ONLY SHOW IF SPECIFIC USER IS LOGGED IN -->
-<!--    DONORS TAB -->
     <?php
     if ($_SESSION['userRole'] == "Admin" ||
         $_SESSION['userRole'] == "Doctor")
@@ -22,33 +17,19 @@
 
         <div class="w3-green w3-center w3-hover-white w3-bar-item w3-button w3-round" onclick="myAccFunc('dropmenu_Donors')"> Donors <i class="fa fa-angle-down"></i></div>
 
-        <div id="dropmenu_Donors" class="w3-hide w3-show w3-white w3-card-4">
+        <div id="dropmenu_Donors" class="w3-hide w3-white w3-card-4">
             <a href="/Page_Admin_RegisterDonorForm.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-address-card-o"></i> Register Donor</a>
             <a href="/Page_Admin_RegisteredDonors.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-address-book-o"></i> Registered Donors</a>
         </div>
 
     <?php } ?>
 
-<!--    USERS TAB  -->
-    <?php
-    if ($_SESSION['userRole'] == "Admin")
-    { ?>
-
-        <div class="w3-green w3-center w3-hover-white w3-bar-item w3-button w3-round" onclick="myAccFunc('dropmenu_Users')"> Users <i class="fa fa-angle-down"></i></div>
-
-        <div id="dropmenu_Users" class="w3-hide w3-show w3-white w3-card-4">
-            <a href="/Page_Admin_RegisterUserForm.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-address-card-o"></i> Register User</a>
-            <a href="/Page_Admin_RegisteredUsers.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-address-book-o"></i> Registered Users</a>
-        </div>
-
-    <?php } ?>
-
-    <a href="#" class="w3-bar-item w3-button w3-round">Link 2</a>
+    <a href="/organsReport.php" class="w3-bar-item w3-button w3-round">Organ stats/a>
     <a href="#" class="w3-bar-item w3-button w3-round">Link 3</a>
 
 </div>
 
-<!--    FUNCTIONS FOR DROP MENU LOGIC    -->
+<!--    FUNCTIONS FOR DROPMENU LOGIC    -->
 <script>
     function myAccFunc(name)
     {

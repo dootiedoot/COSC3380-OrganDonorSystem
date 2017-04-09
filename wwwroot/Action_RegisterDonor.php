@@ -4,7 +4,7 @@ require "Database/MySQLconfig.php";
 require "Database/updateDateAddedtoDB.php";
 
 $firstName;
-$middleInit;
+$middleInit = null;
 $lastName;
 $email;
 $sex;
@@ -14,13 +14,16 @@ $weight;
 $bloodType;
 
 //             Following the database connection code, add code for inserting registration information into the database.
-if(!empty($_POST))
-{
-    try
-    {
+if (!empty($_POST)) {
+    try {
         //  Assign variables
         $firstName = $_POST['firstName'];
-        $middleInit = $_POST['middleInit'];
+
+        //check for if middle initial has been provided
+        if (isset($_POST['middleInit'])) {
+            $middleInit = $_POST['middleInit'];
+        }
+
         $lastName = $_POST['lastName'];
         $email = $_POST['email'];
         $sex = $_POST['gender'];
@@ -45,12 +48,12 @@ if(!empty($_POST))
         $stmt->bindValue(7, $phoneNum);
         $stmt->bindValue(8, $weight);
         $stmt->bindValue(9, $bloodType);
+        $stmt->bindValue(7, $weight);
+        $stmt->bindValue(8, $bloodType);
         $stmt->execute();
 
         echo "<h3>Your're registered!</h3>";
-    }
-    catch (Exception $e)
-    {
+    } catch (Exception $e) {
         die(var_dump($e));
     }
 
@@ -66,4 +69,3 @@ if(!empty($_POST))
 
     header("Location: /");
 }
-?>
