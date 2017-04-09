@@ -31,6 +31,8 @@
                     <th>HLA B2</th>
                     <th>HLA C1</th>
                     <th>HLA C2</th>
+                    <th>HLA DRB1</th>
+                    <th>HLA DRB2</th>
                 </tr>
                 </thead>
 
