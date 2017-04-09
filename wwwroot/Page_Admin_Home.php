@@ -27,9 +27,10 @@
 
 <!-- Main content: shift it to the right by 270 pixels when the sidebar is visible -->
 <?php
-    require "WebsiteContent/MainContent/Form_DonorRegistration.php";
-    require "WebsiteContent/MainContent/Table_Donors.php";
+//    require "WebsiteContent/MainContent/Form_DonorRegistration.php";
+//    require "WebsiteContent/MainContent/Table_Donors.php";
 //    require "WebsiteContent/MainContent/Form_Login.php";
+require "WebsiteContent/MainContent/Main_How_donation_works.php";
 ?>
 
 <!--    PAGE FOOTER  -->
