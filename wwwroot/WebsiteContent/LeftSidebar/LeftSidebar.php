@@ -24,7 +24,8 @@
 
         <div id="dropmenu_Donors" class="w3-hide w3-show w3-white w3-card-4">
             <a href="/Page_RegisterDonorForm.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-address-card-o"></i> Register Donor</a>
-            <a href="/Page_RegisteredDonors.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-address-book-o"></i> Registered Donors</a>
+            <a href="/Page_Donors.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-address-book-o"></i> Registered Donors</a>
+            <a href="/Page_Recipients.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-address-card-o"></i> Registered Recipients</a>
         </div>
 
     <?php } ?>
@@ -38,7 +39,7 @@
 
         <div id="dropmenu_Users" class="w3-hide w3-show w3-white w3-card-4">
             <a href="/Page_RegisterUserForm.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-address-card-o"></i> Register User</a>
-            <a href="/Page_RegisteredUsers.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-address-book-o"></i> Registered Users</a>
+            <a href="/Page_Users.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-address-book-o"></i> Registered Users</a>
         </div>
 
     <?php } ?>
