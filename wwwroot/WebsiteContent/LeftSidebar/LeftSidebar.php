@@ -23,8 +23,8 @@
         <div class="w3-green w3-center w3-hover-white w3-bar-item w3-button w3-round" onclick="myAccFunc('dropmenu_Donors')"> Donors <i class="fa fa-angle-down"></i></div>
 
         <div id="dropmenu_Donors" class="w3-hide w3-show w3-white w3-card-4">
-            <a href="/Page_Admin_RegisterDonorForm.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-address-card-o"></i> Register Donor</a>
-            <a href="/Page_Admin_RegisteredDonors.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-address-book-o"></i> Registered Donors</a>
+            <a href="/Page_RegisterDonorForm.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-address-card-o"></i> Register Donor</a>
+            <a href="/Page_RegisteredDonors.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-address-book-o"></i> Registered Donors</a>
         </div>
 
     <?php } ?>
@@ -37,8 +37,8 @@
         <div class="w3-green w3-center w3-hover-white w3-bar-item w3-button w3-round" onclick="myAccFunc('dropmenu_Users')"> Users <i class="fa fa-angle-down"></i></div>
 
         <div id="dropmenu_Users" class="w3-hide w3-show w3-white w3-card-4">
-            <a href="/Page_Admin_RegisterUserForm.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-address-card-o"></i> Register User</a>
-            <a href="/Page_Admin_RegisteredUsers.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-address-book-o"></i> Registered Users</a>
+            <a href="/Page_RegisterUserForm.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-address-card-o"></i> Register User</a>
+            <a href="/Page_RegisteredUsers.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-address-book-o"></i> Registered Users</a>
         </div>
 
     <?php } ?>

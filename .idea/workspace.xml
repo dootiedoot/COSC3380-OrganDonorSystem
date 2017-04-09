@@ -12,6 +12,16 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Page_RegisteredDonors.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wwwroot/Page_RegisteredDonors.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="4" column="8" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Form_DonorRegistration.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wwwroot/WebsiteContent/MainContent/Form_DonorRegistration.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -22,21 +32,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main_How_donation_works.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wwwroot/WebsiteContent/MainContent/Main_How_donation_works.php">
+      <file leaf-file-name="Table_Donors.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wwwroot/WebsiteContent/MainContent/Table_Donors.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="8" column="38" lean-forward="false" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
-              <folding />
+            <state relative-caret-position="1363">
+              <caret line="47" column="45" lean-forward="false" selection-start-line="47" selection-start-column="45" selection-end-line="47" selection-end-column="45" />
+              <folding>
+                <marker date="1491766087022" expanded="true" signature="316:348" ph="SELECT * FRO... donor" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Form_UserRegistration.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wwwroot/WebsiteContent/MainContent/Form_UserRegistration.php">
+      <file leaf-file-name="LeftSidebar.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wwwroot/WebsiteContent/LeftSidebar/LeftSidebar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="20" column="65" lean-forward="false" selection-start-line="20" selection-start-column="65" selection-end-line="20" selection-end-column="65" />
+            <state relative-caret-position="825">
+              <caret line="33" column="41" lean-forward="true" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -76,25 +88,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="How_donation_works.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="How_donation_works.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wwwroot/How_donation_works.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
               <caret line="2" column="4" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Form_Login.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wwwroot/WebsiteContent/MainContent/Form_Login.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-              <folding>
-                <marker date="1491766087015" expanded="false" signature="41:59" ph="..." />
-                <marker date="1491766087015" expanded="true" signature="1973:2000" ph="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -154,7 +153,6 @@
         <option value="$PROJECT_DIR$/wwwroot/WebsiteContent/MainContent/Form_UserRegistration.php" />
         <option value="$PROJECT_DIR$/wwwroot/Action_RegisterUser.php" />
         <option value="$PROJECT_DIR$/wwwroot/Page_Admin_RegisteredUsers.php" />
-        <option value="$PROJECT_DIR$/wwwroot/WebsiteContent/LeftSidebar/LeftSidebar.php" />
         <option value="$PROJECT_DIR$/wwwroot/Page_Admin_RegisteredDonors.php" />
         <option value="$PROJECT_DIR$/wwwroot/Page_Admin_RegisterDonorForm.php" />
         <option value="$PROJECT_DIR$/wwwroot/Action_LoginUser.php" />
@@ -164,6 +162,8 @@
         <option value="$PROJECT_DIR$/wwwroot/WebsiteContent/MainContent/Form_DonorRegistration.php" />
         <option value="$PROJECT_DIR$/wwwroot/WebsiteContent/MainContent/Table_Users.php" />
         <option value="$PROJECT_DIR$/wwwroot/WebsiteContent/MainContent/Table_Donors.php" />
+        <option value="$PROJECT_DIR$/wwwroot/Page_ApplicantDonors.php" />
+        <option value="$PROJECT_DIR$/wwwroot/WebsiteContent/LeftSidebar/LeftSidebar.php" />
       </list>
     </option>
   </component>
@@ -470,17 +470,18 @@
       <workItem from="1491659971675" duration="2981000" />
       <workItem from="1491663288854" duration="60000" />
       <workItem from="1491708966659" duration="3062000" />
-      <workItem from="1491766146695" duration="1023000" />
+      <workItem from="1491766146695" duration="1175000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52243000" />
+    <option name="totallyTimeSpent" value="52395000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="84" y="-11" width="2087" height="1462" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2276029" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2276029" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -706,14 +707,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wwwroot/WebsiteContent/LeftSidebar/LeftSidebar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="38" lean-forward="false" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wwwroot/WebsiteContent/TopBar/TopBar.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -726,14 +719,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="29" column="4" lean-forward="false" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wwwroot/Page_RegisteredDonors.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="8" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
           <folding />
         </state>
       </provider>
@@ -754,30 +739,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wwwroot/Page_ApplicantDonors.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wwwroot/WebsiteContent/MainContent/Table_Users.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="97">
           <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
           <folding>
             <marker date="1491766087024" expanded="true" signature="294:325" ph="SELECT * FRO... user" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wwwroot/WebsiteContent/MainContent/Table_Donors.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="47" column="45" lean-forward="false" selection-start-line="47" selection-start-column="45" selection-end-line="47" selection-end-column="45" />
-          <folding>
-            <marker date="1491766087022" expanded="true" signature="316:348" ph="SELECT * FRO... donor" />
           </folding>
         </state>
       </provider>
@@ -868,6 +835,40 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="2" column="4" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/Page_ApplicantDonors.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="30" column="55" lean-forward="false" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/Page_RegisteredDonors.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="8" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/WebsiteContent/MainContent/Table_Donors.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1363">
+          <caret line="47" column="45" lean-forward="false" selection-start-line="47" selection-start-column="45" selection-end-line="47" selection-end-column="45" />
+          <folding>
+            <marker date="1491766087022" expanded="true" signature="316:348" ph="SELECT * FRO... donor" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/WebsiteContent/LeftSidebar/LeftSidebar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="33" column="41" lean-forward="true" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
           <folding />
         </state>
       </provider>
