@@ -1,12 +1,20 @@
 <?php
     session_start();
+
+    //  Initial state of checkmarks
+    if(!isset($_SESSION['GeneralInfo']))
+        $_SESSION['GeneralInfo'] = 'on';
+    if(!isset($_SESSION['MedicalInfo']))
+        $_SESSION['MedicalInfo'] = 'on';
+    if(!isset($_SESSION['ApplicantInfo']))
+        $_SESSION['ApplicantInfo'] = 'on';
 ?>
 
 <div class="w3-main w3-container" style="margin-left:270px;margin-top:117px;">
     <!--    Donor table -->
 
     <div class="w3-container w3-green w3-card-4 w3-center">
-        <h2>Recipients</h2>
+        <h2>Donors</h2>
     </div>
 
     <!--    Table selection checkboxes  -->
@@ -18,7 +26,7 @@
         <p><input class="w3-check" type="checkbox" name="MedicalInfo" <?php if($_SESSION['MedicalInfo'] == true) {?> checked="checked" <?php } ?>>
         <label>Medical info</label></p>
 
-        <p><input class="w3-check" type="checkbox" name="ApplicantStatusInfo" <?php if($_SESSION['ApplicantStatusInfo'] == true) {?> checked="checked" <?php } ?>>
+        <p><input class="w3-check" type="checkbox" name="ApplicantInfo" <?php if($_SESSION['ApplicantInfo'] == true) {?> checked="checked" <?php } ?>>
         <label>Applicant Status</label></p>
 
         <div class="w3-padding w3-center">
@@ -39,10 +47,12 @@
             <table class="w3-table-all">
                 <thead>
                 <tr class="w3-green">
+                    
+                    <th>#</th>
+
                     <?php
                     if ($_SESSION['GeneralInfo'] == true)
                     { ?>
-                        <th>#</th>
                         <th>First Name</th>
                         <th>Middle Initial</th>
                         <th>Last Name</th>

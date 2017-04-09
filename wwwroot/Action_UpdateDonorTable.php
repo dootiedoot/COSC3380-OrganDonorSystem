@@ -21,10 +21,10 @@ if(!empty($_POST))
         else
             $_SESSION['MedicalInfo'] = false;
 
-        if ($_POST['ApplicantStatusInfo'] == 'on')
-            $_SESSION['ApplicantStatusInfo'] = true;
+        if ($_POST['ApplicantInfo'] == 'on')
+            $_SESSION['ApplicantInfo'] = true;
         else
-            $_SESSION['ApplicantStatusInfo'] = false;
+            $_SESSION['ApplicantInfo'] = false;
 
 
 //        var_dump($_POST['GeneralInfo']);
@@ -37,7 +37,7 @@ if(!empty($_POST))
         //  Remove from POST array so inputs are not repeated
         unset($_POST['GeneralInfo']);
         unset($_POST['MedicalInfo']);
-        unset($_POST['ApplicantStatusInfo']);
+        unset($_POST['ApplicantInfo']);
 
 
     }
