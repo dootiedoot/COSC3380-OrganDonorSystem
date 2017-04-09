@@ -1,23 +1,52 @@
-<!--<div class="w3-hide-large">-->
-<!--    <a href="javascript:void(0)" onclick="w3_show_nav('sidebarHome')" class="w3-left w3-theme w3-hover-white w3-padding-16 w3-large" style="width:50%">Home</a>-->
-<!--    <a href="javascript:void(0)" onclick="w3_show_nav('sidebarLearn')" class="w3-left w3-theme w3-hover-white w3-padding-16 w3-large" style="width:50%">Learn</a>-->
-<!--    <!--    <a href="javascript:void(0)" onclick="w3_show_nav('menuRegistration')" class="w3-left w3-theme w3-hover-white w3-padding-16 w3-large" style="width:50%">Registration</a>-->
-<!--</div>-->
-<!--<div class="w3-clear"></div>-->
-<!--<a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hide-large" title="close menu">×</a>-->
-<nav class="w3-sidenav w3-collapse w3-white w3-animate-left" style="z-index:3;width:270px">
 <!--    Home-->
-    <div class="w3-sidebar w3-bar-block w3-card-4 w3-light-grey" style="width:265px;margin-top:15px;" id="sidebarHome">
-        <div class="w3-container w3-padding-top">
-            <h3>Donation Information</h3>
+<div class="w3-sidebar w3-bar-block w3-light-grey w3-card-2 w3-round" style="width:270px;margin-top:15px;">
+
+    <div class="w3-green w3-center w3-hover-white w3-bar-item w3-button w3-round" onclick="myAccFunc('dropmenu_General')"> General <i class="fa fa-angle-down"></i>   </div>
+    <div id="dropmenu_General" class="w3-hide w3-white w3-card-4 w3-round">
+        <a href="/How_donation_works.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-heartbeat"></i> How Donation Works</a>
+        <a href="#" class="w3-bar-item w3-button w3-animate-left w3-round"><i class="fa fa-child"></i> How To Donate</a>
+        <a href="#" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-handshake-o"></i> How You Can Help</a>
+        <a href="#" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-question-circle-o"></i> Why Register As A Donor</a>
+    </div>
+
+<!--    ONLY SHOW IF SPECIFIC USER IS LOGGED IN -->
+    <?php
+    if ($_SESSION['userRole'] == "Admin" ||
+        $_SESSION['userRole'] == "Doctor")
+    { ?>
+
+        <div class="w3-green w3-center w3-hover-white w3-bar-item w3-button w3-round" onclick="myAccFunc('dropmenu_Donors')"> Donors <i class="fa fa-angle-down"></i></div>
+
+        <div id="dropmenu_Donors" class="w3-hide w3-white w3-card-4">
+            <a href="/Page_Admin_RegisterDonorForm.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-address-card-o"></i> Register Donor</a>
+            <a href="/Page_Admin_RegisteredDonors.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-address-book-o"></i> Registered Donors</a>
         </div>
 
-        <a href="/How_donation_works.php" id="button_sidebar_HowDonationWorks" class="w3-bar-item w3-button w3-hover-green">How donation works</a>
-        <a id="button_sidebar_HowToDonate" class="w3-bar-item w3-button w3-hover-green">How can you donate</a>
-        <a id="button_sidebar_HowToHelp" class="w3-bar-item w3-button w3-hover-green">How can you help</a>
-        <a id="button_sidebar_WhyRegister" class="w3-bar-item w3-button w3-hover-green">Why register as a donor</a>
-    </div>
-</nav>
+    <?php } ?>
+
+    <a href="#" class="w3-bar-item w3-button w3-round">Link 2</a>
+    <a href="#" class="w3-bar-item w3-button w3-round">Link 3</a>
+
+</div>
+
+<!--    FUNCTIONS FOR DROPMENU LOGIC    -->
+<script>
+    function myAccFunc(name)
+    {
+        var x = document.getElementById(name);
+        if (x.className.indexOf("w3-show") == -1)
+        {
+            x.className += " w3-show";
+            x.previousElementSibling.className += " w3-green";
+        }
+        else
+        {
+            x.className = x.className.replace(" w3-show", "");
+            x.previousElementSibling.className = x.previousElementSibling.className.replace(" w3-green", "");
+        }
+    }
+</script>
+
 
 <!---->
 <!--<div id="sidebarLearn" class="myMenu">-->

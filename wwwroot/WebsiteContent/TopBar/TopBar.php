@@ -8,12 +8,12 @@
         <div class="w3-half w3-margin-top w3-wide w3-hide-medium w3-hide-small"><div class="w3-right">Organ Donor System - Team 8</div></div>
     </div>
 
-    <div class="w3-bar w3-theme w3-large" style="z-index:4;">
+    <div class="w3-bar w3-theme w3-large w3-round" style="z-index:4;">
 
         <!--        Left side of the bar-->
-        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-small w3-hover-white w3-padding-16" href='/'  id="Button_Home">Home</a>
-        <a class="w3-bar-item w3-button w3-hide-medium w3-hover-white w3-padding-16" id="Button_Learn">Learn</a>
-        <a class="w3-bar-item w3-button w3-hide-medium w3-hover-white w3-padding-16" id="Button_GetInvolved">Get Involved</a>
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-small w3-hover-white w3-padding-16 w3-round" href='/'> <i class="fa fa-home"></i> Home</a>
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hover-white w3-padding-16 w3-round"> <i class="fa fa-book"></i> Learn</a>
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hover-white w3-padding-16 w3-round"> <i class="fa fa-comments"></i> Get Involved</a>
 
         <!--        Right side of the bar -->
 <!--            <a class="w3-bar-item w3-button w3-hide-medium w3-hover-white w3-padding-16 w3-right" id="buttonLogin">Log out/a>-->
@@ -22,13 +22,13 @@
         if (isset($_SESSION['username']))
         {?>
             <div class="w3-bar-item w3-padding-16 w3-right">Welcome <?=$_SESSION['username']?>!</div>
-            <a class="w3-bar-item w3-button w3-hide-medium w3-hover-white w3-padding-16 w3-right" href="/Action_LogoutUser.php" id="Button_Logout">Logout</a>
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hover-white w3-padding-16 w3-right w3-round" href="/Action_LogoutUser.php"> <i class="fa fa-sign-out"></i> Logout</a>
         <?php }
         //  else, show login/register button
         else
         {?>
-            <a class="w3-bar-item w3-button w3-hide-medium w3-hover-white w3-padding-16 w3-right" href="/Page_Login.php" id="Button_Login">Login</a>
-            <a class="w3-bar-item w3-button w3-hide-medium w3-hover-white w3-padding-16 w3-right" id="Button_Register">Register</a>
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hover-white w3-padding-16 w3-right w3-round" href="/Page_Login.php"> <i class="fa fa-sign-in"></i> Login</a>
+            <!--            <a class="w3-bar-item w3-button w3-hide-medium w3-hover-white w3-padding-16 w3-right" id="Button_Register">Register</a>-->
         <?php }
         ?>
     </div>

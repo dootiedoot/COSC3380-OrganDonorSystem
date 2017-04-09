@@ -1,15 +1,7 @@
-<!DOCTYPE html>
-<html>
-<title>Organ Donor System - Team 8</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="/W3.CSS Stylesheet/w3.css">
-<style>
-    .w3-theme {color:#fff !important;background-color:#4CAF50 !important}
-    .w3-btn {background-color:#4CAF50;margin-bottom:4px}
-    .w3-code{border-left:4px solid #4CAF50}
-    .myMenu {margin-bottom:150px}
-</style>
-<body>
+<!--    PAGE HEADER   -->
+<?php
+    require "WebsiteContent/Header.php";
+?>
 
 <!--    Connect to the MySQL database   -->
 <?php
@@ -33,16 +25,7 @@
     require "WebsiteContent/MainContent/Form_Login.php";
 ?>
 
-<!--    Footer  -->
+<!--    PAGE FOOTER  -->
 <?php
     require "WebsiteContent/Footer.php";
 ?>
-
-<!-- END MAIN -->
-</div>
-<script src="/lib/w3codecolor.js"></script>
-<script>
-    w3CodeColor();
-</script>
-</body>
-</html>

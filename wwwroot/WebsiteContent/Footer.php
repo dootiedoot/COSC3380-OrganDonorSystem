@@ -7,3 +7,12 @@
 
     </nav></p>
 </footer>
+
+<!-- END MAIN -->
+</div>
+<script src="/lib/w3codecolor.js"></script>
+<script>
+    w3CodeColor();
+</script>
+</body>
+</html>

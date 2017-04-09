@@ -7,7 +7,7 @@
 
         <form method="post" action="/Action_RegisterDonor.php" enctype="multipart/form-data" class="w3-container" >
             <h2>Donor Registration</h2>
-            <p>sub title stuff.</p>
+<!--            <p>sub title stuff.</p>-->
             <!--                <p>-->
             <div class="w3-row-padding">
                 <div class="w3-col" style="width:40%">
@@ -76,7 +76,7 @@
             </div>
             <p>
             <div class="w3-padding w3-centered">
-                <button class="w3-btn w3-green" type="submit" name="submit" value="Submit">Submit</button>
+                <button class="w3-btn w3-green w3-round" type="submit" name="submit" value="Submit">Submit</button>
             </div>
             </p>
         </form>
