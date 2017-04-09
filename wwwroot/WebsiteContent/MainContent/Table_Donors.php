@@ -1,8 +1,12 @@
 <div class="w3-main w3-container" style="margin-left:270px;margin-top:117px;">
     <!--    Donor table -->
-    <div id="mainDonorsTable" class="w3-container w3-section w3-padding-large w3-card-4 w3-light-grey">
+
+    <div class="w3-container w3-green w3-card-4 w3-center">
         <h2>Registered Donors</h2>
-        <!--                <p>If you different hover colors, add w3-hover-<em>color</em> classes to each tr element:</p>-->
+    </div>
+
+    <div id="mainDonorsTable" class="w3-card-4 w3-light-grey">
+
         <?php
         $sql_select = "SELECT * FROM donor LIMIT 0, 100";
         $stmt = $conn->query($sql_select);
@@ -17,12 +21,16 @@
                     <th>First Name</th>
                     <th>Middle Initial</th>
                     <th>Last Name</th>
-                    <th>Email</th>
                     <th>Sex</th>
                     <th>Birthdate</th>
+                    <th>Recent Address</th>
+                    <th>City</th>
+                    <th>State</th>
+                    <th>ZIP code</th>
+                    <th>Email</th>
                     <th>Phone Number</th>
-                    <th>Weight</th>
-                    <th>Blood Type</th>
+<!--                    <th>Weight</th>-->
+<!--                    <th>Blood Type</th>-->
                 </tr>
                 </thead>
 
@@ -35,12 +43,16 @@
                         <td><?= $donor['FirstName']?></td>
                         <td><?= $donor['MiddleInitial']?></td>
                         <td><?= $donor['LastName']?></td>
-                        <td><?= $donor['DEmail']?></td>
                         <td><?= $donor['Sex']?></td>
                         <td><?= $donor['DateOfBirth']?></td>
-                        <td><?= $donor['DPhoneNum']?></td>
-                        <td><?= $donor['Weight']?></td>
-                        <td><?= $donor['BloodType']?></td>
+                        <td><?= $donor['RecentAddress']?></td>
+                        <td><?= $donor['City']?></td>
+                        <td><?= $donor['State']?></td>
+                        <td><?= $donor['ZIPcode']?></td>
+                        <td><?= $donor['Email']?></td>
+                        <td><?= $donor['PhoneNum']?></td>
+<!--                        <td>--><?//= $donor['Weight']?><!--</td>-->
+<!--                        <td>--><?//= $donor['BloodType']?><!--</td>-->
                     </tr>
                     <?php
 

@@ -29,20 +29,23 @@ if(!empty($_POST))
             $_SESSION['userRole'] = $user["role"];
 //            var_dump($_SESSION);
         }
+
+        //  Remove from POST array so inputs are not repeated
+        unset($_POST['username']);
+        unset($_POST['password']);
+
+        //  Determine which page to load based on logged in user role
+        if ($_SESSION['userRole'] == "Admin")
+            header("Location: /Page_Admin_Home.php");
+        else
+            header("Location: /");
     }
+    //  Else... User doesn't exist or login info is incorrect
     else
     {
+        //  Set login error and return to login screen
+        $_SESSION['isLoginError'] = true;
         header("Location: /Page_Login.php");
     }
-
-    //  Remove from POST array so inputs are not repeated
-    unset($_POST['username']);
-    unset($_POST['password']);
-
-    //  Determine which page to load based on logged in user role
-    if ($_SESSION['userRole'] == "Admin")
-        header("Location: /Page_Admin_Home.php");
-    else
-        header("Location: /");
 }
 ?>
