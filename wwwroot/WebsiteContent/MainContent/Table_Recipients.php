@@ -25,7 +25,7 @@
 
                     <th>Weight</th>
                     <th>Blood type</th>
-                    <th>Organ</th>
+                    <th>Needed Organ</th>
                     <th>Date added</th>
                     <th>Birth date</th>
                     <th>Region #</th>

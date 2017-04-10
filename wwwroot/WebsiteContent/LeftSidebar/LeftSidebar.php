@@ -13,8 +13,8 @@
         <a href="#" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-question-circle-o"></i> Why Register As A Donor</a>
     </div>
 
-<!--    ONLY SHOW IF SPECIFIC USER IS LOGGED IN -->
-<!--    DONORS TAB -->
+    <!--    ONLY SHOW IF SPECIFIC USER IS LOGGED IN -->
+    <!--    DONORS TAB -->
     <?php
     if ($_SESSION['userRole'] == "Admin" ||
         $_SESSION['userRole'] == "Doctor")
@@ -25,12 +25,25 @@
         <div id="dropmenu_Donors" class="w3-hide w3-show w3-white w3-card-4">
             <a href="/Page_RegisterDonorForm.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-address-card-o"></i> Register A Donor</a>
             <a href="/Page_Donors.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-address-book-o"></i> See Registered Donors</a>
+        </div>
+
+    <?php } ?>
+
+    <!--    RECIPIENTS TAB -->
+    <?php
+    if ($_SESSION['userRole'] == "Admin" ||
+        $_SESSION['userRole'] == "Doctor")
+    { ?>
+
+        <div class="w3-green w3-center w3-hover-white w3-bar-item w3-button w3-round" onclick="myAccFunc('dropmenu_Recipients')"> Recipients <i class="fa fa-angle-down"></i></div>
+
+        <div id="dropmenu_Recipients" class="w3-hide w3-show w3-white w3-card-4">
             <a href="/Page_Recipients.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-address-card-o"></i> See Registered Recipients</a>
         </div>
 
     <?php } ?>
 
-<!--    USERS TAB  -->
+    <!--    USERS TAB  -->
     <?php
     if ($_SESSION['userRole'] == "Admin")
     { ?>
