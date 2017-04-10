@@ -23,9 +23,9 @@
         <div class="w3-green w3-center w3-hover-white w3-bar-item w3-button w3-round" onclick="myAccFunc('dropmenu_Donors')"> Donors <i class="fa fa-angle-down"></i></div>
 
         <div id="dropmenu_Donors" class="w3-hide w3-show w3-white w3-card-4">
-            <a href="/Page_RegisterDonorForm.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-address-card-o"></i> Register Donor</a>
-            <a href="/Page_Donors.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-address-book-o"></i> Registered Donors</a>
-            <a href="/Page_Recipients.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-address-card-o"></i> Registered Recipients</a>
+            <a href="/Page_RegisterDonorForm.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-address-card-o"></i> Register A Donor</a>
+            <a href="/Page_Donors.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-address-book-o"></i> See Registered Donors</a>
+            <a href="/Page_Recipients.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-address-card-o"></i> See Registered Recipients</a>
         </div>
 
     <?php } ?>
@@ -38,14 +38,13 @@
         <div class="w3-green w3-center w3-hover-white w3-bar-item w3-button w3-round" onclick="myAccFunc('dropmenu_Users')"> Users <i class="fa fa-angle-down"></i></div>
 
         <div id="dropmenu_Users" class="w3-hide w3-show w3-white w3-card-4">
-            <a href="/Page_RegisterUserForm.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-address-card-o"></i> Register User</a>
-            <a href="/Page_Users.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-address-book-o"></i> Registered Users</a>
+            <a href="/Page_RegisterUserForm.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-address-card-o"></i> Register A User</a>
+            <a href="/Page_Users.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-address-book-o"></i> See Registered Users</a>
         </div>
 
     <?php } ?>
 
-    <a href="#" class="w3-bar-item w3-button w3-round">Link 2</a>
-    <a href="#" class="w3-bar-item w3-button w3-round">Link 3</a>
+    <a href="/organsReport.php" class="w3-bar-item w3-button w3-round">Organ statistics</a>
 
 </div>
 
