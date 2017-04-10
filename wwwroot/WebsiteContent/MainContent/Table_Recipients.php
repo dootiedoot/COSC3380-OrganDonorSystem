@@ -4,7 +4,7 @@
         <h2>Recipients</h2>
     </div>
 
-    <div id="mainDonorsTable" class="w3-container w3-padding-large w3-card-4 w3-light-grey">
+    <div id="mainDonorsTable" class="w3-card-4 w3-light-grey w3-responsive">
 
         <!--                <p>If you different hover colors, add w3-hover-<em>color</em> classes to each tr element:</p>-->
         <?php
@@ -18,7 +18,11 @@
                 <thead>
                 <tr class="w3-green">
                     <th>#</th>
-                    <th>Patient ID</th>
+
+                    <th>First Name</th>
+<!--                    <th>Middle Initial</th>-->
+                    <th>Last Name</th>
+
                     <th>Weight</th>
                     <th>Blood type</th>
                     <th>Organ</th>
@@ -42,7 +46,10 @@
                 {?>
                     <tr class="w3-hover-green">
                         <td><?= $counter?>.</td>
-                        <td><?= $recipient['PatientID']?></td>
+                        <td><?= $recipient['FirstName']?></td>
+<!--                        <td>--><?//= $recipient['MiddleInitial']?><!--</td>-->
+                        <td><?= $recipient['LastName']?></td>
+
                         <td><?= $recipient['Weight']?></td>
                         <td><?= $recipient['BloodType']?></td>
                         <td><?= $recipient['Organ']?></td>

@@ -49,13 +49,13 @@
                 <tr class="w3-green">
                     
                     <th>#</th>
+                    <th>First Name</th>
+<!--                    <th>Middle Initial</th>-->
+                    <th>Last Name</th>
 
                     <?php
                     if ($_SESSION['GeneralInfo'] == true)
                     { ?>
-                        <th>First Name</th>
-                        <th>Middle Initial</th>
-                        <th>Last Name</th>
                         <th>Sex</th>
                         <th>Birthdate</th>
                         <th>Recent Address</th>
@@ -88,13 +88,15 @@
                 foreach($donors as $donor)
                 {?>
                     <tr class="w3-hover-green">
+
+                        <td><?= $counter?>.</td>
+                        <td><?= $donor['FirstName']?></td>
+<!--                        <td>--><?//= $donor['MiddleInitial']?><!--</td>-->
+                        <td><?= $donor['LastName']?></td>
+
                         <?php
                         if ($_SESSION['GeneralInfo'] == true)
                         { ?>
-                            <td><?= $counter?>.</td>
-                            <td><?= $donor['FirstName']?></td>
-                            <td><?= $donor['MiddleInitial']?></td>
-                            <td><?= $donor['LastName']?></td>
                             <td><?= $donor['Sex']?></td>
                             <td><?= $donor['DateOfBirth']?></td>
                             <td><?= $donor['RecentAddress']?></td>

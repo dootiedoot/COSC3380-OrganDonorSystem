@@ -3,7 +3,7 @@
 ?>
 
 <!--    Home-->
-<div class="w3-sidebar w3-bar-block w3-light-grey w3-card-2 w3-round" style="width:270px;margin-top:15px;">
+<div class="w3-sidebar w3-bar-block w3-light-grey w3-card-2 w3-round" style="width:270px;margin-top:0px;">
 
     <div class="w3-green w3-center w3-hover-white w3-bar-item w3-button w3-round" onclick="myAccFunc('dropmenu_General')"> General <i class="fa fa-angle-down"></i>   </div>
     <div id="dropmenu_General" class="w3-hide w3-show w3-white w3-card-4 w3-round">

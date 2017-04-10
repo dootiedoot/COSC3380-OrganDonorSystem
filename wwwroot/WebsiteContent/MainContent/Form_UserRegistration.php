@@ -1,10 +1,13 @@
 <div class="w3-main w3-container" style="margin-left:270px;margin-top:117px;">
 <!-- Donor registration form -->
-    <div class="w3-container w3-section w3-padding-large w3-card-4 w3-light-grey">
+
+    <div class="w3-container w3-green w3-card-4 w3-center">
+        <h2>User Registration</h2>
+    </div>
+
+    <div class="w3-container w3-padding-large w3-card-4 w3-light-grey>
         <form method="post" action="/Action_RegisterUser.php" enctype="multipart/form-data" class="w3-container" >
-            <h2>User Registration</h2>
-<!--            <p>sub title stuff.</p>-->
-            <!--                <p>-->
+
             <div class="w3-row-padding">
                 <div class="w3-half">
                     <input class="w3-input w3-border" type="text" name="username" required placeholder="Insert username...">
