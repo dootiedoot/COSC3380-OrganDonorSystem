@@ -5,8 +5,8 @@
     <div id="dropmenu_General" class="w3-hide w3-white w3-card-4 w3-round">
         <a href="/How_donation_works.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-heartbeat"></i> How Donation Works</a>
         <a href="/howtodonate.php" class="w3-bar-item w3-button w3-animate-left w3-round"><i class="fa fa-child"></i> How To Donate</a>
-        <a href="#" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-handshake-o"></i> How You Can Help</a>
-        <a href="#" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-question-circle-o"></i> Why Register As A Donor</a>
+        <a href="/howyoucanhelp.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-handshake-o"></i> How You Can Help</a>
+        <a href="/whyregister.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-question-circle-o"></i> Why Register As A Donor</a>
     </div>
 
 <!--    ONLY SHOW IF SPECIFIC USER IS LOGGED IN -->
