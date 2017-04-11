@@ -20,11 +20,12 @@
         <div id="dropmenu_Donors" class="w3-hide w3-white w3-card-4">
             <a href="/Page_Admin_RegisterDonorForm.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-address-card-o"></i> Register Donor</a>
             <a href="/Page_Admin_RegisteredDonors.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-address-book-o"></i> Registered Donors</a>
+            <a href="/organsReport.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-address-book-o"></i> Donors Organ Stats</a>
         </div>
 
     <?php } ?>
 
-    <a href="/organsReport.php" class="w3-bar-item w3-button w3-round">Organ stats/a>
+    <a href="#" class="w3-bar-item w3-button w3-round">Link 2</a>
     <a href="#" class="w3-bar-item w3-button w3-round">Link 3</a>
 
 </div>
