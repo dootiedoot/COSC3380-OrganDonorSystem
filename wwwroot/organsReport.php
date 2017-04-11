@@ -1,10 +1,41 @@
 
+<?php
+    session_start();
+
+    if( $_SESSION['userRole'] != "Admin" &&
+        $_SESSION['userRole'] != "Doctor")
+        header("Location: /");
+?>
+
+<!--    PAGE HEADER   -->
+<?php
+    require "WebsiteContent/Header.php";
+?>
+
+<!--    Connect to the MySQL database   -->
+<?php
+    require "Database/MySQLconfig.php";
+?>
+
+<!-- Top Bar -->
+<?php
+    require "WebsiteContent/TopBar/TopBar.php";
+?>
+
+<!-- Left Sidebar -->
+<?php
+    require "WebsiteContent/LeftSidebar/LeftSidebar.php";
+?>
+
+
 <div class="w3-main w3-container" style="margin-left:270px;margin-top:117px;">
     <!--    Donor table -->
     <div id="organsReportTable" class="w3-container w3-section w3-padding-large w3-card-4 w3-light-grey">
         <h2>Organ Stats</h2>
+
+     
 <?php
-    require "Database/MySQLconfig.php";
+
 
     $queryOrgansList = "SELECT Organ as organName, count(*) as num from db_organdonorsystem.donor group by Organ order by count(*) desc";
     $results = $conn->query($queryOrgansList);
@@ -43,6 +74,12 @@
         {?>
             <h3>No organs for donation.</h3>
             <?php
-        } ?>
+        } 
+        Header("Location /");  ?>
     </div>
 </div>
+
+<!--    PAGE FOOTER  -->
+<?php
+    require "WebsiteContent/Footer.php";
+?>
