@@ -5,11 +5,11 @@
 <!--    Home-->
 <div class="w3-sidebar w3-bar-block w3-light-grey w3-card-2 w3-round" style="width:270px;margin-top:0px;">
 
-    <div class="w3-green w3-center w3-hover-white w3-bar-item w3-button w3-round" onclick="myAccFunc('dropmenu_General')"> General <i class="fa fa-angle-down"></i>   </div>
+    <div class="w3-green w3-center w3-hover-white w3-bar-item w3-button w3-round" onclick="ToggleElement('dropmenu_General')"> General <i class="fa fa-angle-down"></i>   </div>
     <div id="dropmenu_General" class="w3-hide w3-show w3-white w3-card-4 w3-round">
         <a href="/How_donation_works.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-heartbeat"></i> How Donation Works</a>
         <a href="/howtodonate.php" class="w3-bar-item w3-button w3-animate-left w3-round"><i class="fa fa-child"></i> How To Donate</a>
-        <a href="/howyoucanhelp.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-handshake-o"></i> How You Can Help</a>
+        <a href="/howyoucanhelp.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-asl-interpreting"></i> How You Can Help</a>
         <a href="/whyregister.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-question-circle-o"></i> Why Register As A Donor</a>
     </div>
 
@@ -20,11 +20,12 @@
         $_SESSION['userRole'] == "Doctor")
     { ?>
 
-        <div class="w3-green w3-center w3-hover-white w3-bar-item w3-button w3-round" onclick="myAccFunc('dropmenu_Donors')"> Donors <i class="fa fa-angle-down"></i></div>
+        <div class="w3-green w3-center w3-hover-white w3-bar-item w3-button w3-round" onclick="ToggleElement('dropmenu_Donors')"> Donors <i class="fa fa-angle-down"></i></div>
 
         <div id="dropmenu_Donors" class="w3-hide w3-show w3-white w3-card-4">
             <a href="/Page_RegisterDonorForm.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-address-card-o"></i> Register A Donor</a>
-            <a href="/Page_Donors.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-address-book-o"></i> See Registered Donors</a>
+            <a href="/Page_Donors.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-address-book-o"></i> See Donors</a>
+            <a href="/Page_Matches.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-handshake-o"></i> See Matches</a>
         </div>
 
     <?php } ?>
@@ -35,10 +36,11 @@
         $_SESSION['userRole'] == "Doctor")
     { ?>
 
-        <div class="w3-green w3-center w3-hover-white w3-bar-item w3-button w3-round" onclick="myAccFunc('dropmenu_Recipients')"> Recipients <i class="fa fa-angle-down"></i></div>
+        <div class="w3-green w3-center w3-hover-white w3-bar-item w3-button w3-round" onclick="ToggleElement('dropmenu_Recipients')"> Recipients <i class="fa fa-angle-down"></i></div>
 
         <div id="dropmenu_Recipients" class="w3-hide w3-show w3-white w3-card-4">
-            <a href="/Page_Recipients.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-address-card-o"></i> See Registered Recipients</a>
+            <a href="/Page_Recipients.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-address-card-o"></i> See Recipients</a>
+            <a href="/Page_Matches.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-handshake-o"></i> See Matches</a>
         </div>
 
     <?php } ?>
@@ -48,11 +50,11 @@
     if ($_SESSION['userRole'] == "Admin")
     { ?>
 
-        <div class="w3-green w3-center w3-hover-white w3-bar-item w3-button w3-round" onclick="myAccFunc('dropmenu_Users')"> Users <i class="fa fa-angle-down"></i></div>
+        <div class="w3-green w3-center w3-hover-white w3-bar-item w3-button w3-round" onclick="ToggleElement('dropmenu_Users')"> Users <i class="fa fa-angle-down"></i></div>
 
         <div id="dropmenu_Users" class="w3-hide w3-show w3-white w3-card-4">
             <a href="/Page_RegisterUserForm.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-address-card-o"></i> Register A User</a>
-            <a href="/Page_Users.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-address-book-o"></i> See Registered Users</a>
+            <a href="/Page_Users.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-address-book-o"></i> See Users</a>
         </div>
 
     <?php } ?>
@@ -63,7 +65,7 @@
 
 <!--    FUNCTIONS FOR DROP MENU LOGIC    -->
 <script>
-    function myAccFunc(name)
+    function ToggleElement(name)
     {
         var x = document.getElementById(name);
         if (x.className.indexOf("w3-show") == -1)
