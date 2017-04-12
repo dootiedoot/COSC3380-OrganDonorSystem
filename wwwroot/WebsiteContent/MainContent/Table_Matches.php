@@ -107,43 +107,40 @@
                     <tr
                         <td>
                             <button onclick="ToggleElement('<?=$recipient['PatientID']?>')" class="w3-btn w3-block w3-padding"> <?=$recipient['FirstName']?> <?=$recipient['LastName']?> matches for <?=$recipient['Organ']?></button>
-                            <div id="<?=$recipient['PatientID']?>" class="w3-hide w3-show w3-container w3-card-4">
+                            <div id="<?=$recipient['PatientID']?>" class="w3-hide w3-container w3-card-4">
                                 <?php
                                 //  COMPARE TO RECIPIENTS
                                 foreach($donors as $donor)
                                 {?>
                                     <?php if (  $donor['Organ'] == $recipient['Organ'])
                                     { ?>
-                                        <div> <?=$donor['FirstName']?> <?=$donor['LastName']?> </div>
-                                        <div class="w3-light-gray w3-round w3-padding">
-                                            <!--    Calculate the match percentage    -->
-                                            <?php
-                                            $matchRate = 0;
+                                        <!--    Calculate the match percentage    -->
+                                        <?php
+                                        $matchRate = 0;
 
-                                            if ($recipient['HLAMarkers_A1'] == $donor['HLAMarkers_A1'])
-                                                $matchRate += 1;
-                                            if ($recipient['HLAMarkers_A2'] == $donor['HLAMarkers_A2'])
-                                                $matchRate += 1;
-                                            if ($recipient['HLAMarkers_B1'] == $donor['HLAMarkers_B1'])
-                                                $matchRate += 1;
-                                            if ($recipient['HLAMarkers_B2'] == $donor['HLAMarkers_B2'])
-                                                $matchRate += 1;
-                                            if ($recipient['HLAMarkers_C1'] == $donor['HLAMarkers_C1'])
-                                                $matchRate += 1;
-                                            if ($recipient['HLAMarkers_C2'] == $donor['HLAMarkers_C2'])
-                                                $matchRate += 1;
-                                            if ($recipient['HLAMarkers_DRB1'] == $donor['HLAMarkers_DRB1'])
-                                                $matchRate += 1;
-                                            if ($recipient['HLAMarkers_DRB2'] == $donor['HLAMarkers_DRB2'])
-                                                $matchRate += 1;
+                                        if ($recipient['HLAMarkers_A1'] == $donor['HLAMarkers_A1'])
+                                            $matchRate += 1;
+                                        if ($recipient['HLAMarkers_A2'] == $donor['HLAMarkers_A2'])
+                                            $matchRate += 1;
+                                        if ($recipient['HLAMarkers_B1'] == $donor['HLAMarkers_B1'])
+                                            $matchRate += 1;
+                                        if ($recipient['HLAMarkers_B2'] == $donor['HLAMarkers_B2'])
+                                            $matchRate += 1;
+                                        if ($recipient['HLAMarkers_C1'] == $donor['HLAMarkers_C1'])
+                                            $matchRate += 1;
+                                        if ($recipient['HLAMarkers_C2'] == $donor['HLAMarkers_C2'])
+                                            $matchRate += 1;
+                                        if ($recipient['HLAMarkers_DRB1'] == $donor['HLAMarkers_DRB1'])
+                                            $matchRate += 1;
+                                        if ($recipient['HLAMarkers_DRB2'] == $donor['HLAMarkers_DRB2'])
+                                            $matchRate += 1;
 
-                                            $matchRate = ($matchRate / 8) * 100;
-                                            ?>
+                                        $matchRate = ($matchRate / 8) * 100;
+                                        ?>
 
-                                            <div class="w3-container w3-blue w3-round" style="width:<?=$matchRate?>%"><?=$matchRate?>% Matched</div>
-                                        </div>
+                                        <div class="w3-light-gray w3-round w3-padding"> <?=$donor['FirstName']?> <?=$donor['LastName']?> </div>
+                                        <div class="w3-blue w3-round w3-padding" style="width:<?=$matchRate?>%"><?=$matchRate?>% Matched</div>
                                     <?php } ?>
-
                                 <?php } ?>
                             </div>
                         </td>

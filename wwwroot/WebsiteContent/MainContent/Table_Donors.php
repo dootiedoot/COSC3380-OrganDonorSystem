@@ -40,38 +40,12 @@
         <?php
 //        $sql = "SELECT * FROM donor LIMIT 0, 100";
         $sql = "SELECT * FROM donor";
-
-        //  Add sorting if any
-        if ($_GET['sort'] == 'FirstName')           $sql .= " ORDER BY FirstName ASC";
-        elseif ($_GET['sort'] == 'LastName')        $sql .= " ORDER BY LastName ASC";
-        elseif ($_GET['sort'] == 'Sex')             $sql .= " ORDER BY Sex ASC";
-        elseif ($_GET['sort'] == 'BirthDate')       $sql .= " ORDER BY DateOfBirth ASC";
-        elseif ($_GET['sort'] == 'RecentAddress')   $sql .= " ORDER BY RecentAddress ASC";
-        elseif ($_GET['sort'] == 'City')            $sql .= " ORDER BY City ASC";
-        elseif ($_GET['sort'] == 'State')           $sql .= " ORDER BY State ASC";
-        elseif ($_GET['sort'] == 'ZIPcode')         $sql .= " ORDER BY ZIPcode ASC";
-        elseif ($_GET['sort'] == 'Email')           $sql .= " ORDER BY Email ASC";
-        elseif ($_GET['sort'] == 'PhoneNum')        $sql .= " ORDER BY PhoneNum ASC";
-
-        elseif ($_GET['sort'] == 'BloodType')       $sql .= " ORDER BY BloodType ASC";
-        elseif ($_GET['sort'] == 'DonatingOrgan')   $sql .= " ORDER BY Organ ASC";
-        elseif ($_GET['sort'] == 'HLAA1')           $sql .= " ORDER BY HLAMarkers_A1 ASC";
-        elseif ($_GET['sort'] == 'HLAA2')           $sql .= " ORDER BY HLAMarkers_A2 ASC";
-        elseif ($_GET['sort'] == 'HLAB1')           $sql .= " ORDER BY HLAMarkers_B1 ASC";
-        elseif ($_GET['sort'] == 'HLAB2')           $sql .= " ORDER BY HLAMarkers_B2 ASC";
-        elseif ($_GET['sort'] == 'HLAC1')           $sql .= " ORDER BY HLAMarkers_C1 ASC";
-        elseif ($_GET['sort'] == 'HLAC2')           $sql .= " ORDER BY HLAMarkers_C2 ASC";
-        elseif ($_GET['sort'] == 'HLADRB1')         $sql .= " ORDER BY HLAMarkers_DRB1 ASC";
-        elseif ($_GET['sort'] == 'HLADRB2')         $sql .= " ORDER BY HLAMarkers_DRB2 ASC";
-
-        elseif ($_GET['sort'] == 'ApplicantStatus') $sql .= " ORDER BY ApplicantStatus ASC";
-
         $stmt = $conn->query($sql);
         $donors = $stmt->fetchAll();
 
         if(count($donors) > 0)
         {?>
-            <table class="w3-table-all">
+            <table class="w3-table-all" id="donorsTable">
                 <thead>
                 <tr class="w3-green w3-bar">
 
@@ -81,41 +55,41 @@
                     <?php
                     if ($_SESSION['ApplicantInfo'] == true)
                     { ?>
-                        <th><a class="w3-center w3-bar-item" href="Page_Donors.php?sort=ApplicantStatus">Applicant Status</a></th>
+                        <th onclick="sortTable('donorsTable', 1)"><a class="w3-center w3-bar-item">Applicant Status</a></th>
                     <?php } ?>
 
-                    <th><a class="w3-center w3-bar-item" href="Page_Donors.php?sort=FirstName">First Name</a></th>
-                    <th><a class="w3-center w3-bar-item" href="Page_Donors.php?sort=LastName">Last Name</a></th>
+                    <th onclick="sortTable('donorsTable', 2)"><a class="w3-center w3-bar-item">First Name</a></th>
+                    <th onclick="sortTable('donorsTable', 3)"><a class="w3-center w3-bar-item">Last Name</a></th>
 
                     <!--    GENERAL INFO COLUMNS    -->
                     <?php
                     if ($_SESSION['GeneralInfo'] == true)
                     { ?>
-                        <th><a class="w3-center w3-bar-item" href="Page_Donors.php?sort=Sex">Sex</a></th>
-                        <th><a class="w3-center w3-bar-item" href="Page_Donors.php?sort=BirthDate">Birth Date</a></th>
-                        <th><a class="w3-center w3-bar-item" href="Page_Donors.php?sort=RecentAddress">Recent Address</a></th>
-                        <th><a class="w3-center w3-bar-item" href="Page_Donors.php?sort=City">City</a></th>
-                        <th><a class="w3-center w3-bar-item" href="Page_Donors.php?sort=State">State</a></th>
-                        <th><a class="w3-center w3-bar-item" href="Page_Donors.php?sort=ZIPcode">ZIP Code</a></th>
-                        <th><a class="w3-center w3-bar-item" href="Page_Donors.php?sort=Email">Email</a></th>
-                        <th><a class="w3-center w3-bar-item" href="Page_Donors.php?sort=PhoneNum">Phone #</a></th>
+                        <th onclick="sortTable('donorsTable', 4)"><a class="w3-center w3-bar-item">Sex</a></th>
+                        <th onclick="sortTable('donorsTable', 5)"><a class="w3-center w3-bar-item">Birth Date</a></th>
+                        <th onclick="sortTable('donorsTable', 6)"><a class="w3-center w3-bar-item">Recent Address</a></th>
+                        <th onclick="sortTable('donorsTable', 7)"><a class="w3-center w3-bar-item">City</a></th>
+                        <th onclick="sortTable('donorsTable', 8)"><a class="w3-center w3-bar-item">State</a></th>
+                        <th onclick="sortTable('donorsTable', 9)"><a class="w3-center w3-bar-item">ZIP Code</a></th>
+                        <th onclick="sortTable('donorsTable', 10)"><a class="w3-center w3-bar-item">Email</a></th>
+                        <th onclick="sortTable('donorsTable', 11)"><a class="w3-center w3-bar-item">Phone #</a></th>
                     <?php } ?>
 
                     <!--    MEDICAL INFO COLUMNS    -->
                     <?php
                     if ($_SESSION['MedicalInfo'] == true)
                     { ?>
-                        <th><a class="w3-center w3-bar-item" href="Page_Donors.php?sort=BloodType">BloodType</a></th>
-                        <th><a class="w3-center w3-bar-item" href="Page_Donors.php?sort=DonatingOrgan">Donating Organ</a></th>
-                        <th><a class="w3-center w3-bar-item" href="Page_Donors.php?sort=Weight">Weight</a></th>
-                        <th><a class="w3-center w3-bar-item" href="Page_Donors.php?sort=HLAA1">HLA A1</a></th>
-                        <th><a class="w3-center w3-bar-item" href="Page_Donors.php?sort=HLAA2">HLA A2</a></th>
-                        <th><a class="w3-center w3-bar-item" href="Page_Donors.php?sort=HLAB1">HLA B1</a></th>
-                        <th><a class="w3-center w3-bar-item" href="Page_Donors.php?sort=HLAB2">HLA B2</a></th>
-                        <th><a class="w3-center w3-bar-item" href="Page_Donors.php?sort=HLAC1">HLA C1</a></th>
-                        <th><a class="w3-center w3-bar-item" href="Page_Donors.php?sort=HLAC2">HLA C2</a></th>
-                        <th><a class="w3-center w3-bar-item" href="Page_Donors.php?sort=HLADRB1">HLA DRB1</a></th>
-                        <th><a class="w3-center w3-bar-item" href="Page_Donors.php?sort=HLADRB2">HLA DRB1</a></th>
+                        <th onclick="sortTable('donorsTable', 12)"><a class="w3-center w3-bar-item">BloodType</a></th>
+                        <th onclick="sortTable('donorsTable', 13)"><a class="w3-center w3-bar-item">Donating Organ</a></th>
+                        <th onclick="sortTable('donorsTable', 14)"><a class="w3-center w3-bar-item">Weight</a></th>
+                        <th onclick="sortTable('donorsTable', 15)"><a class="w3-center w3-bar-item">HLA A1</a></th>
+                        <th onclick="sortTable('donorsTable', 16)"><a class="w3-center w3-bar-item">HLA A2</a></th>
+                        <th onclick="sortTable('donorsTable', 17)"><a class="w3-center w3-bar-item">HLA B1</a></th>
+                        <th onclick="sortTable('donorsTable', 18)"><a class="w3-center w3-bar-item">HLA B2</a></th>
+                        <th onclick="sortTable('donorsTable', 19)"><a class="w3-center w3-bar-item">HLA C1</a></th>
+                        <th onclick="sortTable('donorsTable', 20)"><a class="w3-center w3-bar-item">HLA C2</a></th>
+                        <th onclick="sortTable('donorsTable', 21)"><a class="w3-center w3-bar-item">HLA DRB1</a></th>
+                        <th onclick="sortTable('donorsTable', 22)"><a class="w3-center w3-bar-item">HLA DRB1</a></th>
                     <?php } ?>
 
                 </tr>
@@ -205,6 +179,63 @@
         {
             x.className = x.className.replace(" w3-show", "");
             x.previousElementSibling.className = x.previousElementSibling.className.replace(" w3-green", "");
+        }
+    }
+
+
+    function sortTable(tableName, n)
+    {
+        var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+        table = document.getElementById(tableName);
+        switching = true;
+        //Set the sorting direction to ascending:
+        dir = "asc";
+        /*Make a loop that will continue until
+         no switching has been done:*/
+        while (switching) {
+            //start by saying: no switching is done:
+            switching = false;
+            rows = table.getElementsByTagName("TR");
+            /*Loop through all table rows (except the
+             first, which contains table headers):*/
+            for (i = 1; i < (rows.length - 1); i++) {
+                //start by saying there should be no switching:
+                shouldSwitch = false;
+                /*Get the two elements you want to compare,
+                 one from current row and one from the next:*/
+                x = rows[i].getElementsByTagName("TD")[n];
+                y = rows[i + 1].getElementsByTagName("TD")[n];
+                /*check if the two rows should switch place,
+                 based on the direction, asc or desc:*/
+                if (dir == "asc") {
+                    if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                        //if so, mark as a switch and break the loop:
+                        shouldSwitch= true;
+                        break;
+                    }
+                } else if (dir == "desc") {
+                    if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                        //if so, mark as a switch and break the loop:
+                        shouldSwitch= true;
+                        break;
+                    }
+                }
+            }
+            if (shouldSwitch) {
+                /*If a switch has been marked, make the switch
+                 and mark that a switch has been done:*/
+                rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                switching = true;
+                //Each time a switch is done, increase this count by 1:
+                switchcount ++;
+            } else {
+                /*If no switching has been done AND the direction is "asc",
+                 set the direction to "desc" and run the while loop again.*/
+                if (switchcount == 0 && dir == "asc") {
+                    dir = "desc";
+                    switching = true;
+                }
+            }
         }
     }
 </script>
