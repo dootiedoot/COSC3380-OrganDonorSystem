@@ -74,8 +74,7 @@
         {?>
             <h3>No organs for donation.</h3>
             <?php
-        } 
-        Header("Location /");  ?>
+        }?>
     </div>
 </div>
 
