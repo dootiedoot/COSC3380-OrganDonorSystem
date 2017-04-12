@@ -38,57 +38,84 @@
     <div id="mainDonorsTable" class="w3-card-4 w3-light-grey w3-responsive">
 
         <?php
-        $sql_select = "SELECT * FROM donor LIMIT 0, 100";
-        $stmt = $conn->query($sql_select);
+//        $sql = "SELECT * FROM donor LIMIT 0, 100";
+        $sql = "SELECT * FROM donor";
+
+        //  Add sorting if any
+        if ($_GET['sort'] == 'FirstName')           $sql .= " ORDER BY FirstName ASC";
+        elseif ($_GET['sort'] == 'LastName')        $sql .= " ORDER BY LastName ASC";
+        elseif ($_GET['sort'] == 'Sex')             $sql .= " ORDER BY Sex ASC";
+        elseif ($_GET['sort'] == 'BirthDate')       $sql .= " ORDER BY DateOfBirth ASC";
+        elseif ($_GET['sort'] == 'RecentAddress')   $sql .= " ORDER BY RecentAddress ASC";
+        elseif ($_GET['sort'] == 'City')            $sql .= " ORDER BY City ASC";
+        elseif ($_GET['sort'] == 'State')           $sql .= " ORDER BY State ASC";
+        elseif ($_GET['sort'] == 'ZIPcode')         $sql .= " ORDER BY ZIPcode ASC";
+        elseif ($_GET['sort'] == 'Email')           $sql .= " ORDER BY Email ASC";
+        elseif ($_GET['sort'] == 'PhoneNum')        $sql .= " ORDER BY PhoneNum ASC";
+
+        elseif ($_GET['sort'] == 'BloodType')       $sql .= " ORDER BY BloodType ASC";
+        elseif ($_GET['sort'] == 'DonatingOrgan')   $sql .= " ORDER BY Organ ASC";
+        elseif ($_GET['sort'] == 'HLAA1')           $sql .= " ORDER BY HLAMarkers_A1 ASC";
+        elseif ($_GET['sort'] == 'HLAA2')           $sql .= " ORDER BY HLAMarkers_A2 ASC";
+        elseif ($_GET['sort'] == 'HLAB1')           $sql .= " ORDER BY HLAMarkers_B1 ASC";
+        elseif ($_GET['sort'] == 'HLAB2')           $sql .= " ORDER BY HLAMarkers_B2 ASC";
+        elseif ($_GET['sort'] == 'HLAC1')           $sql .= " ORDER BY HLAMarkers_C1 ASC";
+        elseif ($_GET['sort'] == 'HLAC2')           $sql .= " ORDER BY HLAMarkers_C2 ASC";
+        elseif ($_GET['sort'] == 'HLADRB1')         $sql .= " ORDER BY HLAMarkers_DRB1 ASC";
+        elseif ($_GET['sort'] == 'HLADRB2')         $sql .= " ORDER BY HLAMarkers_DRB2 ASC";
+
+        elseif ($_GET['sort'] == 'ApplicantStatus') $sql .= " ORDER BY ApplicantStatus ASC";
+
+        $stmt = $conn->query($sql);
         $donors = $stmt->fetchAll();
 
         if(count($donors) > 0)
         {?>
             <table class="w3-table-all">
                 <thead>
-                <tr class="w3-green">
+                <tr class="w3-green w3-bar">
 
-                    <th><p class="w3-center">#</p></th>
+<!--                    <th><p class="w3-bar-item">#</p></th>-->
 
                     <!--    APPLICANT INFO COLUMNS    -->
                     <?php
                     if ($_SESSION['ApplicantInfo'] == true)
                     { ?>
-                        <th><p class="w3-center">Applicant Status</p></th>
+                        <th><a class="w3-center w3-bar-item" href="Page_Donors.php?sort=ApplicantStatus">Applicant Status</a></th>
                     <?php } ?>
 
-                    <th><p class="w3-center">First Name</p></th>
-                    <th><p class="w3-center">Last Name</p></th>
+                    <th><a class="w3-center w3-bar-item" href="Page_Donors.php?sort=FirstName">First Name</a></th>
+                    <th><a class="w3-center w3-bar-item" href="Page_Donors.php?sort=LastName">Last Name</a></th>
 
                     <!--    GENERAL INFO COLUMNS    -->
                     <?php
                     if ($_SESSION['GeneralInfo'] == true)
                     { ?>
-                        <th><p class="w3-center">Sex</p></th>
-                        <th><p class="w3-center">Birth date</p></th>
-                        <th><p class="w3-center">Recent Address</p></th>
-                        <th><p class="w3-center">City</p></th>
-                        <th><p class="w3-center">State</p></th>
-                        <th><p class="w3-center">ZIP code</p></th>
-                        <th><p class="w3-center">Email</p></th>
-                        <th><p class="w3-center">Phone Number</p></th>
+                        <th><a class="w3-center w3-bar-item" href="Page_Donors.php?sort=Sex">Sex</a></th>
+                        <th><a class="w3-center w3-bar-item" href="Page_Donors.php?sort=BirthDate">Birth Date</a></th>
+                        <th><a class="w3-center w3-bar-item" href="Page_Donors.php?sort=RecentAddress">Recent Address</a></th>
+                        <th><a class="w3-center w3-bar-item" href="Page_Donors.php?sort=City">City</a></th>
+                        <th><a class="w3-center w3-bar-item" href="Page_Donors.php?sort=State">State</a></th>
+                        <th><a class="w3-center w3-bar-item" href="Page_Donors.php?sort=ZIPcode">ZIP Code</a></th>
+                        <th><a class="w3-center w3-bar-item" href="Page_Donors.php?sort=Email">Email</a></th>
+                        <th><a class="w3-center w3-bar-item" href="Page_Donors.php?sort=PhoneNum">Phone #</a></th>
                     <?php } ?>
 
                     <!--    MEDICAL INFO COLUMNS    -->
                     <?php
                     if ($_SESSION['MedicalInfo'] == true)
                     { ?>
-                        <th><p class="w3-center">Blood Type</p></th>
-                        <th><p class="w3-center">Donating Organ</p></th>
-                        <th><p class="w3-center">Weight</p></th>
-                        <th><p class="w3-center">HLA A1</p></th>
-                        <th><p class="w3-center">HLA A2</p></th>
-                        <th><p class="w3-center">HLA B1</p></th>
-                        <th><p class="w3-center">HLA B2</p></th>
-                        <th><p class="w3-center">HLA C1</p></th>
-                        <th><p class="w3-center">HLA C2</p></th>
-                        <th><p class="w3-center">HLA DRB1</p></th>
-                        <th><p class="w3-center">HLA DRB2</p></th>
+                        <th><a class="w3-center w3-bar-item" href="Page_Donors.php?sort=BloodType">BloodType</a></th>
+                        <th><a class="w3-center w3-bar-item" href="Page_Donors.php?sort=DonatingOrgan">Donating Organ</a></th>
+                        <th><a class="w3-center w3-bar-item" href="Page_Donors.php?sort=Weight">Weight</a></th>
+                        <th><a class="w3-center w3-bar-item" href="Page_Donors.php?sort=HLAA1">HLA A1</a></th>
+                        <th><a class="w3-center w3-bar-item" href="Page_Donors.php?sort=HLAA2">HLA A2</a></th>
+                        <th><a class="w3-center w3-bar-item" href="Page_Donors.php?sort=HLAB1">HLA B1</a></th>
+                        <th><a class="w3-center w3-bar-item" href="Page_Donors.php?sort=HLAB2">HLA B2</a></th>
+                        <th><a class="w3-center w3-bar-item" href="Page_Donors.php?sort=HLAC1">HLA C1</a></th>
+                        <th><a class="w3-center w3-bar-item" href="Page_Donors.php?sort=HLAC2">HLA C2</a></th>
+                        <th><a class="w3-center w3-bar-item" href="Page_Donors.php?sort=HLADRB1">HLA DRB1</a></th>
+                        <th><a class="w3-center w3-bar-item" href="Page_Donors.php?sort=HLADRB2">HLA DRB1</a></th>
                     <?php } ?>
 
                 </tr>
@@ -163,3 +190,21 @@
         } ?>
     </div>
 </div>
+
+<!--    FUNCTIONS    -->
+<script>
+    function ToggleElement(name)
+    {
+        var x = document.getElementById(name);
+        if (x.className.indexOf("w3-show") == -1)
+        {
+            x.className += " w3-show";
+            x.previousElementSibling.className += " w3-green";
+        }
+        else
+        {
+            x.className = x.className.replace(" w3-show", "");
+            x.previousElementSibling.className = x.previousElementSibling.className.replace(" w3-green", "");
+        }
+    }
+</script>
