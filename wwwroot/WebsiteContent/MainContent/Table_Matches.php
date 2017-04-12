@@ -101,13 +101,12 @@
 <!--                </thead>-->
 
                 <?php
-                $counter = 1;
                 foreach($recipients as $recipient)
                 {?>
                     <tr
                         <td>
                             <button onclick="ToggleElement(<?=$recipient['PatientID']?>)" class="w3-btn w3-block w3-padding"> <?=$recipient['FirstName']?> <?=$recipient['LastName']?> matches for <?=$recipient['Organ']?></button>
-                            <div id="<?=$recipient['PatientID']?>" class="w3-hide w3-container w3-card-4">
+                            <div id="<?=$recipient['PatientID']?>" class="w3-hide w3-container w3-card-4 w3-responsive">
                                 <table class="w3-table-all" id=<?=$recipient['PatientID']?>>
 
                                     <!--    TABLE HEADER  -->
@@ -116,12 +115,21 @@
                                         <th onclick="sortTable(<?=$recipient['PatientID']?>, 0)"><a class="w3-center w3-bar-item">First Name</a></th>
                                         <th onclick="sortTable(<?=$recipient['PatientID']?>, 1)"><a class="w3-center w3-bar-item">Last Name</a></th>
                                         <th onclick="sortTable(<?=$recipient['PatientID']?>, 2)"><a class="w3-center w3-bar-item">% Matched</a></th>
+                                        <th onclick="sortTable(<?=$recipient['PatientID']?>, 3)"><a class="w3-center w3-bar-item">HLA A1</a></th>
+                                        <th onclick="sortTable(<?=$recipient['PatientID']?>, 4)"><a class="w3-center w3-bar-item">HLA A2</a></th>
+                                        <th onclick="sortTable(<?=$recipient['PatientID']?>, 5)"><a class="w3-center w3-bar-item">HLA B1</a></th>
+                                        <th onclick="sortTable(<?=$recipient['PatientID']?>, 6)"><a class="w3-center w3-bar-item">HLA B2</a></th>
+                                        <th onclick="sortTable(<?=$recipient['PatientID']?>, 7)"><a class="w3-center w3-bar-item">HLA C1</a></th>
+                                        <th onclick="sortTable(<?=$recipient['PatientID']?>, 8)"><a class="w3-center w3-bar-item">HLA C2</a></th>
+                                        <th onclick="sortTable(<?=$recipient['PatientID']?>, 9)"><a class="w3-center w3-bar-item">HLA DRB1</a></th>
+                                        <th onclick="sortTable(<?=$recipient['PatientID']?>, 10)"><a class="w3-center w3-bar-item">HLA DRB2</a></th>
                                     </tr>
                                     </thead>
 
                                     <!--    TABLE DATA  -->
                                     <?php
                                     //  COMPARE TO RECIPIENTS
+                                    $counter = 1;
                                     foreach($donors as $donor)
                                     {?>
                                         <?php if (  $donor['Organ'] == $recipient['Organ'])
@@ -131,97 +139,55 @@
                                             <!--    Calculate the match percentage    -->
                                             <?php
                                             $matchRate = 0;
-
-                                            if ($recipient['HLAMarkers_A1'] == $donor['HLAMarkers_A1'])
-                                                $matchRate += 1;
-                                            if ($recipient['HLAMarkers_A2'] == $donor['HLAMarkers_A2'])
-                                                $matchRate += 1;
-                                            if ($recipient['HLAMarkers_B1'] == $donor['HLAMarkers_B1'])
-                                                $matchRate += 1;
-                                            if ($recipient['HLAMarkers_B2'] == $donor['HLAMarkers_B2'])
-                                                $matchRate += 1;
-                                            if ($recipient['HLAMarkers_C1'] == $donor['HLAMarkers_C1'])
-                                                $matchRate += 1;
-                                            if ($recipient['HLAMarkers_C2'] == $donor['HLAMarkers_C2'])
-                                                $matchRate += 1;
-                                            if ($recipient['HLAMarkers_DRB1'] == $donor['HLAMarkers_DRB1'])
-                                                $matchRate += 1;
-                                            if ($recipient['HLAMarkers_DRB2'] == $donor['HLAMarkers_DRB2'])
-                                                $matchRate += 1;
-
+                                            if ($recipient['HLAMarkers_A1'] == $donor['HLAMarkers_A1']) $matchRate += 1;
+                                            if ($recipient['HLAMarkers_A2'] == $donor['HLAMarkers_A2']) $matchRate += 1;
+                                            if ($recipient['HLAMarkers_B1'] == $donor['HLAMarkers_B1']) $matchRate += 1;
+                                            if ($recipient['HLAMarkers_B2'] == $donor['HLAMarkers_B2']) $matchRate += 1;
+                                            if ($recipient['HLAMarkers_C1'] == $donor['HLAMarkers_C1']) $matchRate += 1;
+                                            if ($recipient['HLAMarkers_C2'] == $donor['HLAMarkers_C2']) $matchRate += 1;
+                                            if ($recipient['HLAMarkers_DRB1'] == $donor['HLAMarkers_DRB1']) $matchRate += 1;
+                                            if ($recipient['HLAMarkers_DRB2'] == $donor['HLAMarkers_DRB2']) $matchRate += 1;
                                             $matchRate = ($matchRate / 8) * 100;
                                             ?>
 
-                                            <td class="w3-light-gray w3-round w3-padding w3-center"><?=$donor['FirstName']?></td>
-                                            <td class="w3-light-gray w3-round w3-padding w3-center"><?=$donor['LastName']?></td>
-                                            <div class="w3-light-grey">
-                                                <td <div class="w3-container w3-blue w3-round w3-padding" style="width:<?=$matchRate?>%"><?=$matchRate?>% Matched</div></td>
-                                            </div>
+                                            <!--    DISPLAY GENERAL DATA    -->
+                                            <td class=""><?=$counter?>.</td>
+                                            <td class=""><?=$donor['FirstName']?></td>
+                                            <td class=""><?=$donor['LastName']?></td>
+                                            <td <div class="w3-light-grey w3-default"> <div class="w3-container w3-blue w3-round" style="width:<?=$matchRate?>%"><?=$matchRate?>% Matched</div></div></div></td>
 
+                                            <!--    DISPLAY HLA MARKERS IN ICONS-->
+<!--                                            <td class="">-->
+<!--                                                --><?php //if ($recipient['HLAMarkers_A1'] == $donor['HLAMarkers_A1']) ?>
+<!--                                                    <i class="glyphicon glyphicon-check" style="color:green"></i>-->
+<!--                                                --><?php //else ?>
+<!--                                                    <i class="fa fa-times-rectangle-o" style="color:red"></i>-->
+<!--                                            </td>-->
+<!--                                            <td class="">-->
+<!--                                                --><?php //if ($recipient['HLAMarkers_A2'] == $donor['HLAMarkers_A2']) ?>
+<!--                                                <i class="glyphicon glyphicon-check" style="color:green"></i>-->
+<!--                                                --><?php //else ?>
+<!--                                                <i class="fa fa-times-rectangle-o" style="color:red"></i>-->
+<!--                                            </td>-->
+
+                                            <?=$counter++;?>
                                             </tr>
                                         <?php } ?>
                                     <?php } ?>
 
                                     <!--    SORT TABLE  -->
-                                    <script> sortTable(<?=$recipient['PatientID']?>, 2); </script>
-<!--                                    --><?php //var_dump($recipient['PatientID']) ?>
+
 
                                 </table>
                             </div>
                         </td>
-<!--                    <td><div class="w3-center w3-hover-white w3-button" onclick="ToggleElement(--><?//= $donor['PatientID'] ?> <?//= $donor['PatientID'] ?><!-- </div>>-->
-<!--                    <div id= --><?//= $donor['PatientID'] ?><!-- class="w3-hide w3-show w3-white w3-card-4 w3-center">-->
-<!--                    <a href="/How_donation_works.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-heartbeat"></i> How Donation Works</a>-->
-<!--                    </div></td>-->
-
-<!--                    <td><p class="w3-center">--><?//= $counter?><!--.</p></td>-->
-
-<!--                        <!--    APPLICANT INFO COLUMNS    -->
-<!--<!--                        --><?php
-//                        if ($_SESSION['ApplicantInfo'] == true)
-////                        { ?>
-<!--<!--                            --><?php ////if ($donor['ApplicantStatus'] == 'Unevaluated')   {?><!--<!-- <td><p class="w3-center"></p><i class="glyphicon glyphicon-unchecked" style="color:grey"></i></td> --><?php ////}
-////                             else if ($donor['ApplicantStatus'] == 'Pass')          {?><!--<!-- <td><p class="w3-center"></p><i class="glyphicon glyphicon-check" style="color:green"></i></td> --><?php ////}
-////                             else if ($donor['ApplicantStatus'] == 'Fail')          {?><!--<!-- <td><p class="w3-center"></p><i class="fa fa-times-rectangle-o" style="color:red"></i></td> --><?php ////} ?>
-<!--<!--                        --><?php ////} ?>
-<!---->
-<!--                        <td><p class="w3-center">--><?//= $donor['FirstName']?><!--</p></td>-->
-<!--                        <td><p class="w3-center">--><?//= $donor['LastName']?><!--</p></td>-->
-<!---->
-<!--                        <!--    GENERAL STATUS COLUMNS    -->
-<!--                        <td><p class="w3-center">--><?//= $donor['Sex']?><!--</p></td>-->
-<!--                        <td><p class="w3-center">--><?//= $donor['DateOfBirth']?><!--</p></td>-->
-<!--                        <td><p class="w3-center">--><?//= $donor['RecentAddress']?><!--</p></td>-->
-<!--                        <td><p class="w3-center">--><?//= $donor['City']?><!--</p></td>-->
-<!--                        <td><p class="w3-center">--><?//= $donor['State']?><!--</p></td>-->
-<!--                        <td><p class="w3-center">--><?//= $donor['ZIPcode']?><!--</p></td>-->
-<!--                        <td><p class="w3-center">--><?//= $donor['Email']?><!--</p></td>-->
-<!--                        <td><p class="w3-center">--><?//= $donor['PhoneNum']?><!--</p></td>-->
-<!---->
-<!--                        <!--    MEDICAL INFO COLUMNS    -->
-<!--                        <td><p class="w3-center">--><?//= $donor['BloodType']?><!--</p></td>-->
-<!--                        <td><p class="w3-center">--><?//= $donor['Organ']?><!--</p></td>-->
-<!--                        <td><p class="w3-center">--><?//= $donor['Weight']?><!--</p></td>-->
-<!--                        <td><p class="w3-center">--><?//= $donor['HLAMarkers_A1']?><!--</p></td>-->
-<!--                        <td><p class="w3-center">--><?//= $donor['HLAMarkers_A2']?><!--</p></td>-->
-<!--                        <td><p class="w3-center">--><?//= $donor['HLAMarkers_B1']?><!--</p></td>-->
-<!--                        <td><p class="w3-center">--><?//= $donor['HLAMarkers_B2']?><!--</p></td>-->
-<!--                        <td><p class="w3-center">--><?//= $donor['HLAMarkers_C1']?><!--</p></td>-->
-<!--                        <td><p class="w3-center">--><?//= $donor['HLAMarkers_C2']?><!--</p></td>-->
-<!--                        <td><p class="w3-center">--><?//= $donor['HLAMarkers_DRB1']?><!--</p></td>-->
-<!--                        <td><p class="w3-center">--><?//= $donor['HLAMarkers_DRB2']?><!--</p></td>-->
                     </tr>
-                    <?php
-
-                    $counter++;
-                }?>
+                <?php } ?>
             </table>
-            <?php
-        }
+        <?php }
         else
         {?>
             <h3>No one is currently registered.</h3>
-
         <?php } ?>
     </div>
 </div>
