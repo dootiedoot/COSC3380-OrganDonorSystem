@@ -61,7 +61,7 @@
                         <td><?= $counter?>.</td>
                         <td><?= $organ['organName']?></td>
                         <td><?= $organ['num']?></td>
-                        <td><?= $organ['num']/count($organsList)?></td>
+                        <td><?= $organ['num']/count($orgransList)?></td>
                     </tr>
                     <?php
 
