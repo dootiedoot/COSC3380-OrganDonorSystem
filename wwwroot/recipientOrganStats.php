@@ -37,7 +37,7 @@
 <?php
 
 
-    $queryOrgansList = "SELECT Organ as organName, count(*) as num from db_organdonorsystem.recipient where OrganID IS NOT NULL group by Organ order by count(*) desc";
+    $queryOrgansList = "SELECT Organ as organName, count(*) as num from db_organdonorsystem.recipient where Organ IS NOT NULL group by Organ order by count(*) desc";
     $results = $conn->query($queryOrgansList);
     $orgransList = $results->fetchAll();
 
