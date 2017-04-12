@@ -50,7 +50,7 @@
 
         if(count($recipients) > 0)
         {?>
-            <table class="w3-table-all">
+            <table class="w3-table-all" id="matchesTable">
 <!--                <thead>-->
 <!--                <tr class="w3-green">-->
 <!---->
@@ -106,42 +106,67 @@
                 {?>
                     <tr
                         <td>
-                            <button onclick="ToggleElement('<?=$recipient['PatientID']?>')" class="w3-btn w3-block w3-padding"> <?=$recipient['FirstName']?> <?=$recipient['LastName']?> matches for <?=$recipient['Organ']?></button>
+                            <button onclick="ToggleElement(<?=$recipient['PatientID']?>)" class="w3-btn w3-block w3-padding"> <?=$recipient['FirstName']?> <?=$recipient['LastName']?> matches for <?=$recipient['Organ']?></button>
                             <div id="<?=$recipient['PatientID']?>" class="w3-hide w3-container w3-card-4">
-                                <?php
-                                //  COMPARE TO RECIPIENTS
-                                foreach($donors as $donor)
-                                {?>
-                                    <?php if (  $donor['Organ'] == $recipient['Organ'])
-                                    { ?>
-                                        <!--    Calculate the match percentage    -->
-                                        <?php
-                                        $matchRate = 0;
+                                <table class="w3-table-all" id=<?=$recipient['PatientID']?>>
 
-                                        if ($recipient['HLAMarkers_A1'] == $donor['HLAMarkers_A1'])
-                                            $matchRate += 1;
-                                        if ($recipient['HLAMarkers_A2'] == $donor['HLAMarkers_A2'])
-                                            $matchRate += 1;
-                                        if ($recipient['HLAMarkers_B1'] == $donor['HLAMarkers_B1'])
-                                            $matchRate += 1;
-                                        if ($recipient['HLAMarkers_B2'] == $donor['HLAMarkers_B2'])
-                                            $matchRate += 1;
-                                        if ($recipient['HLAMarkers_C1'] == $donor['HLAMarkers_C1'])
-                                            $matchRate += 1;
-                                        if ($recipient['HLAMarkers_C2'] == $donor['HLAMarkers_C2'])
-                                            $matchRate += 1;
-                                        if ($recipient['HLAMarkers_DRB1'] == $donor['HLAMarkers_DRB1'])
-                                            $matchRate += 1;
-                                        if ($recipient['HLAMarkers_DRB2'] == $donor['HLAMarkers_DRB2'])
-                                            $matchRate += 1;
+                                    <!--    TABLE HEADER  -->
+                                    <thead>
+                                    <tr class="w3-green w3-bar">
+                                        <th onclick="sortTable(<?=$recipient['PatientID']?>, 0)"><a class="w3-center w3-bar-item">First Name</a></th>
+                                        <th onclick="sortTable(<?=$recipient['PatientID']?>, 1)"><a class="w3-center w3-bar-item">Last Name</a></th>
+                                        <th onclick="sortTable(<?=$recipient['PatientID']?>, 2)"><a class="w3-center w3-bar-item">% Matched</a></th>
+                                    </tr>
+                                    </thead>
 
-                                        $matchRate = ($matchRate / 8) * 100;
-                                        ?>
+                                    <!--    TABLE DATA  -->
+                                    <?php
+                                    //  COMPARE TO RECIPIENTS
+                                    foreach($donors as $donor)
+                                    {?>
+                                        <?php if (  $donor['Organ'] == $recipient['Organ'])
+                                        { ?>
+                                            <tr
 
-                                        <div class="w3-light-gray w3-round w3-padding"> <?=$donor['FirstName']?> <?=$donor['LastName']?> </div>
-                                        <div class="w3-blue w3-round w3-padding" style="width:<?=$matchRate?>%"><?=$matchRate?>% Matched</div>
+                                            <!--    Calculate the match percentage    -->
+                                            <?php
+                                            $matchRate = 0;
+
+                                            if ($recipient['HLAMarkers_A1'] == $donor['HLAMarkers_A1'])
+                                                $matchRate += 1;
+                                            if ($recipient['HLAMarkers_A2'] == $donor['HLAMarkers_A2'])
+                                                $matchRate += 1;
+                                            if ($recipient['HLAMarkers_B1'] == $donor['HLAMarkers_B1'])
+                                                $matchRate += 1;
+                                            if ($recipient['HLAMarkers_B2'] == $donor['HLAMarkers_B2'])
+                                                $matchRate += 1;
+                                            if ($recipient['HLAMarkers_C1'] == $donor['HLAMarkers_C1'])
+                                                $matchRate += 1;
+                                            if ($recipient['HLAMarkers_C2'] == $donor['HLAMarkers_C2'])
+                                                $matchRate += 1;
+                                            if ($recipient['HLAMarkers_DRB1'] == $donor['HLAMarkers_DRB1'])
+                                                $matchRate += 1;
+                                            if ($recipient['HLAMarkers_DRB2'] == $donor['HLAMarkers_DRB2'])
+                                                $matchRate += 1;
+
+                                            $matchRate = ($matchRate / 8) * 100;
+                                            ?>
+
+                                            <td class="w3-light-gray w3-round w3-padding w3-center"><?=$donor['FirstName']?></td>
+                                            <td class="w3-light-gray w3-round w3-padding w3-center"><?=$donor['LastName']?></td>
+                                            <div class="w3-light-grey">
+                                                <td <div class="w3-container w3-blue w3-round w3-padding" style="width:<?=$matchRate?>%"><?=$matchRate?>% Matched</div></td>
+                                            </div>
+
+                                            </tr>
+                                        <?php } ?>
                                     <?php } ?>
-                                <?php } ?>
+
+                                    <!--    SORT TABLE  -->
+                                    <script> sortTable(<?=$recipient['PatientID']?>, 2); </script>
+<!--                                    --><?php //var_dump($recipient['PatientID']) ?>
+
+                                </table>
                             </div>
                         </td>
 <!--                    <td><div class="w3-center w3-hover-white w3-button" onclick="ToggleElement(--><?//= $donor['PatientID'] ?> <?//= $donor['PatientID'] ?><!-- </div>>-->
@@ -215,6 +240,62 @@
         {
             x.className = x.className.replace(" w3-show", "");
             x.previousElementSibling.className = x.previousElementSibling.className.replace(" w3-green", "");
+        }
+    }
+
+    function sortTable(tableName, n)
+    {
+        var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+        table = document.getElementById(tableName);
+        switching = true;
+        //Set the sorting direction to ascending:
+        dir = "asc";
+        /*Make a loop that will continue until
+         no switching has been done:*/
+        while (switching) {
+            //start by saying: no switching is done:
+            switching = false;
+            rows = table.getElementsByTagName("TR");
+            /*Loop through all table rows (except the
+             first, which contains table headers):*/
+            for (i = 1; i < (rows.length - 1); i++) {
+                //start by saying there should be no switching:
+                shouldSwitch = false;
+                /*Get the two elements you want to compare,
+                 one from current row and one from the next:*/
+                x = rows[i].getElementsByTagName("TD")[n];
+                y = rows[i + 1].getElementsByTagName("TD")[n];
+                /*check if the two rows should switch place,
+                 based on the direction, asc or desc:*/
+                if (dir == "asc") {
+                    if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                        //if so, mark as a switch and break the loop:
+                        shouldSwitch= true;
+                        break;
+                    }
+                } else if (dir == "desc") {
+                    if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                        //if so, mark as a switch and break the loop:
+                        shouldSwitch= true;
+                        break;
+                    }
+                }
+            }
+            if (shouldSwitch) {
+                /*If a switch has been marked, make the switch
+                 and mark that a switch has been done:*/
+                rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                switching = true;
+                //Each time a switch is done, increase this count by 1:
+                switchcount ++;
+            } else {
+                /*If no switching has been done AND the direction is "asc",
+                 set the direction to "desc" and run the while loop again.*/
+                if (switchcount == 0 && dir == "asc") {
+                    dir = "desc";
+                    switching = true;
+                }
+            }
         }
     }
 </script>

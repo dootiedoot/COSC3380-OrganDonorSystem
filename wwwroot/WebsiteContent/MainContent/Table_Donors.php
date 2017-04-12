@@ -50,7 +50,7 @@
                 <tr class="w3-green w3-bar">
 
 <!--                    <th><p class="w3-bar-item">#</p></th>-->
-
+                    <!--    TABLE HEADERS  -->
                     <!--    APPLICANT INFO COLUMNS    -->
                     <?php
                     if ($_SESSION['ApplicantInfo'] == true)
@@ -95,6 +95,7 @@
                 </tr>
                 </thead>
 
+                <!--    TABLE DATA  -->
                 <?php
                 $counter = 1;
                 foreach($donors as $donor)
