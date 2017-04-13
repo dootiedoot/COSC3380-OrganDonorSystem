@@ -103,12 +103,12 @@
                 <?php
                 foreach($recipients as $recipient)
                 {?>
+                    <?php $counter = 1; ?>
                     <tr
                         <td>
                             <button onclick="ToggleElement(<?=$recipient['PatientID']?>)" class="w3-btn w3-block w3-padding"> <?=$recipient['FirstName']?> <?=$recipient['LastName']?> matches for <?=$recipient['Organ']?></button>
                             <div id="<?=$recipient['PatientID']?>" class="w3-hide w3-container w3-card-4 w3-responsive">
                                 <table class="w3-table-all" id=<?=$recipient['PatientID']?>>
-
                                     <!--    TABLE HEADER  -->
                                     <thead>
                                     <tr class="w3-green w3-bar">
@@ -129,13 +129,13 @@
                                     <!--    TABLE DATA  -->
                                     <?php
                                     //  COMPARE TO RECIPIENTS
-                                    $counter = 1;
                                     foreach($donors as $donor)
                                     {?>
                                         <?php if (  $donor['Organ'] == $recipient['Organ'])
                                         { ?>
-                                            <tr
 
+
+                                            <tr
                                             <!--    Calculate the match percentage    -->
                                             <?php
                                             $matchRate = 0;
@@ -174,10 +174,8 @@
                                             </tr>
                                         <?php } ?>
                                     <?php } ?>
-
                                     <!--    SORT TABLE  -->
-
-
+                                    <script> TestPHPfunction(); </script>
                                 </table>
                             </div>
                         </td>
@@ -187,13 +185,18 @@
         <?php }
         else
         {?>
-            <h3>No one is currently registered.</h3>
+            <h3>No recipients currently require organs.</h3>
         <?php } ?>
     </div>
 </div>
 
 <!--    FUNCTIONS FOR DROP MENU LOGIC    -->
 <script>
+    function TestPHPfunction()
+    {
+        <?php var_dump($_SESSION['username']) ?>
+    }
+
     function ToggleElement(name)
     {
         var x = document.getElementById(name);
