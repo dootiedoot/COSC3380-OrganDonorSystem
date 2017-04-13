@@ -36,12 +36,11 @@
      
 <?php
 
-
     $queryOrgansList = "SELECT Organ as organName, count(*) as num from db_organdonorsystem.donor where Organ IS NOT NULL group by Organ order by count(*) desc";
     $results = $conn->query($queryOrgansList);
-    $orgransList = $results->fetchAll();
+    $organsList = $results->fetchAll();
 
-        if(count($orgransList) > 0)
+        if(count($organsList) > 0)
         {?>
             <table class="w3-table-all">
                 <thead>
@@ -54,14 +53,20 @@
                 </thead>
 
                 <?php
+                $sum = 0.0;
+                foreach($organsList as $organ){
+                    $sum += (float)$organ['num'];
+                }
+
                 $counter = 1;
-                foreach($orgransList as $organ)
+                foreach($organsList as $organ)
                 {?>
+
                     <tr class="w3-hover-green">
                         <td><?= $counter?>.</td>
                         <td><?= $organ['organName']?></td>
                         <td><?= $organ['num']?></td>
-                        <td><?= $organ['num']/count($orgransList)?></td>
+                        <td><?= (((float)$organ['num']/$sum)*100.0).'%' ?></td>
                     </tr>
                     <?php
 
