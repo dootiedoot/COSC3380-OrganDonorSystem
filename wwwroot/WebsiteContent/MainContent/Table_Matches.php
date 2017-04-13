@@ -103,26 +103,26 @@
                 <?php
                 foreach($recipients as $recipient)
                 {?>
-                    <?php $counter = 1; ?>
+<!--                    --><?php //$counter = 1; ?>
                     <tr
                         <td>
                             <button onclick="ToggleElement(<?=$recipient['PatientID']?>)" class="w3-btn w3-block w3-padding"> <?=$recipient['FirstName']?> <?=$recipient['LastName']?> matches for <?=$recipient['Organ']?></button>
-                            <div id="<?=$recipient['PatientID']?>" class="w3-hide w3-container w3-card-4 w3-responsive">
+                            <div id="<?=$recipient['PatientID']?>" class="w3-hide w3-show w3-container w3-card-4 w3-responsive">
                                 <table class="w3-table-all" id=<?=$recipient['PatientID']?>>
                                     <!--    TABLE HEADER  -->
                                     <thead>
-                                    <tr class="w3-green w3-bar">
-                                        <th onclick="sortTable(<?=$recipient['PatientID']?>, 0)"><a class="w3-center w3-bar-item">First Name</a></th>
-                                        <th onclick="sortTable(<?=$recipient['PatientID']?>, 1)"><a class="w3-center w3-bar-item">Last Name</a></th>
-                                        <th onclick="sortTable(<?=$recipient['PatientID']?>, 2)"><a class="w3-center w3-bar-item">% Matched</a></th>
-                                        <th onclick="sortTable(<?=$recipient['PatientID']?>, 3)"><a class="w3-center w3-bar-item">HLA A1</a></th>
-                                        <th onclick="sortTable(<?=$recipient['PatientID']?>, 4)"><a class="w3-center w3-bar-item">HLA A2</a></th>
-                                        <th onclick="sortTable(<?=$recipient['PatientID']?>, 5)"><a class="w3-center w3-bar-item">HLA B1</a></th>
-                                        <th onclick="sortTable(<?=$recipient['PatientID']?>, 6)"><a class="w3-center w3-bar-item">HLA B2</a></th>
-                                        <th onclick="sortTable(<?=$recipient['PatientID']?>, 7)"><a class="w3-center w3-bar-item">HLA C1</a></th>
-                                        <th onclick="sortTable(<?=$recipient['PatientID']?>, 8)"><a class="w3-center w3-bar-item">HLA C2</a></th>
-                                        <th onclick="sortTable(<?=$recipient['PatientID']?>, 9)"><a class="w3-center w3-bar-item">HLA DRB1</a></th>
-                                        <th onclick="sortTable(<?=$recipient['PatientID']?>, 10)"><a class="w3-center w3-bar-item">HLA DRB2</a></th>
+                                    <tr class="w3-green">
+                                        <th onclick="sortTable(<?=$recipient['PatientID']?>, 0)"><a class="w3-center w3-text-white">First Name</a></th>
+                                        <th onclick="sortTable(<?=$recipient['PatientID']?>, 1)"><a class="w3-center w3-text-white">Last Name</a></th>
+                                        <th onclick="sortTable(<?=$recipient['PatientID']?>, 2)"><a class="w3-center w3-text-white">% Matched</a></th>
+                                        <th onclick="sortTable(<?=$recipient['PatientID']?>, 3)"><a class="w3-center w3-text-white">HLA A1</a></th>
+                                        <th onclick="sortTable(<?=$recipient['PatientID']?>, 4)"><a class="w3-center w3-text-white">HLA A2</a></th>
+                                        <th onclick="sortTable(<?=$recipient['PatientID']?>, 5)"><a class="w3-center w3-text-white">HLA B1</a></th>
+                                        <th onclick="sortTable(<?=$recipient['PatientID']?>, 6)"><a class="w3-center w3-text-white">HLA B2</a></th>
+                                        <th onclick="sortTable(<?=$recipient['PatientID']?>, 7)"><a class="w3-center w3-text-white">HLA C1</a></th>
+                                        <th onclick="sortTable(<?=$recipient['PatientID']?>, 8)"><a class="w3-center w3-text-white">HLA C2</a></th>
+                                        <th onclick="sortTable(<?=$recipient['PatientID']?>, 9)"><a class="w3-center w3-text-white">HLA DRB1</a></th>
+                                        <th onclick="sortTable(<?=$recipient['PatientID']?>, 10)"><a class="w3-center w3-text-white">HLA DRB2</a></th>
                                     </tr>
                                     </thead>
 
@@ -133,8 +133,6 @@
                                     {?>
                                         <?php if (  $donor['Organ'] == $recipient['Organ'])
                                         { ?>
-
-
                                             <tr
                                             <!--    Calculate the match percentage    -->
                                             <?php
@@ -151,31 +149,50 @@
                                             ?>
 
                                             <!--    DISPLAY GENERAL DATA    -->
-                                            <td class=""><?=$counter?>.</td>
+<!--                                            <td class="">--><?//=$counter?><!--.</td>-->
                                             <td class=""><?=$donor['FirstName']?></td>
                                             <td class=""><?=$donor['LastName']?></td>
-                                            <td <div class="w3-light-grey w3-default"> <div class="w3-container w3-blue w3-round" style="width:<?=$matchRate?>%"><?=$matchRate?>% Matched</div></div></div></td>
+                                            <td <div class=""><div class="w3-container w3-blue w3-round" style="width:<?=$matchRate?>%"><?=$matchRate?>% Matched</div></div></div></td>
 
                                             <!--    DISPLAY HLA MARKERS IN ICONS-->
-<!--                                            <td class="">-->
-<!--                                                --><?php //if ($recipient['HLAMarkers_A1'] == $donor['HLAMarkers_A1']) ?>
-<!--                                                    <i class="glyphicon glyphicon-check" style="color:green"></i>-->
-<!--                                                --><?php //else ?>
-<!--                                                    <i class="fa fa-times-rectangle-o" style="color:red"></i>-->
-<!--                                            </td>-->
-<!--                                            <td class="">-->
-<!--                                                --><?php //if ($recipient['HLAMarkers_A2'] == $donor['HLAMarkers_A2']) ?>
-<!--                                                <i class="glyphicon glyphicon-check" style="color:green"></i>-->
-<!--                                                --><?php //else ?>
-<!--                                                <i class="fa fa-times-rectangle-o" style="color:red"></i>-->
-<!--                                            </td>-->
+                                            <td class="w3-center">
+                                                <?php if ($recipient['HLAMarkers_A1'] == $donor['HLAMarkers_A1']) { ?> <i class="w3-center glyphicon glyphicon-check" style="color:green"></i> <?php }
+                                                else { ?> <i class="fa fa-times-rectangle-o" style="color:red"></i> <?php } ?>
+                                            </td>
+                                            <td class="w3-center">
+                                                <?php if ($recipient['HLAMarkers_A2'] == $donor['HLAMarkers_A2']) { ?> <i class="w3-center glyphicon glyphicon-check" style="color:green"></i> <?php }
+                                                else { ?> <i class="fa fa-times-rectangle-o" style="color:red"></i> <?php } ?>
+                                            </td>
+                                            <td class="w3-center">
+                                                <?php if ($recipient['HLAMarkers_B1'] == $donor['HLAMarkers_B1']) { ?> <i class="w3-center glyphicon glyphicon-check" style="color:green"></i> <?php }
+                                                else { ?> <i class="fa fa-times-rectangle-o" style="color:red"></i> <?php } ?>
+                                            </td>
+                                            <td class="w3-center">
+                                                <?php if ($recipient['HLAMarkers_B2'] == $donor['HLAMarkers_B2']) { ?> <i class="w3-center glyphicon glyphicon-check" style="color:green"></i> <?php }
+                                                else { ?> <i class="fa fa-times-rectangle-o" style="color:red"></i> <?php } ?>
+                                            </td>
+                                            <td class="w3-center">
+                                                <?php if ($recipient['HLAMarkers_C1'] == $donor['HLAMarkers_C1']) { ?> <i class="w3-center glyphicon glyphicon-check" style="color:green"></i> <?php }
+                                                else { ?> <i class="fa fa-times-rectangle-o" style="color:red"></i> <?php } ?>
+                                            </td>
+                                            <td class="w3-center">
+                                                <?php if ($recipient['HLAMarkers_C2'] == $donor['HLAMarkers_C2']) { ?> <i class="w3-center glyphicon glyphicon-check" style="color:green"></i> <?php }
+                                                else { ?> <i class="fa fa-times-rectangle-o" style="color:red"></i> <?php } ?>
+                                            </td>
+                                            <td class="w3-center">
+                                                <?php if ($recipient['HLAMarkers_DRB1'] == $donor['HLAMarkers_DRB1']) { ?> <i class="w3-center glyphicon glyphicon-check" style="color:green"></i> <?php }
+                                                else { ?> <i class="fa fa-times-rectangle-o" style="color:red"></i> <?php } ?>
+                                            </td>
+                                            <td class="w3-center">
+                                                <?php if ($recipient['HLAMarkers_DRB2'] == $donor['HLAMarkers_DRB2']) { ?> <i class="w3-center glyphicon glyphicon-check" style="color:green"></i> <?php }
+                                                else { ?> <i class="fa fa-times-rectangle-o" style="color:red"></i> <?php } ?>
+                                            </td>
 
-                                            <?=$counter++;?>
                                             </tr>
                                         <?php } ?>
                                     <?php } ?>
                                     <!--    SORT TABLE  -->
-                                    <script> TestPHPfunction(); </script>
+                                    <script> sortTable(<?=$recipient['PatientID']?>, 1); </script>
                                 </table>
                             </div>
                         </td>
@@ -192,11 +209,6 @@
 
 <!--    FUNCTIONS FOR DROP MENU LOGIC    -->
 <script>
-    function TestPHPfunction()
-    {
-        <?php var_dump($_SESSION['username']) ?>
-    }
-
     function ToggleElement(name)
     {
         var x = document.getElementById(name);
