@@ -31,7 +31,7 @@
 <div class="w3-main w3-container" style="margin-left:270px;margin-top:117px;">
     <!--    Donor table -->
     <div id="organsReportTable" class="w3-container w3-section w3-padding-large w3-card-4 w3-light-grey">
-        <h2>Organ Stats</h2>
+        <h2>Recipient Organ Statistics</h2>
 
      
 <?php
@@ -41,15 +41,15 @@
     $results = $conn->query($queryOrgansList);
     $organsList = $results->fetchAll();
 
-        if(count($orgransList) > 0)
+        if(count($organsList) > 0)
         {?>
             <table class="w3-table-all">
                 <thead>
                 <tr class="w3-green">
                     <th>#</th>
                     <th>Organ</th>
-                    <th># of organ</th>
-                    <th>% of total organs</th>
+                    <th># of Organ</th>
+                    <th>% of Total Organs</th>
                 </tr>
                 </thead>
 
