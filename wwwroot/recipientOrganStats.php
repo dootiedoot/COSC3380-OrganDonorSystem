@@ -39,7 +39,7 @@
 
     $queryOrgansList = "SELECT Organ as organName, count(*) as num from db_organdonorsystem.recipient where Organ IS NOT NULL group by Organ order by count(*) desc";
     $results = $conn->query($queryOrgansList);
-    $orgransList = $results->fetchAll();
+    $organsList = $results->fetchAll();
 
         if(count($orgransList) > 0)
         {?>
@@ -60,7 +60,7 @@
                 }
 
                 $counter = 1;
-                foreach($orgransList as $organ)
+                foreach($organsList as $organ)
                 {?>
                     <tr class="w3-hover-green">
                         <td><?= $counter?>.</td>
