@@ -104,14 +104,26 @@
                 foreach($recipients as $recipient)
                 {?>
 <!--                    --><?php //$counter = 1; ?>
+                    <?php $donorExist = false; ?>
+                    <?php foreach($donors as $donor)
+                    {?>
+                        <?php if (  $donor['Organ'] == $recipient['Organ'])
+                        {
+                            $donorExist = true;
+                            break;
+                        }
+                    } ?>
+                    <?php if ($donorExist == false) { continue; } ?>
+
                     <tr
                         <td>
-                            <button onclick="ToggleElement(<?=$recipient['PatientID']?>)" class="w3-btn w3-block w3-padding"> <?=$recipient['FirstName']?> <?=$recipient['LastName']?> matches for <?=$recipient['Organ']?></button>
+                            <button onclick="ToggleElement(<?=$recipient['PatientID']?>)" class="w3-btn w3-block w3-large w3-card-4 w3-left-align w3-padding"><?=$recipient['Organ']?> matches for <?=$recipient['FirstName']?> <?=$recipient['LastName']?></button>
                             <div id="<?=$recipient['PatientID']?>" class="w3-hide w3-show w3-container w3-card-4 w3-responsive">
-                                <table class="w3-table-all" id=<?=$recipient['PatientID']?>>
+                                <table class="w3-table-all w3-card-4" id=<?=$recipient['PatientID']?>>
+
                                     <!--    TABLE HEADER  -->
                                     <thead>
-                                    <tr class="w3-green">
+                                    <tr class="w3-blue">
                                         <th onclick="sortTable(<?=$recipient['PatientID']?>, 0)"><a class="w3-center w3-text-white">First Name</a></th>
                                         <th onclick="sortTable(<?=$recipient['PatientID']?>, 1)"><a class="w3-center w3-text-white">Last Name</a></th>
                                         <th onclick="sortTable(<?=$recipient['PatientID']?>, 2)"><a class="w3-center w3-text-white">% Matched</a></th>

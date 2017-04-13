@@ -47,49 +47,50 @@
         {?>
             <table class="w3-table-all" id="donorsTable">
                 <thead>
-                <tr class="w3-green w3-bar">
+                <tr class="w3-green">
 
-<!--                    <th><p class="w3-bar-item">#</p></th>-->
+                    <th onclick="sortTable('donorsTable', 0)"><a class="w3-center w3-text-white">#</a></th>
+
                     <!--    TABLE HEADERS  -->
                     <!--    APPLICANT INFO COLUMNS    -->
                     <?php
                     if ($_SESSION['ApplicantInfo'] == true)
                     { ?>
-                        <th onclick="sortTable('donorsTable', 1)"><a class="w3-center w3-bar-item">Applicant Status</a></th>
+                        <th onclick="sortTable('donorsTable', 1)"><a class="w3-center w3-text-white">Applicant Status</a></th>
                     <?php } ?>
 
-                    <th onclick="sortTable('donorsTable', 2)"><a class="w3-center w3-bar-item">First Name</a></th>
-                    <th onclick="sortTable('donorsTable', 3)"><a class="w3-center w3-bar-item">Last Name</a></th>
+                    <th onclick="sortTable('donorsTable', 2)"><a class="w3-center w3-text-white">First Name</a></th>
+                    <th onclick="sortTable('donorsTable', 3)"><a class="w3-center w3-text-white">Last Name</a></th>
 
                     <!--    GENERAL INFO COLUMNS    -->
                     <?php
                     if ($_SESSION['GeneralInfo'] == true)
                     { ?>
-                        <th onclick="sortTable('donorsTable', 4)"><a class="w3-center w3-bar-item">Sex</a></th>
-                        <th onclick="sortTable('donorsTable', 5)"><a class="w3-center w3-bar-item">Birth Date</a></th>
-                        <th onclick="sortTable('donorsTable', 6)"><a class="w3-center w3-bar-item">Recent Address</a></th>
-                        <th onclick="sortTable('donorsTable', 7)"><a class="w3-center w3-bar-item">City</a></th>
-                        <th onclick="sortTable('donorsTable', 8)"><a class="w3-center w3-bar-item">State</a></th>
-                        <th onclick="sortTable('donorsTable', 9)"><a class="w3-center w3-bar-item">ZIP Code</a></th>
-                        <th onclick="sortTable('donorsTable', 10)"><a class="w3-center w3-bar-item">Email</a></th>
-                        <th onclick="sortTable('donorsTable', 11)"><a class="w3-center w3-bar-item">Phone #</a></th>
+                        <th onclick="sortTable('donorsTable', 4)"><a class="w3-center w3-text-white">Sex</a></th>
+                        <th onclick="sortTable('donorsTable', 5)"><a class="w3-center w3-text-white">Birth Date</a></th>
+                        <th onclick="sortTable('donorsTable', 6)"><a class="w3-center w3-text-white">Recent Address</a></th>
+                        <th onclick="sortTable('donorsTable', 7)"><a class="w3-center w3-text-white">City</a></th>
+                        <th onclick="sortTable('donorsTable', 8)"><a class="w3-center w3-text-white">State</a></th>
+                        <th onclick="sortTable('donorsTable', 9)"><a class="w3-center w3-text-white">ZIP Code</a></th>
+                        <th onclick="sortTable('donorsTable', 10)"><a class="w3-center w3-text-white">Email</a></th>
+                        <th onclick="sortTable('donorsTable', 11)"><a class="w3-center w3-text-white">Phone #</a></th>
                     <?php } ?>
 
                     <!--    MEDICAL INFO COLUMNS    -->
                     <?php
                     if ($_SESSION['MedicalInfo'] == true)
                     { ?>
-                        <th onclick="sortTable('donorsTable', 12)"><a class="w3-center w3-bar-item">BloodType</a></th>
-                        <th onclick="sortTable('donorsTable', 13)"><a class="w3-center w3-bar-item">Donating Organ</a></th>
-                        <th onclick="sortTable('donorsTable', 14)"><a class="w3-center w3-bar-item">Weight</a></th>
-                        <th onclick="sortTable('donorsTable', 15)"><a class="w3-center w3-bar-item">HLA A1</a></th>
-                        <th onclick="sortTable('donorsTable', 16)"><a class="w3-center w3-bar-item">HLA A2</a></th>
-                        <th onclick="sortTable('donorsTable', 17)"><a class="w3-center w3-bar-item">HLA B1</a></th>
-                        <th onclick="sortTable('donorsTable', 18)"><a class="w3-center w3-bar-item">HLA B2</a></th>
-                        <th onclick="sortTable('donorsTable', 19)"><a class="w3-center w3-bar-item">HLA C1</a></th>
-                        <th onclick="sortTable('donorsTable', 20)"><a class="w3-center w3-bar-item">HLA C2</a></th>
-                        <th onclick="sortTable('donorsTable', 21)"><a class="w3-center w3-bar-item">HLA DRB1</a></th>
-                        <th onclick="sortTable('donorsTable', 22)"><a class="w3-center w3-bar-item">HLA DRB1</a></th>
+                        <th onclick="sortTable('donorsTable', 12)"><a class="w3-center w3-text-white">BloodType</a></th>
+                        <th onclick="sortTable('donorsTable', 13)"><a class="w3-center w3-text-white">Donating Organ</a></th>
+                        <th onclick="sortTable('donorsTable', 14)"><a class="w3-center w3-text-white">Weight</a></th>
+                        <th onclick="sortTable('donorsTable', 15)"><a class="w3-center w3-text-white">HLA A1</a></th>
+                        <th onclick="sortTable('donorsTable', 16)"><a class="w3-center w3-text-white">HLA A2</a></th>
+                        <th onclick="sortTable('donorsTable', 17)"><a class="w3-center w3-text-white">HLA B1</a></th>
+                        <th onclick="sortTable('donorsTable', 18)"><a class="w3-center w3-text-white">HLA B2</a></th>
+                        <th onclick="sortTable('donorsTable', 19)"><a class="w3-center w3-text-white">HLA C1</a></th>
+                        <th onclick="sortTable('donorsTable', 20)"><a class="w3-center w3-text-white">HLA C2</a></th>
+                        <th onclick="sortTable('donorsTable', 21)"><a class="w3-center w3-text-white">HLA DRB1</a></th>
+                        <th onclick="sortTable('donorsTable', 22)"><a class="w3-center w3-text-white">HLA DRB1</a></th>
                     <?php } ?>
 
                 </tr>
@@ -108,9 +109,9 @@
                         <?php
                         if ($_SESSION['ApplicantInfo'] == true)
                         { ?>
-                            <?php if ($donor['ApplicantStatus'] == 'Unevaluated')   {?> <td><p class="w3-center"></p><i class="glyphicon glyphicon-unchecked" style="color:grey"></i></td> <?php }
-                             else if ($donor['ApplicantStatus'] == 'Pass')          {?> <td><p class="w3-center"></p><i class="glyphicon glyphicon-check" style="color:green"></i></td> <?php }
-                             else if ($donor['ApplicantStatus'] == 'Fail')          {?> <td><p class="w3-center"></p><i class="fa fa-times-rectangle-o" style="color:red"></i></td> <?php } ?>
+                            <?php if ($donor['ApplicantStatus'] == 'Unevaluated')   {?> <td><p class=""></p><i class="w3-center glyphicon glyphicon-unchecked" style="color:grey"></i></td> <?php }
+                             else if ($donor['ApplicantStatus'] == 'Pass')          {?> <td><p class=""></p><i class="w3-center glyphicon glyphicon-check" style="color:green"></i></td> <?php }
+                             else if ($donor['ApplicantStatus'] == 'Fail')          {?> <td><p class=""></p><i class="w3-center fa fa-times-rectangle-o" style="color:red"></i></td> <?php } ?>
                         <?php } ?>
 
                         <td><p class="w3-center"><?= $donor['FirstName']?></p></td>
