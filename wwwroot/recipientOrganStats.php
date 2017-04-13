@@ -47,7 +47,7 @@
                 <thead>
                 <tr class="w3-green">
                     <th>#</th>
-                    <th>Organ</th>
+                    <th>Organ Name</th>
                     <th># of Organ</th>
                     <th>% of Total Organs</th>
                 </tr>
