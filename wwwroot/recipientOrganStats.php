@@ -54,6 +54,11 @@
                 </thead>
 
                 <?php
+                $sum = 0.0;
+                foreach($organsList as $organ){
+                    $sum += (float)$organ['num'];
+                }
+
                 $counter = 1;
                 foreach($orgransList as $organ)
                 {?>
@@ -61,7 +66,7 @@
                         <td><?= $counter?>.</td>
                         <td><?= $organ['organName']?></td>
                         <td><?= $organ['num']?></td>
-                        <td><?= $organ['num']/count($orgransList)?></td>
+                        <td><?= (((float)$organ['num']/$sum)*100.0).'%' ?></td>
                     </tr>
                     <?php
 
