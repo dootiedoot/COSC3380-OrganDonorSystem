@@ -26,6 +26,7 @@
             <a href="/Page_RegisterDonorForm.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-address-card-o"></i> Register A Donor</a>
             <a href="/Page_Donors.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-address-book-o"></i> See Donors</a>
             <a href="/Page_Matches.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-handshake-o"></i> See Matches</a>
+            <a href="/donorOrganStats.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-handshake-o"></i> Donor Organ Stats </a>
         </div>
 
     <?php } ?>
@@ -41,6 +42,7 @@
         <div id="dropmenu_Recipients" class="w3-hide w3-show w3-white w3-card-4">
             <a href="/Page_Recipients.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-address-card-o"></i> See Recipients</a>
             <a href="/Page_Matches.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-handshake-o"></i> See Matches</a>
+            <a href="/recipientOrganStats.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-handshake-o"></i> Recipient Organ Stats</a>
         </div>
 
     <?php } ?>
@@ -58,8 +60,6 @@
         </div>
 
     <?php } ?>
-
-    <a href="/organsReport.php" class="w3-bar-item w3-button w3-round">Organ statistics</a>
 
 </div>
 
