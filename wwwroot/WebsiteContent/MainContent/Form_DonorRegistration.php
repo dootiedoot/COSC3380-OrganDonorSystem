@@ -172,25 +172,113 @@
             </div>
 
             <!--    WEIGHT    -->
-<!--            <div class="w3-padding">-->
-<!--                <input class="w3-input" type="number" name="weight" min="0" id="userWeight" required>-->
-<!--                <label class="w3-label w3-validate">Weight</label>-->
-<!--            </div>-->
+            <div class="w3-padding">
+                <input class="w3-input" type="number" name="weight" min="0" id="userWeight" required>
+                <label class="w3-label w3-validate">Weight</label>
+            </div>
 
             <!--    BLOOD TYPE    -->
-<!--            <div class="w3-padding">-->
-<!--                <select class="w3-select" name="bloodType">-->
-<!--                    <option value="" disabled selected>Select blood type</option>-->
-<!--                    <option value="1">A+</option>-->
-<!--                    <option value="2">A-</option>-->
-<!--                    <option value="3">B+</option>-->
-<!--                    <option value="4">B-</option>-->
-<!--                    <option value="5">AB+</option>-->
-<!--                    <option value="6">AB-</option>-->
-<!--                    <option value="7">O+</option>-->
-<!--                    <option value="8">O-</option>-->
-<!--                </select>-->
-<!--            </div>-->
+            <div class="w3-padding">
+                <select class="w3-select" name="bloodType">
+                    <option value="" disabled selected>Select blood type</option>
+                    <option value="1">A+</option>
+                    <option value="2">A-</option>
+                    <option value="3">B+</option>
+                    <option value="4">B-</option>
+                    <option value="5">AB+</option>
+                    <option value="6">AB-</option>
+                    <option value="7">O+</option>
+                    <option value="8">O-</option>
+                </select>
+            </div>
+
+            <!--    HLA Marker A1   -->
+            <div class="w3-padding">
+                <select class="w3-select" name="HLAMarkers_A1" required>
+                    <option value="" disabled selected>Select Marker</option>
+                    <option value="1" label="Black">Black</option>
+                    <option value="2" label="Blue">Blue</option>
+                    <option value="3" label="White">White</option>
+                </select>
+                <label class="w3-label w3-validate">HLAMarkers_A1</label>
+            </div>
+
+            <!--    HLA Marker A2   -->
+            <div class="w3-padding">
+                <select class="w3-select" name="HLAMarkers_A2" required>
+                    <option value="" disabled selected>Select Marker</option>
+                    <option value="1" label="Black">Black</option>
+                    <option value="2" label="Blue">Blue</option>
+                    <option value="3" label="White">White</option>
+                </select>
+                <label class="w3-label w3-validate">HLAMarkers_A2</label>
+            </div>
+
+            <!--    HLA Marker B1  -->
+            <div class="w3-padding">
+                <select class="w3-select" name="HLAMarkers_B1" required>
+                    <option value="" disabled selected>Select Marker</option>
+                    <option value="1" label="Black">Black</option>
+                    <option value="2" label="Blue">Blue</option>
+                    <option value="3" label="White">White</option>
+                </select>
+                <label class="w3-label w3-validate">HLAMarkers_B1</label>
+            </div>
+
+            <!--    HLA Marker B2  -->
+            <div class="w3-padding">
+                <select class="w3-select" name="HLAMarkers_B2" required>
+                    <option value="" disabled selected>Select Marker</option>
+                    <option value="1" label="Black">Black</option>
+                    <option value="2" label="Blue">Blue</option>
+                    <option value="3" label="White">White</option>
+                </select>
+                <label class="w3-label w3-validate">HLAMarkers_B2</label>
+            </div>
+
+            <!--    HLA Marker C1   -->
+            <div class="w3-padding">
+                <select class="w3-select" name="HLAMarkers_C1" required>
+                    <option value="" disabled selected>Select Marker</option>
+                    <option value="1" label="Black">Black</option>
+                    <option value="2" label="Blue">Blue</option>
+                    <option value="3" label="White">White</option>
+                </select>
+                <label class="w3-label w3-validate">HLAMarkers_C1</label>
+            </div>
+
+            <!--    HLA Marker C2   -->
+            <div class="w3-padding">
+                <select class="w3-select" name="HLAMarkers_C2" required>
+                    <option value="" disabled selected>Select Marker</option>
+                    <option value="1" label="Black">Black</option>
+                    <option value="2" label="Blue">Blue</option>
+                    <option value="3" label="White">White</option>
+                </select>
+                <label class="w3-label w3-validate">HLAMarkers_C2</label>
+            </div>
+
+            <!--    HLA Marker DRB1  -->
+            <div class="w3-padding">
+                <select class="w3-select" name="HLAMarkers_DRB1" required>
+                    <option value="" disabled selected>Select Marker</option>
+                    <option value="1" label="Black">Black</option>
+                    <option value="2" label="Blue">Blue</option>
+                    <option value="3" label="White">White</option>
+                </select>
+                <label class="w3-label w3-validate">HLAMarkers_DRB1</label>
+            </div>
+
+            <!--    HLA Marker DRB2   -->
+            <div class="w3-padding">
+                <select class="w3-select" name="HLAMarkers_DRB2" required>
+                    <option value="" disabled selected>Select Marker</option>
+                    <option value="1" label="Black">Black</option>
+                    <option value="2" label="Blue">Blue</option>
+                    <option value="3" label="White">White</option>
+                </select>
+                <label class="w3-label w3-validate">HLAMarkers_DRB2</label>
+            </div>
 
             <div class="w3-padding w3-centered">
                 <button class="w3-btn w3-green w3-round" type="submit" name="submit" value="Submit">Submit</button>
