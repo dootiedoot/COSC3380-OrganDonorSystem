@@ -130,6 +130,7 @@
                                         <th onclick="sortTable(<?=$recipient['PatientID']?>, 3)"><a class="w3-center w3-text-white">HLA A1</a></th>
                                         <th onclick="sortTable(<?=$recipient['PatientID']?>, 4)"><a class="w3-center w3-text-white">HLA A2</a></th>
                                         <th onclick="sortTable(<?=$recipient['PatientID']?>, 5)"><a class="w3-center w3-text-white">HLA B1</a></th>
+                        qwas2
                                         <th onclick="sortTable(<?=$recipient['PatientID']?>, 6)"><a class="w3-center w3-text-white">HLA B2</a></th>
                                         <th onclick="sortTable(<?=$recipient['PatientID']?>, 7)"><a class="w3-center w3-text-white">HLA C1</a></th>
                                         <th onclick="sortTable(<?=$recipient['PatientID']?>, 8)"><a class="w3-center w3-text-white">HLA C2</a></th>
@@ -164,7 +165,9 @@
 <!--                                            <td class="">--><?//=$counter?><!--.</td>-->
                                             <td class=""><?=$donor['FirstName']?></td>
                                             <td class=""><?=$donor['LastName']?></td>
-                                            <td <div class=""><div class="w3-container w3-blue w3-round" style="width:<?=$matchRate?>%"><?=$matchRate?>% Matched</div></div></div></td>
+                                            <td <div class="w3-center w3-text-shadow-white">
+                                                    <div class="w3-container w3-blue w3-round-xlarge w3-center" style="height:24px;width:<?=$matchRate?>%"><?=$matchRate?>% Matched</div>
+                                                </div></td>
 
                                             <!--    DISPLAY HLA MARKERS IN ICONS-->
                                             <td class="w3-center">
