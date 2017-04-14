@@ -3,7 +3,7 @@
 session_start();
 
 require "Database/MySQLconfig.php";
-require "Database/updateDateAddedtoDB.php";
+//require "Database/updateDateAddedtoDB.php";
 
 //$firstName;
 //$middleInit;
