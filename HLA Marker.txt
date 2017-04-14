@@ -1,0 +1,10 @@
+﻿<!--    HLA Marker   -->
+            <div class="w3-padding">
+                <select class="w3-select" name="HLA Marker A1" required>
+                    <option value="" disabled selected>Select Marker</option>
+                    <option value="1" label="Black">Black</option>
+                    <option value="2" label="Blue">Blue</option>
+                    <option value="3" label="White">White</option>
+                </select>
+                <label class="w3-label w3-validate">HLA Marker A1</label>
+            </div>
