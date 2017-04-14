@@ -155,7 +155,7 @@
 
             <!--    ZIP code    -->
             <div class="w3-padding">
-                <input class="w3-input" type="number" name="zipCode" min="000000" max="999999" id="userZIPcode" required>
+                <input class="w3-input" type="number" name="zipCode" min="10000" max="999999" id="userZIPcode" required>
                 <label class="w3-label w3-validate">ZIP code</label>
             </div>
 
