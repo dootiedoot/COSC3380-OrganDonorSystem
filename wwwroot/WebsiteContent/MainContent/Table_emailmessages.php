@@ -10,8 +10,8 @@
         <?php
         $sql_select = "SELECT * FROM emailmessage LIMIT 0, 100";
         $stmt = $conn->query($sql_select);
-        $emailmessage = $stmt->fetchAll();
-        if(count($emailmessage) > 0)
+        $emailmessages = $stmt->fetchAll();
+        if(count($emailmessages) > 0)
         {?>
             <table class="w3-table-all">
                 <thead>
