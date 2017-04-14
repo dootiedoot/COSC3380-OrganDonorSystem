@@ -118,7 +118,7 @@
                     <tr
                         <td>
                             <button onclick="ToggleElement(<?=$recipient['PatientID']?>)" class="w3-btn w3-block w3-large w3-card-4 w3-left-align w3-padding"><?=$recipient['Organ']?> matches for <?=$recipient['FirstName']?> <?=$recipient['LastName']?></button>
-                            <div id="<?=$recipient['PatientID']?>" class="w3-hide w3-show w3-container w3-card-4 w3-responsive">
+                            <div id="<?=$recipient['PatientID']?>" class="w3-hide w3-show w3-container w3-card-4">
                                 <table class="w3-table-all w3-card-4" id=<?=$recipient['PatientID']?>>
 
                                     <!--    TABLE HEADER  -->
