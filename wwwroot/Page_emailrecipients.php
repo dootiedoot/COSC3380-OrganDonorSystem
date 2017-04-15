@@ -1,7 +1,8 @@
 
 <?php
     session_start();
-    if( $_SESSION['userRole'] != "Doctor")
+    if( $_SESSION['userRole'] != "Admin" &&
+        $_SESSION['userRole'] != "Doctor" )
         header("Location: /");
 ?>
 
@@ -27,7 +28,7 @@
 
 <!-- Main content: shift it to the right by 270 pixels when the sidebar is visible -->
 <?php
-    require "WebsiteContent/MainContent/Table_emailrecipients.php.php";
+    require "WebsiteContent/MainContent/Table_emailrecipients.php";
 ?>
 
 <!--    PAGE FOOTER  -->
