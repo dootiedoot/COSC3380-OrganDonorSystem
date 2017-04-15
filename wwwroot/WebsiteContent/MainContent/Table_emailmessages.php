@@ -20,7 +20,6 @@
                     <th>Recipient</th>
                     <th>Body</th>
                     <th>Subject</th>
-                    <th>emailmessage_pk</th>
                 </tr>
                 </thead>
 
@@ -33,7 +32,6 @@
                         <td><?= $emailmessage['Recipient']?></td>
                         <td><?= $emailmessage['Body']?></td>
                         <td><?= $emailmessage['Subject']?></td>
-                        <td><?= $emailmessage['emailmessage_pk']?></td>
                     </tr>
                     <?php
                     $counter++;
