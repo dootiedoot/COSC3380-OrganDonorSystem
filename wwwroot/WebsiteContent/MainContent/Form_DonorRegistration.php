@@ -191,6 +191,23 @@
                     <option value="8">O-</option>
                 </select>
             </div>
+            
+            <!--    ORGAN   -->
+            <div class="w3-padding">
+                <select class="w3-select" name="organ">
+                    <option value="" disabled selected>Select Organ</option>
+                    <option value="1">Kidney</option>
+                    <option value="2">Liver-</option>
+                    <option value="3">Lung</option>
+                    <option value="4">Heart</option>
+                    <option value="5">Pancreas</option>
+                    <option value="6">Small Intestine</option>
+                    <option value="7">Large Intestine</option>
+                    <option value="8">Hand</option>
+                    <option value="9">Face</option>
+                </select>
+            </div
+
 
             <!--    HLA Marker A1   -->
             <div class="w3-padding">
