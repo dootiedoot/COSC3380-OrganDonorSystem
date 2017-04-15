@@ -47,11 +47,12 @@ if(!empty($_POST))
         $HLA_DRB1 = $_POST['HLAMarkers_DRB1'];
         $HLA_DRB2 = $_POST['HLAMarkers_DRB2'];
         $organ = $_POST['organ'];
+        $regionNum = 1;
 
         // Insert data
         $sql_insert = "
-            INSERT INTO recipient (FirstName, MiddleInitial, LastName, Sex, DateOfBirth, RecentAddress, City, State, ZIPcode, Email, PhoneNum, Weight, BloodType, HLAMarkers_A1, HLAMarkers_A2, HLAMarkers_B1, HLAMarkers_B2, HLAMarkers_C1, HLAMarkers_C2, HLAMarkers_DRB1, HLAMarkers_DRB2, Organ) 
-            VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+            INSERT INTO recipient (FirstName, MiddleInitial, LastName, Sex, DateOfBirth, RecentAddress, City, State, ZIPcode, Email, PhoneNum, Weight, BloodType, HLAMarkers_A1, HLAMarkers_A2, HLAMarkers_B1, HLAMarkers_B2, HLAMarkers_C1, HLAMarkers_C2, HLAMarkers_DRB1, HLAMarkers_DRB2, Organ, RegionNum) 
+            VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
             ";
 
         $stmt = $conn->prepare($sql_insert);
@@ -77,6 +78,7 @@ if(!empty($_POST))
         $stmt->bindValue(20, $HLA_DRB1);
         $stmt->bindValue(21, $HLA_DRB2);
         $stmt->bindValue(22, $organ);
+        $stmt->bindValue(23, $regionNum);
         $stmt->execute();
 
         //  Remove from POST array so inputs are not repeated
