@@ -25,14 +25,20 @@
 		<h1>How to donate</h1>
 	</div>
 		<p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
+             		If you wish to donate, look up your state's organ donation website and register to be a donor. 
+			The chance to save a life is just a few clicks away!
 		</p>
 	<div class="w3-panel w3-green w3-round">
 		<h2>Facts about organ donation</h2>
 	</div>
-        <p>
-            Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
-        </p>
+        
+    <ul>
+		<li>Anyone can be a donor, no matter the age. The medical condition of the donor will be evaluated and determine whether they are eligible to donate.</li>
+		<li>Only the information that will ensure the compatibility, such as blood type, HLA markers, and other pertinent medical information are important for receiving or donating an organ.</li>
+		<li>The list of organs and tissues that can be donated includes: bone, heart, lungs, kidneys, pancreas, liver, intestines, tendons, heart valves, corneas, and skin.</li>
+		<li>Even if you have registered as a donor, it is wise to inform your family so they may understand the decision.</li>
+	</ul>
+        
 		
 	<div class="w3-panel w3-green w3-round">
 		<h2>Live donations</h2>
