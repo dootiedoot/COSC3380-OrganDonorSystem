@@ -29,13 +29,13 @@
 
         <form method="post" action="/Action_LoginUser.php" enctype="multipart/form-data" class="w3-container">
 <!--        Username input   -->
-            <div class="w3-padding w3-center" style="width:40%">
+            <div class="w3-padding w3-center" style="width:40%; margin-left: auto; margin-right: auto">
                 <input class="w3-input w3-border" type="text" name="username" id="username" required placeholder="Insert username...">
                 <label class="w3-label w3-padding w3-validate">Username</label>
             </div>
 
 <!--        Password input    -->
-            <div class="w3-padding w3-center" style="width:40%">
+            <div class="w3-padding w3-center" style="width:40%; margin-left: auto; margin-right: auto">
                 <input class="w3-input w3-border" type="password" name="password" id="password" required placeholder="Insert password...">
                 <label class="w3-label w3-padding w3-validate">Password</label>
             </div>

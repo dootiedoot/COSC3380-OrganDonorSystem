@@ -2,8 +2,12 @@
 <?php
     session_start();
     if( $_SESSION['userRole'] != "Admin" &&
-        $_SESSION['userRole'] != "Doctor" )
-        header("Location: /");
+        $_SESSION['userRole'] != "Doctor" &&
+        $_SESSION['userRole'] != "Surgeon" &&
+        $_SESSION['userRole'] != "Donor" &&
+        $_SESSION['userRole'] != "Recipient"){
+            header("Location: /");
+        }
 ?>
 
 <!--    PAGE HEADER   -->
@@ -28,7 +32,7 @@
 
 <!-- Main content: shift it to the right by 270 pixels when the sidebar is visible -->
 <?php
-    require "WebsiteContent/MainContent/Table_emailrecipients.php";
+    require "WebsiteContent/MainContent/Form_SendMessage.php";
 ?>
 
 <!--    PAGE FOOTER  -->
