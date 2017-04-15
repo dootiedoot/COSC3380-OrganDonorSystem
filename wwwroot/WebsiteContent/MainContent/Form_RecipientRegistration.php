@@ -1,9 +1,9 @@
 <div class="w3-main w3-container" style="margin-left:270px;margin-top:117px;">
 
-    <!--    Show donor registration status if any -->
+    <!--    Show recipient registration status if any -->
     <?php
     session_start();
-    if ($_SESSION['donorRegistrationStatus'] == "Successful")
+    if ($_SESSION['recipientRegistrationStatus'] == "Successful")
     { ?>
 
         <div class="w3-panel w3-green w3-display-container">
@@ -12,9 +12,9 @@
             <h3>Registration Successful!</h3>
         </div>
 
-        <?php unset($_SESSION['donorRegistrationStatus']);
+        <?php unset($_SESSION['recipientRegistrationStatus']);
     }
-    else if ($_SESSION['donorRegistrationStatus'] == "Unsuccessful")
+    else if ($_SESSION['recipientRegistrationStatus'] == "Unsuccessful")
     { ?>
         <div class="w3-panel w3-red w3-display-container">
                 <span onclick="this.parentElement.style.display='none'"
@@ -22,22 +22,22 @@
             <h3>Registration Unsuccessful!</h3>
         </div>
 
-        <?php unset($_SESSION['donorRegistrationStatus']);
+        <?php unset($_SESSION['recipientRegistrationStatus']);
     } ?>
 
-<!-- Donor registration form -->
+<!-- Recipient registration form -->
     <div class="w3-container w3-green w3-card-4 w3-center">
-        <h2>Donor Registration</h2>
+        <h2>Recipient Registration</h2>
     </div>
 
-    <div id="mainDonorRegistrationForm" class="w3-container w3-padding-large w3-card-4 w3-light-grey">
-        <!--        <h1 class="w3-jumbo">Donor Registration</h1>-->
+    <div id="mainrecipientRegistrationForm" class="w3-container w3-padding-large w3-card-4 w3-light-grey">
+        <!--        <h1 class="w3-jumbo">recipient Registration</h1>-->
         <!--        <p class="w3-xlarge">sub title</p>-->
         <!--            <form action="/action_page.php" class="w3-container">-->
 
 <!--            <p>sub title stuff.</p>-->
 
-        <form method="post" action="/Action_RegisterDonor.php" enctype="multipart/form-data" class="w3-container" >
+        <form method="post" action="/Action_RegisterRecipient.php" enctype="multipart/form-data" class="w3-container" >
             <div class="w3-row-padding">
                 <div class="w3-col" style="width:40%">
                     <input class="w3-input w3-border" type="text" name="firstName" id="firstName" required placeholder="Insert first name...">
@@ -191,6 +191,23 @@
                     <option value="8">O-</option>
                 </select>
             </div>
+            
+            <!--    ORGAN   -->
+            <div class="w3-padding">
+                <select class="w3-select" name="organ">
+                    <option value="" disabled selected>Select Organ</option>
+                    <option value="1">Kidney</option>
+                    <option value="2">Liver-</option>
+                    <option value="3">Lung</option>
+                    <option value="4">Heart</option>
+                    <option value="5">Pancreas</option>
+                    <option value="6">Small Intestine</option>
+                    <option value="7">Large Intestine</option>
+                    <option value="8">Hand</option>
+                    <option value="9">Face</option>
+                </select>
+            </div
+
 
             <!--    HLA Marker A1   -->
             <div class="w3-padding">

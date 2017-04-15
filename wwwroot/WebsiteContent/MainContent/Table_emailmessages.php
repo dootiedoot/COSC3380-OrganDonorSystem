@@ -10,8 +10,8 @@
         <?php
         $sql_select = "SELECT * FROM emailmessage LIMIT 0, 100";
         $stmt = $conn->query($sql_select);
-        $emailmessage = $stmt->fetchAll();
-        if(count($emailmessage) > 0)
+        $emailmessages = $stmt->fetchAll();
+        if(count($emailmessages) > 0)
         {?>
             <table class="w3-table-all">
                 <thead>
@@ -20,7 +20,6 @@
                     <th>Recipient</th>
                     <th>Body</th>
                     <th>Subject</th>
-                    <th>emailmessage_pk</th>
                 </tr>
                 </thead>
 
@@ -33,7 +32,6 @@
                         <td><?= $emailmessage['Recipient']?></td>
                         <td><?= $emailmessage['Body']?></td>
                         <td><?= $emailmessage['Subject']?></td>
-                        <td><?= $emailmessage['emailmessage_pk']?></td>
                     </tr>
                     <?php
                     $counter++;

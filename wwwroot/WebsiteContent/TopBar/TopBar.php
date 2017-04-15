@@ -13,7 +13,7 @@
         <!--        Left side of the bar-->
         <a class="w3-bar-item w3-button w3-hide-medium w3-hide-small w3-hover-white w3-padding-16" href='/'> <i class="fa fa-home"></i> Home</a>
         <a class="w3-bar-item w3-button w3-hide-medium w3-hover-white w3-padding-16"> <i class="fa fa-book"></i> Learn</a>
-        <a class="w3-bar-item w3-button w3-hide-medium w3-hover-white w3-padding-16"> <i class="fa fa-comments"></i> Get Involved</a>
+        <a href="/page_emailmessages.php" class="w3-bar-item w3-button w3-hide-medium w3-hover-white w3-padding-16"> <i class="fa fa-comments"></i> Messages</a>
 
         <!--        Right side of the bar -->
 <!--            <a class="w3-bar-item w3-button w3-hide-medium w3-hover-white w3-padding-16 w3-right" id="buttonLogin">Log out/a>-->
