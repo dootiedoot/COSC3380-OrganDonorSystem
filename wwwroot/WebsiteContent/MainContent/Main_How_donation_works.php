@@ -6,14 +6,13 @@
         <!-- Information on How it works: -->
 
 	<div class="w3-panel w3-green w3-round">
-		<h1>Your decision matters</h1>
+		<h1>Your Decision Matters</h1>
 	</div>
 		<p>
-		The organ donation process begins with you. The decision to donate can help save lives.
-		First, <a href="https://www.organdonor.gov/register.html?gclid=CjwKEAjwlKLHBRDztKr6wMnRthMSJAALcT-scetIV0AhrBHDvxNzzN_Eu8vJarEOov-78cV5tQIaABoCb-Tw_wcB">sign up here to be an organ donor.</a> Then, when the time comes, your organs could be used to save the lives of others. And all from one small decision to donate! 
+		The organ donation process begins with you. The decision to donate can help save lives. When the time comes, your organs could be used to save the lives of others. And all from one small decision to donate!
 		</p>
 	<div class="w3-panel w3-green w3-round">
-		<h2>Facts about organ donation</h2>
+		<h2>Facts About Organ Donation</h2>
 	</div>
 		<ul class="w3-ul w3-card-4">
 			<li>Anyone can be a donor, no matter the age. The medical condition of the donor will be evaluated and determine whether they are eligible to donate.</li>
@@ -22,7 +21,7 @@
 			<li>Even if you have registered as a donor, it is wise to inform your family so they may understand the decision.</li>
 		</ul>
 	<div class="w3-panel w3-green w3-round">
-		<h2>Live donations</h2>
+		<h2>Live Donations</h2>
 	</div>
 		<p>
 			Many people still require transplants, but supply does not meet demand yet. Donating parts of the liver, a kidney, or tissue can help increase the supply of organs and improve the lives of others.
