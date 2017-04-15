@@ -22,17 +22,12 @@
         <!-- Information on How it works: -->
 
 	<div class="w3-panel w3-green w3-round">
-		<h1>How to donate</h1>
+		<h1>How you can help us</h1>
 	</div>
 		<p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
+            If you haven't already, register to be a donor! If you want to help in a more big picture sort of way, message your government representatives and ask them to vote to change organ donation to an "opt-out" consent process. The Opt-out system makes it so that every person is already defaulted to opting into being a donor. One wouldn't expect this to be such a big deal, but statistics show that areas where the default choice is to be an organ donor have much higher numbers of organ donors compared to other places. This helps save lives, and still gives those people that do not want to donate their organs the option to opt-out of the list of donors without any repercussions. 
 		</p>
-	<div class="w3-panel w3-green w3-round">
-		<h2>Facts about organ donation</h2>
-	</div>
-        <p>
-            Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
-        </p>
+	
 		
 	<div class="w3-panel w3-green w3-round">
 		<h2>Live donations</h2>
