@@ -18,8 +18,8 @@
                 <tr class="w3-green">
                     <th>Sender</th>
                     <th>Recipient</th>
-                    <th>Body</th>
                     <th>Subject</th>
+                    <th>Body</th>
                 </tr>
                 </thead>
 
@@ -30,8 +30,8 @@
                     <tr class="w3-hover-green">
                         <td><?= $emailmessage['Sender']?></td>
                         <td><?= $emailmessage['Recipient']?></td>
-                        <td><?= $emailmessage['Body']?></td>
                         <td><?= $emailmessage['Subject']?></td>
+                        <td><?= $emailmessage['Body']?></td>
                     </tr>
                     <?php
                     $counter++;
