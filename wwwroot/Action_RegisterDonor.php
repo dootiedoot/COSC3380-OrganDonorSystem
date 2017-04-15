@@ -5,20 +5,6 @@ session_start();
 require "Database/MySQLconfig.php";
 //require "Database/updateDateAddedtoDB.php";
 
-//$firstName;
-//$middleInit;
-//$lastName;
-//$sex;
-//$birthDate;
-//$recentAddress;
-//$city;
-//$state;
-//$zipcode;
-////$weight;
-////$bloodType;
-//$email;
-//$phoneNum;
-
 //             Following the database connection code, add code for inserting registration information into the database.
 if(!empty($_POST))
 {
@@ -34,10 +20,11 @@ if(!empty($_POST))
         $city = $_POST['city'];
         $state = $_POST['state'];
         $zipcode = $_POST['zipCode'];
-        $weight = $_POST['weight'];
-        $bloodType = $_POST['bloodType'];
         $email = $_POST['email'];
         $phoneNum = $_POST['phoneNum'];
+        $weight = $_POST['weight'];
+        $bloodType = $_POST['bloodType'];
+        $organ = $_POST['organ'];
         $HLA_A1 = $_POST['HLAMarkers_A1'];
         $HLA_A2 = $_POST['HLAMarkers_A2'];
         $HLA_B1 = $_POST['HLAMarkers_B1'];
@@ -46,13 +33,14 @@ if(!empty($_POST))
         $HLA_C2 = $_POST['HLAMarkers_C2'];
         $HLA_DRB1 = $_POST['HLAMarkers_DRB1'];
         $HLA_DRB2 = $_POST['HLAMarkers_DRB2'];
-        
+        $regionNum = 1;
 
         // Insert data
         $sql_insert = "
-            INSERT INTO donor (FirstName, MiddleInitial, LastName, Sex, DateOfBirth, RecentAddress, City, State, ZIPcode, Email, PhoneNum, Weight, 
-                HLAMarkers_A1, HLAMarkers_A2, HLAMarkers_B1, HLAMarkers_B2, HLAMarkers_C1, HLAMarkers_C2, HLAMarkers_DRB1, HLAMarkers_DRB2) 
-            VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+            INSERT INTO donor (FirstName, MiddleInitial, LastName, Sex, DateOfBirth, RecentAddress, City, State, ZIPcode, Email, PhoneNum, Weight, BloodType, 
+              HLAMarkers_A1, HLAMarkers_A2, HLAMarkers_B1, HLAMarkers_B2, HLAMarkers_C1, HLAMarkers_C2, HLAMarkers_DRB1, HLAMarkers_DRB2, 
+              Organ, RegionNum) 
+            VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
             ";
 
         $stmt = $conn->prepare($sql_insert);
@@ -77,6 +65,8 @@ if(!empty($_POST))
         $stmt->bindValue(19, $HLA_C2);
         $stmt->bindValue(20, $HLA_DRB1);
         $stmt->bindValue(21, $HLA_DRB2);
+        $stmt->bindValue(22, $organ);
+        $stmt->bindValue(23, $regionNum);
         $stmt->execute();
 
         //  Remove from POST array so inputs are not repeated
@@ -93,6 +83,15 @@ if(!empty($_POST))
         unset($_POST['phoneNum']);
         unset($_POST['weight']);
         unset($_POST['bloodType']);
+        unset($_POST['HLA_A1']);
+        unset($_POST['HLA_A2']);
+        unset($_POST['HLA_B1']);
+        unset($_POST['HLA_B2']);
+        unset($_POST['HLA_C1']);
+        unset($_POST['HLA_C2']);
+        unset($_POST['HLA_DRB1']);
+        unset($_POST['HLA_DRB2']);
+        unset($_POST['organ']);
 
         //  Set donor registration error status
         $_SESSION['donorRegistrationStatus'] = "Successful";

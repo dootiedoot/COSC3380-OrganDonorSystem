@@ -5,20 +5,6 @@ session_start();
 require "Database/MySQLconfig.php";
 //require "Database/updateDateAddedtoDB.php";
 
-//$firstName;
-//$middleInit;
-//$lastName;
-//$sex;
-//$birthDate;
-//$recentAddress;
-//$city;
-//$state;
-//$zipcode;
-////$weight;
-////$bloodType;
-//$email;
-//$phoneNum;
-
 //             Following the database connection code, add code for inserting registration information into the database.
 if(!empty($_POST))
 {
@@ -34,10 +20,11 @@ if(!empty($_POST))
         $city = $_POST['city'];
         $state = $_POST['state'];
         $zipcode = $_POST['zipCode'];
-        $weight = $_POST['weight'];
-        $bloodType = $_POST['bloodType'];
         $email = $_POST['email'];
         $phoneNum = $_POST['phoneNum'];
+        $weight = $_POST['weight'];
+        $bloodType = $_POST['bloodType'];
+        $organ = $_POST['organ'];
         $HLA_A1 = $_POST['HLAMarkers_A1'];
         $HLA_A2 = $_POST['HLAMarkers_A2'];
         $HLA_B1 = $_POST['HLAMarkers_B1'];
@@ -46,12 +33,13 @@ if(!empty($_POST))
         $HLA_C2 = $_POST['HLAMarkers_C2'];
         $HLA_DRB1 = $_POST['HLAMarkers_DRB1'];
         $HLA_DRB2 = $_POST['HLAMarkers_DRB2'];
-        $organ = $_POST['organ'];
         $regionNum = 1;
 
         // Insert data
         $sql_insert = "
-            INSERT INTO recipient (FirstName, MiddleInitial, LastName, Sex, DateOfBirth, RecentAddress, City, State, ZIPcode, Email, PhoneNum, Weight, BloodType, HLAMarkers_A1, HLAMarkers_A2, HLAMarkers_B1, HLAMarkers_B2, HLAMarkers_C1, HLAMarkers_C2, HLAMarkers_DRB1, HLAMarkers_DRB2, Organ, RegionNum) 
+            INSERT INTO recipient (FirstName, MiddleInitial, LastName, Sex, DateOfBirth, RecentAddress, City, State, ZIPcode, Email, PhoneNum, Weight, BloodType, 
+              HLAMarkers_A1, HLAMarkers_A2, HLAMarkers_B1, HLAMarkers_B2, HLAMarkers_C1, HLAMarkers_C2, HLAMarkers_DRB1, HLAMarkers_DRB2, 
+              Organ, RegionNum) 
             VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
             ";
 

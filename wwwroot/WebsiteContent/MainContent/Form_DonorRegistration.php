@@ -190,7 +190,25 @@
                     <option value="7">O+</option>
                     <option value="8">O-</option>
                 </select>
+                <label class="w3-label">Blood Type</label>
             </div>
+
+            <!--    ORGAN   -->
+            <div class="w3-padding">
+                <select class="w3-select" name="organ" required>
+                    <option value="" disabled selected>Select Organ</option>
+                    <option value="1">Kidney</option>
+                    <option value="2">Liver</option>
+                    <option value="3">Lung</option>
+                    <option value="4">Heart</option>
+                    <option value="5">Pancreas</option>
+                    <option value="6">Small Intestine</option>
+                    <option value="7">Large Intestine</option>
+                    <option value="8">Hand</option>
+                    <option value="9">Face</option>
+                </select>
+                <label class="w3-label">Donating Organ</label>
+            </div
 
             <!--    HLA Marker A1   -->
             <div class="w3-padding">
@@ -200,7 +218,7 @@
                     <option value="2" label="Blue">Blue</option>
                     <option value="3" label="White">White</option>
                 </select>
-                <label class="w3-label w3-validate">HLAMarkers_A1</label>
+                <label class="w3-label w3-validate">HLAMarkers A1</label>
             </div>
 
             <!--    HLA Marker A2   -->
@@ -211,7 +229,7 @@
                     <option value="2" label="Blue">Blue</option>
                     <option value="3" label="White">White</option>
                 </select>
-                <label class="w3-label w3-validate">HLAMarkers_A2</label>
+                <label class="w3-label w3-validate">HLAMarkers A2</label>
             </div>
 
             <!--    HLA Marker B1  -->
@@ -222,7 +240,7 @@
                     <option value="2" label="Blue">Blue</option>
                     <option value="3" label="White">White</option>
                 </select>
-                <label class="w3-label w3-validate">HLAMarkers_B1</label>
+                <label class="w3-label w3-validate">HLAMarkers B1</label>
             </div>
 
             <!--    HLA Marker B2  -->
@@ -233,7 +251,7 @@
                     <option value="2" label="Blue">Blue</option>
                     <option value="3" label="White">White</option>
                 </select>
-                <label class="w3-label w3-validate">HLAMarkers_B2</label>
+                <label class="w3-label w3-validate">HLAMarkers B2</label>
             </div>
 
             <!--    HLA Marker C1   -->
@@ -244,7 +262,7 @@
                     <option value="2" label="Blue">Blue</option>
                     <option value="3" label="White">White</option>
                 </select>
-                <label class="w3-label w3-validate">HLAMarkers_C1</label>
+                <label class="w3-label w3-validate">HLAMarkers C1</label>
             </div>
 
             <!--    HLA Marker C2   -->
@@ -255,7 +273,7 @@
                     <option value="2" label="Blue">Blue</option>
                     <option value="3" label="White">White</option>
                 </select>
-                <label class="w3-label w3-validate">HLAMarkers_C2</label>
+                <label class="w3-label w3-validate">HLAMarkers C2</label>
             </div>
 
             <!--    HLA Marker DRB1  -->
@@ -266,7 +284,7 @@
                     <option value="2" label="Blue">Blue</option>
                     <option value="3" label="White">White</option>
                 </select>
-                <label class="w3-label w3-validate">HLAMarkers_DRB1</label>
+                <label class="w3-label w3-validate">HLAMarkers DRB1</label>
             </div>
 
             <!--    HLA Marker DRB2   -->
@@ -277,7 +295,7 @@
                     <option value="2" label="Blue">Blue</option>
                     <option value="3" label="White">White</option>
                 </select>
-                <label class="w3-label w3-validate">HLAMarkers_DRB2</label>
+                <label class="w3-label w3-validate">HLAMarkers DRB2</label>
             </div>
 
             <div class="w3-padding w3-centered">
