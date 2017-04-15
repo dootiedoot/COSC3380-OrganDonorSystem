@@ -43,7 +43,7 @@
                 <input class="w3-input w3-border" type="text" name="messageSubject" id="messageSubject" required placeholder="Subject:">
             </div>
 
-<!--        message subject input    -->
+<!--        message body input    -->
             <div class="w3-padding w3-center" style="width:40%; margin-left: auto; margin-right: auto">
                 <label class="w3-label w3-padding w3-validate">Message Body</label> </br>
                 <textarea rows="15" cols="80" name="messageBody" required placeholder="Body:"> </textarea>
