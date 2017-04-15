@@ -40,6 +40,7 @@
         <div class="w3-green w3-center w3-hover-white w3-bar-item w3-button w3-round" onclick="ToggleElement('dropmenu_Recipients')"> Recipients <i class="fa fa-angle-down"></i></div>
 
         <div id="dropmenu_Recipients" class="w3-hide w3-show w3-white w3-card-4">
+            <a href="/Page_RegisterRecipientForm.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-address-card-o"></i> Register A Recipient</a>
             <a href="/Page_Recipients.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-address-card-o"></i> See Recipients</a>
             <a href="/Page_Matches.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-handshake-o"></i> See Matches</a>
             <a href="/recipientOrganStats.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-handshake-o"></i> Recipient Organ Stats</a>
