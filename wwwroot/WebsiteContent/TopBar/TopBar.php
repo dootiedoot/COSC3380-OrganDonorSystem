@@ -17,8 +17,8 @@
         //  if a username is currently active, show username welcome and logout button
         if (isset($_SESSION['username']))
         {?>
-            <a href="/page_emailmessages.php" class="w3-bar-item w3-button w3-hide-medium w3-hover-white w3-padding-16"> <i class="fa fa-server"></i>View Message</a>
-            <a href="/page_sendmessage.php" class="w3-bar-item w3-button w3-hide-medium w3-hover-white w3-padding-16"> <i class="fa fa-comments"></i>Send Messages</a>
+            <a href="/page_emailmessages.php" class="w3-bar-item w3-button w3-hide-medium w3-hover-white w3-padding-16"> <i class="fa fa-server"></i>View Messages</a>
+            <a href="/page_sendmessage.php" class="w3-bar-item w3-button w3-hide-medium w3-hover-white w3-padding-16"> <i class="fa fa-comments"></i>Send Message</a>
         <?php } ?>
         
 
