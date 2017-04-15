@@ -33,6 +33,7 @@ if(!empty($_POST))
         $HLA_C2 = $_POST['HLAMarkers_C2'];
         $HLA_DRB1 = $_POST['HLAMarkers_DRB1'];
         $HLA_DRB2 = $_POST['HLAMarkers_DRB2'];
+        $organ = $_POST['organ'];
 
         $regionNum = 1;
 
@@ -41,17 +42,7 @@ if(!empty($_POST))
             INSERT INTO donor (FirstName, MiddleInitial, LastName, Sex, DateOfBirth, RecentAddress, City, State, ZIPcode, Email, PhoneNum, Weight, BloodType, 
               HLAMarkers_A1, HLAMarkers_A2, HLAMarkers_B1, HLAMarkers_B2, HLAMarkers_C1, HLAMarkers_C2, HLAMarkers_DRB1, HLAMarkers_DRB2, 
               Organ, RegionNum) 
-            VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?);";
-
-        $organ = $_POST['organ'];
-        
-        
-
-        // Insert data
-        $sql_insert = "
-            INSERT INTO donor (FirstName, MiddleInitial, LastName, Sex, DateOfBirth, RecentAddress, City, State, ZIPcode, Email, PhoneNum, Weight, BloodType, HLAMarkers_A1, HLAMarkers_A2, HLAMarkers_B1, HLAMarkers_B2, HLAMarkers_C1, HLAMarkers_C2, HLAMarkers_DRB1, HLAMarkers_DRB2, Organ) 
-            VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
-            ";
+            VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";      
 
         $stmt = $conn->prepare($sql_insert);
         $stmt->bindValue(1, $firstName);
