@@ -30,8 +30,8 @@ if(!empty($_POST))
         $stmt = $conn->prepare($sql_insert);
         $stmt->bindValue(1, $sender);
         $stmt->bindValue(2, $to);
-        $stmt->bindValue(3, $subject);
-        $stmt->bindValue(4, $body);
+        $stmt->bindValue(3, $body);
+        $stmt->bindValue(4, $subject);
         $stmt->execute();
 
         //  Remove from POST array so inputs are not repeated
