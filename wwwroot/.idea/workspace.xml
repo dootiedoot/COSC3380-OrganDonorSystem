@@ -15,8 +15,8 @@
       <file leaf-file-name="Table_Matches.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebsiteContent/MainContent/Table_Matches.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2040">
-              <caret line="120" column="112" lean-forward="false" selection-start-line="120" selection-start-column="112" selection-end-line="120" selection-end-column="112" />
+            <state relative-caret-position="-1623">
+              <caret line="123" column="60" lean-forward="false" selection-start-line="123" selection-start-column="60" selection-end-line="123" selection-end-column="60" />
               <folding>
                 <marker date="1492180833938" expanded="true" signature="1753:1772" ph="SELECT * FRO... donor" />
                 <marker date="1492180833938" expanded="true" signature="1912:1935" ph="SELECT * FRO... recipient" />
@@ -25,38 +25,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Table_emailmessages.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebsiteContent/MainContent/Table_emailmessages.php">
+      <file leaf-file-name="Table_Recipients.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebsiteContent/MainContent/Table_Recipients.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="-255">
+              <caret line="21" column="39" lean-forward="true" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
               <folding>
-                <marker date="1492230143196" expanded="true" signature="292:331" ph="SELECT * FRO... emailmessage" />
-                <marker date="1492230143196" expanded="true" signature="1189:1191" ph="..." />
-                <marker date="1492230143196" expanded="true" signature="1189:1223" ph="..." />
-                <marker date="1492230143196" expanded="true" signature="1189:1300" ph="{...}" />
-                <marker date="1492230143196" expanded="true" signature="1189:1322" ph="..." />
-                <marker date="1492230143196" expanded="true" signature="1364:1457" ph="{...}" />
+                <marker date="1492274304092" expanded="true" signature="420:443" ph="SELECT * FRO... recipient" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Page_emailrecipients.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Page_emailrecipients.php">
+      <file leaf-file-name="Form_SendMessage.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebsiteContent/MainContent/Form_SendMessage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="16" lean-forward="false" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Form_RecipientRegistration.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebsiteContent/MainContent/Form_RecipientRegistration.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="210" column="17" lean-forward="true" selection-start-line="210" selection-start-column="17" selection-end-line="210" selection-end-column="17" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -64,11 +49,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Page_emailmessages.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Page_emailmessages.php">
+      <file leaf-file-name="Table_Donors.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebsiteContent/MainContent/Table_Donors.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="5" lean-forward="false" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+            <state relative-caret-position="340">
+              <caret line="41" column="8" lean-forward="false" selection-start-line="41" selection-start-column="8" selection-end-line="46" selection-end-column="11" />
+              <folding>
+                <marker date="1492290394134" expanded="true" signature="1547:1579" ph="SELECT * FRO... donor" />
+                <marker date="1492290394134" expanded="true" signature="1598:1617" ph="SELECT * FRO... donor" />
+                <marker date="1492290394134" expanded="true" signature="9267:12217" ph="..." />
+                <marker date="1492290394134" expanded="true" signature="9306:9738" ph="{...}" />
+                <marker date="1492290394134" expanded="true" signature="9413:9526" ph="{...}" />
+                <marker date="1492290394134" expanded="true" signature="9548:9732" ph="{...}" />
+                <marker date="1492290394134" expanded="true" signature="9782:12208" ph="{...}" />
+                <marker date="1492290394134" expanded="true" signature="10022:10099" ph="/*...*/" />
+                <marker date="1492290394134" expanded="true" signature="10126:12202" ph="{...}" />
+                <marker date="1492290394134" expanded="true" signature="10277:10371" ph="/*...*/" />
+                <marker date="1492290394134" expanded="true" signature="10424:11497" ph="{...}" />
+                <marker date="1492290394134" expanded="true" signature="10544:10650" ph="/*...*/" />
+                <marker date="1492290394134" expanded="true" signature="10789:10889" ph="/*...*/" />
+                <marker date="1492290394134" expanded="true" signature="10924:11191" ph="{...}" />
+                <marker date="1492290394134" expanded="true" signature="11005:11173" ph="{...}" />
+                <marker date="1492290394134" expanded="true" signature="11216:11483" ph="{...}" />
+                <marker date="1492290394134" expanded="true" signature="11297:11465" ph="{...}" />
+                <marker date="1492290394134" expanded="true" signature="11528:11872" ph="{...}" />
+                <marker date="1492290394134" expanded="true" signature="11546:11649" ph="/*...*/" />
+                <marker date="1492290394134" expanded="true" signature="11878:12192" ph="{...}" />
+                <marker date="1492290394134" expanded="true" signature="11896:12032" ph="/*...*/" />
+                <marker date="1492290394134" expanded="true" signature="12087:12178" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="w3.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/W3.CSS Stylesheet/w3.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="768">
+              <caret line="365" column="1" lean-forward="false" selection-start-line="365" selection-start-column="1" selection-end-line="365" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -86,48 +104,48 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Form_DonorRegistration.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebsiteContent/MainContent/Form_DonorRegistration.php">
+      <file leaf-file-name="TopBar.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebsiteContent/TopBar/TopBar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="202" column="52" lean-forward="true" selection-start-line="202" selection-start-column="52" selection-end-line="202" selection-end-column="52" />
-              <folding>
-                <element signature="n#div#5;n#form#0;n#div#3;n#div#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Action_RegisterDonor.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Action_RegisterDonor.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="37" column="22" lean-forward="true" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
-              <folding>
-                <marker date="1492232148128" expanded="true" signature="1268:1653" ph="INSERT INTO donor... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Action_LogoutUser.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Action_LogoutUser.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="357">
+              <caret line="21" column="18" lean-forward="true" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Action_RegisterRecipient.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Action_RegisterRecipient.php">
+      <file leaf-file-name="Table_Patient.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/WebsiteContent/MainContent/Table_Patient.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="86" column="32" lean-forward="true" selection-start-line="86" selection-start-column="32" selection-end-line="86" selection-end-column="32" />
+            <state relative-caret-position="340">
+              <caret line="26" column="45" lean-forward="true" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
               <folding>
-                <marker date="1492231371512" expanded="true" signature="1268:1657" ph="INSERT INTO recipient... " />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <marker date="1492291425892" expanded="true" signature="305:342" ph="SELECT * FRO... donor" />
+                <marker date="1492291425892" expanded="true" signature="305:351" ph="SELECT * FRO... donor" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Action_LoginUser.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Action_LoginUser.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="8" lean-forward="false" selection-start-line="23" selection-start-column="8" selection-end-line="24" selection-end-column="9" />
+              <folding>
+                <marker date="1491834364317" expanded="true" signature="355:425" ph="SELECT * FRO... user" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Page_Patient.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Page_Patient.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="28" column="61" lean-forward="true" selection-start-line="28" selection-start-column="61" selection-end-line="28" selection-end-column="61" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -137,7 +155,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/WebsiteContent/MainContent/Table_Donors.php" />
         <option value="$PROJECT_DIR$/WebsiteContent/MainContent/Table_Matches.php" />
         <option value="$PROJECT_DIR$/Page_emailmessages.php" />
         <option value="$PROJECT_DIR$/Page_emailrecipients.php" />
@@ -145,6 +162,12 @@
         <option value="$PROJECT_DIR$/WebsiteContent/MainContent/Form_RecipientRegistration.php" />
         <option value="$PROJECT_DIR$/Action_RegisterRecipient.php" />
         <option value="$PROJECT_DIR$/Action_RegisterDonor.php" />
+        <option value="$PROJECT_DIR$/Page_Patient.php" />
+        <option value="$PROJECT_DIR$/Action_UpdatePatient.php" />
+        <option value="$PROJECT_DIR$/WebsiteContent/MainContent/Table_Recipients.php" />
+        <option value="$PROJECT_DIR$/W3.CSS Stylesheet/w3.css" />
+        <option value="$PROJECT_DIR$/WebsiteContent/MainContent/Table_Donors.php" />
+        <option value="$PROJECT_DIR$/WebsiteContent/MainContent/Table_Patient.php" />
       </list>
     </option>
   </component>
@@ -156,8 +179,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="142" />
-    <option name="y" value="29" />
+    <option name="x" value="122" />
+    <option name="y" value="8" />
     <option name="width" value="1704" />
     <option name="height" value="1045" />
   </component>
@@ -176,8 +199,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -258,6 +281,20 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wwwroot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wwwroot" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="W3.CSS Stylesheet" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -265,6 +302,12 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\chadh\OneDrive\Documents\GitHub\COSC3380-OrganDonorSystem\wwwroot" />
+      <recent name="C:\Users\chadh\OneDrive\Documents\GitHub\COSC3380-OrganDonorSystem\wwwroot\WebsiteContent\MainContent" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -360,14 +403,15 @@
       <workItem from="1491985495726" duration="4117000" />
       <workItem from="1492180749365" duration="478000" />
       <workItem from="1492230590359" duration="1586000" />
+      <workItem from="1492268444250" duration="5554000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11963000" />
+    <option name="totallyTimeSpent" value="17517000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="142" y="29" width="1704" height="1045" extended-state="0" />
+    <frame x="122" y="8" width="1704" height="1045" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -400,6 +444,68 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/WebsiteContent/MainContent/Form_RecipientRegistration.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3570">
+          <caret line="210" column="17" lean-forward="true" selection-start-line="210" selection-start-column="17" selection-end-line="210" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Page_emailmessages.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="5" lean-forward="false" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebsiteContent/MainContent/Table_emailrecipients.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1492180688244" expanded="true" signature="294:336" ph="SELECT * FRO... emailrecipients" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebsiteContent/MainContent/Form_DonorRegistration.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3434">
+          <caret line="202" column="52" lean-forward="true" selection-start-line="202" selection-start-column="52" selection-end-line="202" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Action_LogoutUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Action_RegisterRecipient.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1462">
+          <caret line="86" column="32" lean-forward="true" selection-start-line="86" selection-start-column="32" selection-end-line="86" selection-end-column="32" />
+          <folding>
+            <marker date="1492231371512" expanded="true" signature="1268:1657" ph="INSERT INTO recipient... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Action_RegisterDonor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="22" lean-forward="true" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
+          <folding>
+            <marker date="1492232148128" expanded="true" signature="1268:1653" ph="INSERT INTO donor... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/WebsiteContent/MainContent/Table_Matches.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2040">
@@ -416,12 +522,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1492230143196" expanded="true" signature="292:331" ph="SELECT * FRO... emailmessage" />
-            <marker date="1492230143196" expanded="true" signature="1189:1191" ph="..." />
-            <marker date="1492230143196" expanded="true" signature="1189:1223" ph="..." />
-            <marker date="1492230143196" expanded="true" signature="1189:1300" ph="{...}" />
-            <marker date="1492230143196" expanded="true" signature="1189:1322" ph="..." />
-            <marker date="1492230143196" expanded="true" signature="1364:1457" ph="{...}" />
+            <marker date="1492268429452" expanded="true" signature="399:448" ph="SELECT email... user" />
+            <marker date="1492268429452" expanded="true" signature="593:632" ph="SELECT * FRO... emailmessage" />
+            <marker date="1492268429452" expanded="true" signature="1659:1692" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -449,8 +552,28 @@
         <state relative-caret-position="2091">
           <caret line="123" column="48" lean-forward="false" selection-start-line="123" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
           <folding>
-            <marker date="1492180592923" expanded="true" signature="1547:1579" ph="SELECT * FRO... donor" />
-            <marker date="1492180592923" expanded="true" signature="1598:1617" ph="SELECT * FRO... donor" />
+            <marker date="1492290394134" expanded="true" signature="1547:1579" ph="SELECT * FRO... donor" />
+            <marker date="1492290394134" expanded="true" signature="1598:1617" ph="SELECT * FRO... donor" />
+            <marker date="1492290394134" expanded="true" signature="9267:12217" ph="..." />
+            <marker date="1492290394134" expanded="true" signature="9306:9738" ph="{...}" />
+            <marker date="1492290394134" expanded="true" signature="9413:9526" ph="{...}" />
+            <marker date="1492290394134" expanded="true" signature="9548:9732" ph="{...}" />
+            <marker date="1492290394134" expanded="true" signature="9782:12208" ph="{...}" />
+            <marker date="1492290394134" expanded="true" signature="10022:10099" ph="/*...*/" />
+            <marker date="1492290394134" expanded="true" signature="10126:12202" ph="{...}" />
+            <marker date="1492290394134" expanded="true" signature="10277:10371" ph="/*...*/" />
+            <marker date="1492290394134" expanded="true" signature="10424:11497" ph="{...}" />
+            <marker date="1492290394134" expanded="true" signature="10544:10650" ph="/*...*/" />
+            <marker date="1492290394134" expanded="true" signature="10789:10889" ph="/*...*/" />
+            <marker date="1492290394134" expanded="true" signature="10924:11191" ph="{...}" />
+            <marker date="1492290394134" expanded="true" signature="11005:11173" ph="{...}" />
+            <marker date="1492290394134" expanded="true" signature="11216:11483" ph="{...}" />
+            <marker date="1492290394134" expanded="true" signature="11297:11465" ph="{...}" />
+            <marker date="1492290394134" expanded="true" signature="11528:11872" ph="{...}" />
+            <marker date="1492290394134" expanded="true" signature="11546:11649" ph="/*...*/" />
+            <marker date="1492290394134" expanded="true" signature="11878:12192" ph="{...}" />
+            <marker date="1492290394134" expanded="true" signature="11896:12032" ph="/*...*/" />
+            <marker date="1492290394134" expanded="true" signature="12087:12178" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -459,12 +582,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="85" lean-forward="false" selection-start-line="20" selection-start-column="85" selection-end-line="20" selection-end-column="85" />
-          <folding>
-            <marker date="1492230143198" expanded="true" signature="1146:1984" ph="..." />
-            <marker date="1492230143198" expanded="true" signature="1275:1576" ph="{...}" />
-            <marker date="1492230143198" expanded="true" signature="1359:1380" ph="..." />
-            <marker date="1492230143198" expanded="true" signature="1634:1975" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -472,9 +590,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#div#5;n#form#0;n#div#3;n#div#0;n#!!top" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -483,7 +599,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1491873672811" expanded="true" signature="420:457" ph="SELECT * FRO... recipient" />
+            <marker date="1492274304092" expanded="true" signature="420:443" ph="SELECT * FRO... recipient" />
           </folding>
         </state>
       </provider>
@@ -492,7 +608,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="16" lean-forward="true" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-          <folding />
+          <folding>
+            <marker date="1492268429448" expanded="true" signature="641:648" ph="..." />
+            <marker date="1492268429448" expanded="true" signature="682:724" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -512,8 +631,28 @@
         <state relative-caret-position="2074">
           <caret line="122" column="48" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
           <folding>
-            <marker date="1492180592923" expanded="true" signature="1547:1579" ph="SELECT * FRO... donor" />
-            <marker date="1492180592923" expanded="true" signature="1598:1617" ph="SELECT * FRO... donor" />
+            <marker date="1492290394134" expanded="true" signature="1547:1579" ph="SELECT * FRO... donor" />
+            <marker date="1492290394134" expanded="true" signature="1598:1617" ph="SELECT * FRO... donor" />
+            <marker date="1492290394134" expanded="true" signature="9267:12217" ph="..." />
+            <marker date="1492290394134" expanded="true" signature="9306:9738" ph="{...}" />
+            <marker date="1492290394134" expanded="true" signature="9413:9526" ph="{...}" />
+            <marker date="1492290394134" expanded="true" signature="9548:9732" ph="{...}" />
+            <marker date="1492290394134" expanded="true" signature="9782:12208" ph="{...}" />
+            <marker date="1492290394134" expanded="true" signature="10022:10099" ph="/*...*/" />
+            <marker date="1492290394134" expanded="true" signature="10126:12202" ph="{...}" />
+            <marker date="1492290394134" expanded="true" signature="10277:10371" ph="/*...*/" />
+            <marker date="1492290394134" expanded="true" signature="10424:11497" ph="{...}" />
+            <marker date="1492290394134" expanded="true" signature="10544:10650" ph="/*...*/" />
+            <marker date="1492290394134" expanded="true" signature="10789:10889" ph="/*...*/" />
+            <marker date="1492290394134" expanded="true" signature="10924:11191" ph="{...}" />
+            <marker date="1492290394134" expanded="true" signature="11005:11173" ph="{...}" />
+            <marker date="1492290394134" expanded="true" signature="11216:11483" ph="{...}" />
+            <marker date="1492290394134" expanded="true" signature="11297:11465" ph="{...}" />
+            <marker date="1492290394134" expanded="true" signature="11528:11872" ph="{...}" />
+            <marker date="1492290394134" expanded="true" signature="11546:11649" ph="/*...*/" />
+            <marker date="1492290394134" expanded="true" signature="11878:12192" ph="{...}" />
+            <marker date="1492290394134" expanded="true" signature="11896:12032" ph="/*...*/" />
+            <marker date="1492290394134" expanded="true" signature="12087:12178" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -522,12 +661,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="85" lean-forward="false" selection-start-line="20" selection-start-column="85" selection-end-line="20" selection-end-column="85" />
-          <folding>
-            <marker date="1492230143198" expanded="true" signature="1146:1984" ph="..." />
-            <marker date="1492230143198" expanded="true" signature="1275:1576" ph="{...}" />
-            <marker date="1492230143198" expanded="true" signature="1359:1380" ph="..." />
-            <marker date="1492230143198" expanded="true" signature="1634:1975" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -535,9 +669,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#div#5;n#form#0;n#div#3;n#div#0;n#!!top" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -546,7 +678,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1491873672811" expanded="true" signature="420:457" ph="SELECT * FRO... recipient" />
+            <marker date="1492274304092" expanded="true" signature="420:443" ph="SELECT * FRO... recipient" />
           </folding>
         </state>
       </provider>
@@ -555,12 +687,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="85" lean-forward="false" selection-start-line="20" selection-start-column="85" selection-end-line="20" selection-end-column="85" />
-          <folding>
-            <marker date="1492230143198" expanded="true" signature="1146:1984" ph="..." />
-            <marker date="1492230143198" expanded="true" signature="1275:1576" ph="{...}" />
-            <marker date="1492230143198" expanded="true" signature="1359:1380" ph="..." />
-            <marker date="1492230143198" expanded="true" signature="1634:1975" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -568,9 +695,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#div#5;n#form#0;n#div#3;n#div#0;n#!!top" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -579,7 +704,7 @@
         <state relative-caret-position="-306">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1491873672811" expanded="true" signature="420:457" ph="SELECT * FRO... recipient" />
+            <marker date="1492274304092" expanded="true" signature="420:443" ph="SELECT * FRO... recipient" />
           </folding>
         </state>
       </provider>
@@ -600,42 +725,28 @@
         <state relative-caret-position="238">
           <caret line="73" column="40" lean-forward="true" selection-start-line="73" selection-start-column="40" selection-end-line="73" selection-end-column="40" />
           <folding>
-            <marker date="1492180592923" expanded="true" signature="1547:1579" ph="SELECT * FRO... donor" />
-            <marker date="1492180592923" expanded="true" signature="1598:1617" ph="SELECT * FRO... donor" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebsiteContent/TopBar/TopBar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="85" lean-forward="false" selection-start-line="20" selection-start-column="85" selection-end-line="20" selection-end-column="85" />
-          <folding>
-            <marker date="1492230143198" expanded="true" signature="1146:1984" ph="..." />
-            <marker date="1492230143198" expanded="true" signature="1275:1576" ph="{...}" />
-            <marker date="1492230143198" expanded="true" signature="1359:1380" ph="..." />
-            <marker date="1492230143198" expanded="true" signature="1634:1975" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebsiteContent/MainContent/Table_Recipients.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1491873672811" expanded="true" signature="420:457" ph="SELECT * FRO... recipient" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebsiteContent/MainContent/Table_Donors.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2091">
-          <caret line="123" column="48" lean-forward="false" selection-start-line="123" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
-          <folding>
-            <marker date="1492180592923" expanded="true" signature="1547:1579" ph="SELECT * FRO... donor" />
-            <marker date="1492180592923" expanded="true" signature="1598:1617" ph="SELECT * FRO... donor" />
+            <marker date="1492290394134" expanded="true" signature="1547:1579" ph="SELECT * FRO... donor" />
+            <marker date="1492290394134" expanded="true" signature="1598:1617" ph="SELECT * FRO... donor" />
+            <marker date="1492290394134" expanded="true" signature="9267:12217" ph="..." />
+            <marker date="1492290394134" expanded="true" signature="9306:9738" ph="{...}" />
+            <marker date="1492290394134" expanded="true" signature="9413:9526" ph="{...}" />
+            <marker date="1492290394134" expanded="true" signature="9548:9732" ph="{...}" />
+            <marker date="1492290394134" expanded="true" signature="9782:12208" ph="{...}" />
+            <marker date="1492290394134" expanded="true" signature="10022:10099" ph="/*...*/" />
+            <marker date="1492290394134" expanded="true" signature="10126:12202" ph="{...}" />
+            <marker date="1492290394134" expanded="true" signature="10277:10371" ph="/*...*/" />
+            <marker date="1492290394134" expanded="true" signature="10424:11497" ph="{...}" />
+            <marker date="1492290394134" expanded="true" signature="10544:10650" ph="/*...*/" />
+            <marker date="1492290394134" expanded="true" signature="10789:10889" ph="/*...*/" />
+            <marker date="1492290394134" expanded="true" signature="10924:11191" ph="{...}" />
+            <marker date="1492290394134" expanded="true" signature="11005:11173" ph="{...}" />
+            <marker date="1492290394134" expanded="true" signature="11216:11483" ph="{...}" />
+            <marker date="1492290394134" expanded="true" signature="11297:11465" ph="{...}" />
+            <marker date="1492290394134" expanded="true" signature="11528:11872" ph="{...}" />
+            <marker date="1492290394134" expanded="true" signature="11546:11649" ph="/*...*/" />
+            <marker date="1492290394134" expanded="true" signature="11878:12192" ph="{...}" />
+            <marker date="1492290394134" expanded="true" signature="11896:12032" ph="/*...*/" />
+            <marker date="1492290394134" expanded="true" signature="12087:12178" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -645,42 +756,6 @@
         <state relative-caret-position="485">
           <caret line="228" column="16" lean-forward="false" selection-start-line="228" selection-start-column="16" selection-end-line="228" selection-end-column="16" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebsiteContent/MainContent/Table_Matches.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2040">
-          <caret line="120" column="112" lean-forward="false" selection-start-line="120" selection-start-column="112" selection-end-line="120" selection-end-column="112" />
-          <folding>
-            <marker date="1492180833938" expanded="true" signature="1753:1772" ph="SELECT * FRO... donor" />
-            <marker date="1492180833938" expanded="true" signature="1912:1935" ph="SELECT * FRO... recipient" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebsiteContent/MainContent/Table_emailrecipients.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1492180688244" expanded="true" signature="294:336" ph="SELECT * FRO... emailrecipients" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebsiteContent/MainContent/Table_emailmessages.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1492230143196" expanded="true" signature="292:331" ph="SELECT * FRO... emailmessage" />
-            <marker date="1492230143196" expanded="true" signature="1189:1191" ph="..." />
-            <marker date="1492230143196" expanded="true" signature="1189:1223" ph="..." />
-            <marker date="1492230143196" expanded="true" signature="1189:1300" ph="{...}" />
-            <marker date="1492230143196" expanded="true" signature="1189:1322" ph="..." />
-            <marker date="1492230143196" expanded="true" signature="1364:1457" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -694,33 +769,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Page_emailrecipients.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="16" lean-forward="false" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebsiteContent/MainContent/Form_RecipientRegistration.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="210" column="17" lean-forward="true" selection-start-line="210" selection-start-column="17" selection-end-line="210" selection-end-column="17" />
+        <state relative-caret-position="306">
+          <caret line="18" column="16" lean-forward="false" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <marker date="1492268429448" expanded="true" signature="641:648" ph="..." />
+            <marker date="1492268429448" expanded="true" signature="682:724" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WebsiteContent/MainContent/Form_DonorRegistration.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
+        <state relative-caret-position="3434">
           <caret line="202" column="52" lean-forward="true" selection-start-line="202" selection-start-column="52" selection-end-line="202" selection-end-column="52" />
-          <folding>
-            <element signature="n#div#5;n#form#0;n#div#3;n#div#0;n#!!top" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Action_LogoutUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Database/MySQLconfig.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -744,6 +818,190 @@
           <caret line="37" column="22" lean-forward="true" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
           <folding>
             <marker date="1492232148128" expanded="true" signature="1268:1653" ph="INSERT INTO donor... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebsiteContent/MainContent/Form_Login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebsiteContent/MainContent/Form_RecipientRegistration.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="210" column="17" lean-forward="true" selection-start-line="210" selection-start-column="17" selection-end-line="210" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebsiteContent/MainContent/Table_emailmessages.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1492268429452" expanded="true" signature="399:448" ph="SELECT email... user" />
+            <marker date="1492268429452" expanded="true" signature="593:632" ph="SELECT * FRO... emailmessage" />
+            <marker date="1492268429452" expanded="true" signature="1659:1692" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Page_Donors.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebsiteContent/MainContent/Form_UserRegistration.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="5" selection-end-column="10" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Action_UpdateDonorTable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Action_UpdatePatient.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="48" selection-end-column="2" />
+          <folding>
+            <marker date="1492274213417" expanded="true" signature="429:474" ph="UPDATE MyGue... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebsiteContent/TopBar/TopBar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="18" lean-forward="true" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/W3.CSS Stylesheet/w3.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="768">
+          <caret line="365" column="1" lean-forward="false" selection-start-line="365" selection-start-column="1" selection-end-line="365" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebsiteContent/MainContent/Table_Matches.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1623">
+          <caret line="123" column="60" lean-forward="false" selection-start-line="123" selection-start-column="60" selection-end-line="123" selection-end-column="60" />
+          <folding>
+            <marker date="1492180833938" expanded="true" signature="1753:1772" ph="SELECT * FRO... donor" />
+            <marker date="1492180833938" expanded="true" signature="1912:1935" ph="SELECT * FRO... recipient" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebsiteContent/MainContent/Table_Recipients.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-255">
+          <caret line="21" column="39" lean-forward="true" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+          <folding>
+            <marker date="1492274304092" expanded="true" signature="420:443" ph="SELECT * FRO... recipient" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebsiteContent/MainContent/Form_SendMessage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebsiteContent/MainContent/Table_emailrecipients.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1492180688244" expanded="true" signature="294:336" ph="SELECT * FRO... emailrecipients" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Page_Patient.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="61" lean-forward="true" selection-start-line="28" selection-start-column="61" selection-end-line="28" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebsiteContent/MainContent/Table_Donors.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="41" column="8" lean-forward="false" selection-start-line="41" selection-start-column="8" selection-end-line="46" selection-end-column="11" />
+          <folding>
+            <marker date="1492290394134" expanded="true" signature="1547:1579" ph="SELECT * FRO... donor" />
+            <marker date="1492290394134" expanded="true" signature="1598:1617" ph="SELECT * FRO... donor" />
+            <marker date="1492290394134" expanded="true" signature="9267:12217" ph="..." />
+            <marker date="1492290394134" expanded="true" signature="9306:9738" ph="{...}" />
+            <marker date="1492290394134" expanded="true" signature="9413:9526" ph="{...}" />
+            <marker date="1492290394134" expanded="true" signature="9548:9732" ph="{...}" />
+            <marker date="1492290394134" expanded="true" signature="9782:12208" ph="{...}" />
+            <marker date="1492290394134" expanded="true" signature="10022:10099" ph="/*...*/" />
+            <marker date="1492290394134" expanded="true" signature="10126:12202" ph="{...}" />
+            <marker date="1492290394134" expanded="true" signature="10277:10371" ph="/*...*/" />
+            <marker date="1492290394134" expanded="true" signature="10424:11497" ph="{...}" />
+            <marker date="1492290394134" expanded="true" signature="10544:10650" ph="/*...*/" />
+            <marker date="1492290394134" expanded="true" signature="10789:10889" ph="/*...*/" />
+            <marker date="1492290394134" expanded="true" signature="10924:11191" ph="{...}" />
+            <marker date="1492290394134" expanded="true" signature="11005:11173" ph="{...}" />
+            <marker date="1492290394134" expanded="true" signature="11216:11483" ph="{...}" />
+            <marker date="1492290394134" expanded="true" signature="11297:11465" ph="{...}" />
+            <marker date="1492290394134" expanded="true" signature="11528:11872" ph="{...}" />
+            <marker date="1492290394134" expanded="true" signature="11546:11649" ph="/*...*/" />
+            <marker date="1492290394134" expanded="true" signature="11878:12192" ph="{...}" />
+            <marker date="1492290394134" expanded="true" signature="11896:12032" ph="/*...*/" />
+            <marker date="1492290394134" expanded="true" signature="12087:12178" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Action_LoginUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="8" lean-forward="false" selection-start-line="23" selection-start-column="8" selection-end-line="24" selection-end-column="9" />
+          <folding>
+            <marker date="1491834364317" expanded="true" signature="355:425" ph="SELECT * FRO... user" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebsiteContent/MainContent/Table_Patient.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="26" column="45" lean-forward="true" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <marker date="1492291425892" expanded="true" signature="305:342" ph="SELECT * FRO... donor" />
+            <marker date="1492291425892" expanded="true" signature="305:351" ph="SELECT * FRO... donor" />
           </folding>
         </state>
       </provider>

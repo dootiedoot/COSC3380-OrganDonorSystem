@@ -103,7 +103,7 @@
                 {?>
                     <tr class="w3-hover-green">
 
-                        <td><p class="w3-center"><?= $counter?>.</p></td>
+                        <td><a href="https://organdonorsystem.azurewebsites.net/Page_Patient.php?donorID=<?=$donor['PatientID']?>" id="<?= $donor['PatientID']?>" class="w3-center"><?= $counter?>.</a></td>
 
                         <!--    APPLICANT INFO COLUMNS    -->
                         <?php
@@ -151,7 +151,7 @@
 <!--                        <td>--><?//= $donor['BloodType']?><!--</td>-->
 
 
-                    </tr>
+                    </></tr>
                     <?php
 
                     $counter++;
