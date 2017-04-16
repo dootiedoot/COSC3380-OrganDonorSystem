@@ -36,7 +36,7 @@ if(!empty($_GET))
 
                 <!--            <p>sub title stuff.</p>-->
 
-            <form method="post" action="/Action_UpdateDonor.php" enctype="multipart/form-data" class="w3-container" >
+            <form method="post" action="/Action_UpdatePatient.php" enctype="multipart/form-data" class="w3-container" >
                     <div class="w3-row-padding">
                         <div class="w3-col" style="width:40%">
                             <input class="w3-input w3-border" type="text" name="firstName" id="firstName" required <?php if ($isEditMode != true) { ?>disabled<?php } ?> placeholder="<?=$donor['FirstName']?>">
@@ -178,7 +178,7 @@ if(!empty($_GET))
 
                     <!--    BLOOD TYPE    -->
                     <div class="w3-padding">
-                        <select class="w3-select" name="bloodType">
+                        <select class="w3-select" name="bloodType" <?php if ($isEditMode != true) { ?>disabled<?php } ?>>
                             <option value="" disabled selected><?=$donor['BloodType']?></option>
                             <option value="1">A+</option>
                             <option value="2">A-</option>
@@ -194,7 +194,7 @@ if(!empty($_GET))
 
                             <!--    ORGAN   -->
                     <div class="w3-padding">
-                        <select class="w3-select" name="organ" required>
+                        <select class="w3-select" name="organ" required <?php if ($isEditMode != true) { ?>disabled<?php } ?>>
                             <option value="" disabled selected><?=$donor['Organ']?></option>
                             <option value="1">Kidney</option>
                             <option value="2">Liver</option>
@@ -211,7 +211,7 @@ if(!empty($_GET))
 
                             <!--    HLA Marker A1   -->
                     <div class="w3-padding">
-                        <select class="w3-select" name="HLAMarkers_A1" required>
+                        <select class="w3-select" name="HLAMarkers_A1" required <?php if ($isEditMode != true) { ?>disabled<?php } ?>>
                             <option value="" disabled selected><?=$donor['HLAMarkers_A1']?></option>
                             <option value="1" label="Black">Black</option>
                             <option value="2" label="Blue">Blue</option>
@@ -222,7 +222,7 @@ if(!empty($_GET))
 
                     <!--    HLA Marker A2   -->
                     <div class="w3-padding">
-                        <select class="w3-select" name="HLAMarkers_A2" required>
+                        <select class="w3-select" name="HLAMarkers_A2" required <?php if ($isEditMode != true) { ?>disabled<?php } ?>>
                             <option value="" disabled selected><?=$donor['HLAMarkers_A2']?></option>
                             <option value="1" label="Black">Black</option>
                             <option value="2" label="Blue">Blue</option>
@@ -233,7 +233,7 @@ if(!empty($_GET))
 
                     <!--    HLA Marker B1  -->
                     <div class="w3-padding">
-                        <select class="w3-select" name="HLAMarkers_B1" required
+                        <select class="w3-select" name="HLAMarkers_B1" required <?php if ($isEditMode != true) { ?>disabled<?php } ?>>
                             <option value="" disabled selected><?=$donor['HLAMarkers_B1']?></option>
                             <option value="1" label="Black">Black</option>
                             <option value="2" label="Blue">Blue</option>
@@ -244,7 +244,7 @@ if(!empty($_GET))
 
                     <!--    HLA Marker B2  -->
                     <div class="w3-padding">
-                        <select class="w3-select" name="HLAMarkers_B2" required>
+                        <select class="w3-select" name="HLAMarkers_B2" required <?php if ($isEditMode != true) { ?>disabled<?php } ?>>
                             <option value="" disabled selected><?=$donor['HLAMarkers_B2']?></option>
                             <option value="1" label="Black">Black</option>
                             <option value="2" label="Blue">Blue</option>
@@ -255,7 +255,7 @@ if(!empty($_GET))
 
                     <!--    HLA Marker C1   -->
                     <div class="w3-padding">
-                        <select class="w3-select" name="HLAMarkers_C1" required>
+                        <select class="w3-select" name="HLAMarkers_C1" required <?php if ($isEditMode != true) { ?>disabled<?php } ?>>
                             <option value="" disabled selected><?=$donor['HLAMarkers_C1']?></option>
                             <option value="1" label="Black">Black</option>
                             <option value="2" label="Blue">Blue</option>
@@ -266,7 +266,7 @@ if(!empty($_GET))
 
                     <!--    HLA Marker C2   -->
                     <div class="w3-padding">
-                        <select class="w3-select" name="HLAMarkers_C2" required>
+                        <select class="w3-select" name="HLAMarkers_C2" required <?php if ($isEditMode != true) { ?>disabled<?php } ?>>
                             <option value="" disabled selected><?=$donor['HLAMarkers_C2']?></option>
                             <option value="1" label="Black">Black</option>
                             <option value="2" label="Blue">Blue</option>
@@ -277,7 +277,7 @@ if(!empty($_GET))
 
                     <!--    HLA Marker DRB1  -->
                     <div class="w3-padding">
-                        <select class="w3-select" name="HLAMarkers_DRB1" required>
+                        <select class="w3-select" name="HLAMarkers_DRB1" required <?php if ($isEditMode != true) { ?>disabled<?php } ?>>
                             <option value="" disabled selected><?=$donor['HLAMarkers_DRB1']?></option>
                             <option value="1" label="Black">Black</option>
                             <option value="2" label="Blue">Blue</option>
@@ -288,7 +288,7 @@ if(!empty($_GET))
 
                     <!--    HLA Marker DRB2   -->
                     <div class="w3-padding">
-                        <select class="w3-select" name="HLAMarkers_DRB2" required>
+                        <select class="w3-select" name="HLAMarkers_DRB2" required <?php if ($isEditMode != true) { ?>disabled<?php } ?>>
                             <option value="" disabled selected><?=$donor['HLAMarkers_DRB2']?></option>
                             <option value="1" label="Black">Black</option>
                             <option value="2" label="Blue">Blue</option>
@@ -297,9 +297,14 @@ if(!empty($_GET))
                         <label class="w3-label w3-validate">HLAMarkers DRB2</label>
                     </div>
 
-                    <div class="w3-padding w3-centered">
-                        <button class="w3-btn w3-green w3-round" type="submit" name="submit" value="Submit">Update</button>
-                    </div>
+                    <?php if ($isEditMode == true)
+                    { ?>
+                        <div class="w3-center">
+                            <div class="w3-padding w3-centered" >
+                                <button class="w3-btn w3-green w3-round" type="submit" name="submit" value="Submit">Update</button>
+                            </div>
+                        </div>
+                    <?php } ?>
                     </p>
                 </form>
 

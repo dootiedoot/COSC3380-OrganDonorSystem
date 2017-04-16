@@ -70,6 +70,8 @@ if(!empty($_POST))
     unset($_POST['HLA_DRB2']);
     unset($_POST['organ']);
 
-    eader("Location: /Page_Patient?donorID=1.php");
+    echo "Update Success!";
+
+    header("Location: /Page_Donors.php");
 }
 ?>
