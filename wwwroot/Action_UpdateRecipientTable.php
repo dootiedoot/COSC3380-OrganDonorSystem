@@ -46,6 +46,6 @@ if(!empty($_POST))
         die(var_dump($e));
     }
 
-    header("Location: /Page_Donors.php");
+    header("Location: /Page_Recipients.php");
 }
 ?>
