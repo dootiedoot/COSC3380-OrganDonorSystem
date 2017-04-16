@@ -1,7 +1,12 @@
 
 <?php
     session_start();
-    if( $_SESSION['userRole'] != "Doctor")
+    if( $_SESSION['userRole'] != "Admin" &&
+        $_SESSION['userRole'] != "Doctor" &&
+        $_SESSION['userRole'] != "Surgeon" &&
+        $_SESSION['userRole'] != "Donor" &&
+        $_SESSION['userRole'] != "Recipient"
+                                )
         header("Location: /");
 ?>
 
