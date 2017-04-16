@@ -29,23 +29,16 @@
 			The chance to save a life is just a few clicks away!
 		</p>
 	<div class="w3-panel w3-green w3-round">
-		<h2>Facts about organ donation</h2>
+		<h2>The organ donation process</h2>
 	</div>
+        <ul class="w3-ul w3-card-4">
+        	<li>There are several different ways that a person can become an organ donor in the United States. Anyone over the age of 18 is eligible to sign up, and in several states, people under the age of 18 can too. </li>
+		<li>There are several ways to sign up. The primary way that people sign up for organ donation is by registering online on their state website or by registering at a local motor vehicle department.</li>
+		<li>When registering for donation most states give you the option to choose which organs and tissues you donate, or to donate everything that can be used.</li>
+		<li>If you ever want to take yourself off the organ donation list all you have to do is look for an option such as "updating your status" on your state's site and you will be able to remove yourself.</li>
+	    </ul>
         
-    <ul>
-		<li>Anyone can be a donor, no matter the age. The medical condition of the donor will be evaluated and determine whether they are eligible to donate.</li>
-		<li>Only the information that will ensure the compatibility, such as blood type, HLA markers, and other pertinent medical information are important for receiving or donating an organ.</li>
-		<li>The list of organs and tissues that can be donated includes: bone, heart, lungs, kidneys, pancreas, liver, intestines, tendons, heart valves, corneas, and skin.</li>
-		<li>Even if you have registered as a donor, it is wise to inform your family so they may understand the decision.</li>
-	</ul>
-        
-		
-	<div class="w3-panel w3-green w3-round">
-		<h2>Live donations</h2>
-	</div>
-		<p>
-			Many people still require transplants, but supply does not meet demand yet. Donating parts of the liver, a kidney, or tissue can help increase the supply of organs and improve the lives of others.
-		</p>
+
 	</div>
     
 </div>
