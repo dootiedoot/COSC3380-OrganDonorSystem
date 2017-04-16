@@ -130,7 +130,6 @@
                                         <th onclick="sortTable(<?=$recipient['PatientID']?>, 3)"><a class="w3-center w3-text-white">HLA A1</a></th>
                                         <th onclick="sortTable(<?=$recipient['PatientID']?>, 4)"><a class="w3-center w3-text-white">HLA A2</a></th>
                                         <th onclick="sortTable(<?=$recipient['PatientID']?>, 5)"><a class="w3-center w3-text-white">HLA B1</a></th>
-                        qwas2
                                         <th onclick="sortTable(<?=$recipient['PatientID']?>, 6)"><a class="w3-center w3-text-white">HLA B2</a></th>
                                         <th onclick="sortTable(<?=$recipient['PatientID']?>, 7)"><a class="w3-center w3-text-white">HLA C1</a></th>
                                         <th onclick="sortTable(<?=$recipient['PatientID']?>, 8)"><a class="w3-center w3-text-white">HLA C2</a></th>
