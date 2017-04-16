@@ -20,6 +20,7 @@
                     <th>#</th>
                     <th>Username</th>
                     <th>Role</th>
+                    <th>Email</th>
                 </tr>
                 </thead>
 
@@ -31,6 +32,7 @@
                         <td><?= $counter?>.</td>
                         <td><?= $user['username']?></td>
                         <td><?= $user['role']?></td>
+                        <td><?= $user['email']?></td>
                     </tr>
                     <?php
 
