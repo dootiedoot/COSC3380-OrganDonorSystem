@@ -2,6 +2,19 @@
 session_start();
 require "/Database/MySQLconfig.php";
 ?>
+
+<style>
+
+table{
+    table-layout: fixed;
+}
+
+td{
+    word-wrap:break-word
+}
+
+</style>
+
 <div class="w3-main w3-container" style="margin-left:270px;margin-top:117px;">
 
     <div class="w3-container w3-green w3-card-4 w3-center">
@@ -36,7 +49,8 @@ require "/Database/MySQLconfig.php";
 
                 <?php
                 $counter = 1;
-                foreach($emailmessages as $emailmessage){                  
+                foreach($emailmessages as $emailmessage){
+                    if($myEmail == $emailmessage['Recipient']){            
                 ?>
                     <tr class="w3-hover-green">
                         <td><?= $emailmessage['Sender']?></td>
@@ -45,6 +59,7 @@ require "/Database/MySQLconfig.php";
                     </tr>
                     <?php
                     $counter++;         
+                    }
                 }?>
             
             </table>
