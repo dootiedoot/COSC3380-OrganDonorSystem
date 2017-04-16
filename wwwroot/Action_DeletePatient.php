@@ -19,3 +19,9 @@ if(!empty($_GET))
 
 //    header("Location: /");
 }
+else
+{
+    echo "Record deleted unsuccessful!";
+
+//    header("Location: /");
+}

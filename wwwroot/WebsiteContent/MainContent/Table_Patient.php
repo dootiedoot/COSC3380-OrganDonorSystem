@@ -9,11 +9,13 @@ if(!empty($_GET))
 {
     //  Assign variables
     $donorID = $_GET['donorID'];
+    $isEditMode = $_GET['editMode'];
     $sql = "SELECT * FROM donor WHERE PatientID='$donorID'";
     $stmt = $conn->query($sql);
     $donors = $stmt->fetchAll();
 
 //    unset($_GET['donorID']);
+//    unset($_GET['editMode']);
 
     if(count($donors) > 0)
     {
@@ -37,15 +39,15 @@ if(!empty($_GET))
             <form method="post" action="/Action_UpdateDonor.php" enctype="multipart/form-data" class="w3-container" >
                     <div class="w3-row-padding">
                         <div class="w3-col" style="width:40%">
-                            <input class="w3-input w3-border" type="text" name="firstName" id="firstName" required placeholder="Insert first name...">
+                            <input class="w3-input w3-border" type="text" name="firstName" id="firstName" required <?php if ($isEditMode != true) { ?>disabled<?php } ?> placeholder="<?=$donor['FirstName']?>">
                             <label class="w3-label w3-validate">First Name</label>
                         </div>
                         <div class="w3-col" style="width:20%">
-                            <input class="w3-input w3-border" type="text" name="middleInit" id="middleInit" maxlength="1" placeholder="Insert middle initial...">
+                            <input class="w3-input w3-border" type="text" name="middleInit" id="middleInit" maxlength="1" <?php if ($isEditMode != true) { ?>disabled<?php } ?> placeholder="<?=$donor['MiddleInitial']?>">
                             <label class="w3-label">Middle Initial</label>
                         </div>
                         <div class="w3-col" style="width:40%">
-                            <input class="w3-input w3-border" type="text" name="lastName" id="lastName" required placeholder="Insert last name...">
+                            <input class="w3-input w3-border" type="text" name="lastName" id="lastName" required <?php if ($isEditMode != true) { ?>disabled<?php } ?> placeholder="<?=$donor['LastName']?>">
                             <label class="w3-label w3-validate">Last Name</label>
                         </div>
                     </div>
@@ -57,34 +59,34 @@ if(!empty($_GET))
 
                     <!--    SEX    -->
                     <div class="w3-padding">
-                        <input class="w3-radio" type="radio" name="sex" value="male" id="userIsMale" checked>
+                        <input class="w3-radio" type="radio" name="sex" value="male" id="userIsMale" <?php if ($isEditMode != true) { ?>disabled<?php } ?> <?php if($donor['Sex'] == 'Male') { ?> checked <?php } ?>>
                         <label class="w3-validate">Male</label>
-                        <input class="w3-radio" type="radio" name="sex" value="female" id="userIsFem">
+                        <input class="w3-radio" type="radio" name="sex" value="female" id="userIsFem" <?php if ($isEditMode != true) { ?>disabled<?php } ?> <?php if($donor['Sex'] == 'Female') { ?> checked <?php } ?>>
                         <label class="w3-validate">Female</label>
                     </div>
 
                     <!--    BIRTH DATE    -->
                     <div class="w3-padding">
-                        <input class="w3-input" type="date" name="birthDate" id="userBirthDate" required>
+                        <input class="w3-input" type="date" name="birthDate" id="userBirthDate" required <?php if ($isEditMode != true) { ?>disabled<?php } ?>>
                         <label class="w3-label w3-validate">Birth date (ex. MM/DD/YYYY)</label>
                     </div>
 
                     <!--    MOST RECENT ADDRESS    -->
                     <div class="w3-padding">
-                        <input class="w3-input" type="text" name="recentAddress" id="recentAddress" required>
+                        <input class="w3-input" type="text" name="recentAddress" id="recentAddress" required <?php if ($isEditMode != true) { ?>disabled<?php } ?> placeholder="<?=$donor['RecentAddress']?>">
                         <label class="w3-label w3-validate">Most recent address</label>
                     </div>
 
                     <!--    CITY    -->
                     <div class="w3-padding">
-                        <input class="w3-input" type="text" name="city" id="city" required>
+                        <input class="w3-input" type="text" name="city" id="city" required <?php if ($isEditMode != true) { ?>disabled<?php } ?> placeholder="<?=$donor['City']?>">
                         <label class="w3-label w3-validate">City</label>
                     </div>
 
                     <!--    STATE    -->
                     <div class="w3-padding">
-                        <select class="w3-select" name="state" required>
-                            <option value="" disabled selected>Select State</option>
+                        <select class="w3-select" name="state" required <?php if ($isEditMode != true) { ?>disabled<?php } ?>>
+                            <option value="" disabled selected><?=$donor['State']?></option>
                             <option value="1" label="Alabama">Alabama</option>
                             <option value="2" label="Alaska">Alaska</option>
                             <option value="3" label="Arizona">Arizona</option>
@@ -152,32 +154,32 @@ if(!empty($_GET))
 
                     <!--    ZIP code    -->
                     <div class="w3-padding">
-                        <input class="w3-input" type="number" name="zipCode" min="10000" max="999999" id="userZIPcode" required>
+                        <input class="w3-input" type="number" name="zipCode" min="10000" max="999999" id="userZIPcode" required <?php if ($isEditMode != true) { ?>disabled<?php } ?> placeholder="<?=$donor['ZIPcode']?>">
                         <label class="w3-label w3-validate">ZIP code</label>
                     </div>
 
                     <!--    EMAIL    -->
                     <div class="w3-padding">
-                        <input class="w3-input" type="email" name="email" id="userEmail">
+                        <input class="w3-input" type="email" name="email" id="userEmail" <?php if ($isEditMode != true) { ?>disabled<?php } ?> placeholder="<?=$donor['Email']?>">
                         <label class="w3-label w3-validate">Email</label>
                     </div>
 
                     <!--    PHONE NUMBER    -->
                     <div class="w3-padding">
-                        <input class="w3-input" type="number" name="phoneNum" min="1000000000" max="9999999999" id="userPhoneNum">
+                        <input class="w3-input" type="number" name="phoneNum" min="1000000000" max="9999999999" id="userPhoneNum" <?php if ($isEditMode != true) { ?>disabled<?php } ?> placeholder="<?=$donor['PhoneNum']?>">
                         <label class="w3-label w3-validate">Phone Number</label>
                     </div>
 
                     <!--    WEIGHT    -->
                     <div class="w3-padding">
-                        <input class="w3-input" type="number" name="weight" min="0" id="userWeight" required>
+                        <input class="w3-input" type="number" name="weight" min="0" id="userWeight" required <?php if ($isEditMode != true) { ?>disabled<?php } ?> placeholder="<?=$donor['Weight']?>">
                         <label class="w3-label w3-validate">Weight</label>
                     </div>
 
                     <!--    BLOOD TYPE    -->
                     <div class="w3-padding">
                         <select class="w3-select" name="bloodType">
-                            <option value="" disabled selected>Select blood type</option>
+                            <option value="" disabled selected><?=$donor['BloodType']?></option>
                             <option value="1">A+</option>
                             <option value="2">A-</option>
                             <option value="3">B+</option>
@@ -190,27 +192,10 @@ if(!empty($_GET))
                         <label class="w3-label">Blood Type</label>
                     </div>
 
-                    <!--    ORGAN   -->
-                    <div class="w3-padding">
-                        <select class="w3-select" name="organ">
-                            <option value="" disabled selected>Select Organ</option>
-                            <option value="1">Kidney</option>
-                            <option value="2">Liver-</option>
-                            <option value="3">Lung</option>
-                            <option value="4">Heart</option>
-                            <option value="5">Pancreas</option>
-                            <option value="6">Small Intestine</option>
-                            <option value="7">Large Intestine</option>
-                            <option value="8">Hand</option>
-                            <option value="9">Face</option>
-                        </select>
-                    </div
-
-
                             <!--    ORGAN   -->
                     <div class="w3-padding">
                         <select class="w3-select" name="organ" required>
-                            <option value="" disabled selected>Select Organ</option>
+                            <option value="" disabled selected><?=$donor['Organ']?></option>
                             <option value="1">Kidney</option>
                             <option value="2">Liver</option>
                             <option value="3">Lung</option>
@@ -227,7 +212,7 @@ if(!empty($_GET))
                             <!--    HLA Marker A1   -->
                     <div class="w3-padding">
                         <select class="w3-select" name="HLAMarkers_A1" required>
-                            <option value="" disabled selected>Select Marker</option>
+                            <option value="" disabled selected><?=$donor['HLAMarkers_A1']?></option>
                             <option value="1" label="Black">Black</option>
                             <option value="2" label="Blue">Blue</option>
                             <option value="3" label="White">White</option>
@@ -238,7 +223,7 @@ if(!empty($_GET))
                     <!--    HLA Marker A2   -->
                     <div class="w3-padding">
                         <select class="w3-select" name="HLAMarkers_A2" required>
-                            <option value="" disabled selected>Select Marker</option>
+                            <option value="" disabled selected><?=$donor['HLAMarkers_A2']?></option>
                             <option value="1" label="Black">Black</option>
                             <option value="2" label="Blue">Blue</option>
                             <option value="3" label="White">White</option>
@@ -248,8 +233,8 @@ if(!empty($_GET))
 
                     <!--    HLA Marker B1  -->
                     <div class="w3-padding">
-                        <select class="w3-select" name="HLAMarkers_B1" required>
-                            <option value="" disabled selected>Select Marker</option>
+                        <select class="w3-select" name="HLAMarkers_B1" required
+                            <option value="" disabled selected><?=$donor['HLAMarkers_B1']?></option>
                             <option value="1" label="Black">Black</option>
                             <option value="2" label="Blue">Blue</option>
                             <option value="3" label="White">White</option>
@@ -260,7 +245,7 @@ if(!empty($_GET))
                     <!--    HLA Marker B2  -->
                     <div class="w3-padding">
                         <select class="w3-select" name="HLAMarkers_B2" required>
-                            <option value="" disabled selected>Select Marker</option>
+                            <option value="" disabled selected><?=$donor['HLAMarkers_B2']?></option>
                             <option value="1" label="Black">Black</option>
                             <option value="2" label="Blue">Blue</option>
                             <option value="3" label="White">White</option>
@@ -271,7 +256,7 @@ if(!empty($_GET))
                     <!--    HLA Marker C1   -->
                     <div class="w3-padding">
                         <select class="w3-select" name="HLAMarkers_C1" required>
-                            <option value="" disabled selected>Select Marker</option>
+                            <option value="" disabled selected><?=$donor['HLAMarkers_C1']?></option>
                             <option value="1" label="Black">Black</option>
                             <option value="2" label="Blue">Blue</option>
                             <option value="3" label="White">White</option>
@@ -282,7 +267,7 @@ if(!empty($_GET))
                     <!--    HLA Marker C2   -->
                     <div class="w3-padding">
                         <select class="w3-select" name="HLAMarkers_C2" required>
-                            <option value="" disabled selected>Select Marker</option>
+                            <option value="" disabled selected><?=$donor['HLAMarkers_C2']?></option>
                             <option value="1" label="Black">Black</option>
                             <option value="2" label="Blue">Blue</option>
                             <option value="3" label="White">White</option>
@@ -293,7 +278,7 @@ if(!empty($_GET))
                     <!--    HLA Marker DRB1  -->
                     <div class="w3-padding">
                         <select class="w3-select" name="HLAMarkers_DRB1" required>
-                            <option value="" disabled selected>Select Marker</option>
+                            <option value="" disabled selected><?=$donor['HLAMarkers_DRB1']?></option>
                             <option value="1" label="Black">Black</option>
                             <option value="2" label="Blue">Blue</option>
                             <option value="3" label="White">White</option>
@@ -304,7 +289,7 @@ if(!empty($_GET))
                     <!--    HLA Marker DRB2   -->
                     <div class="w3-padding">
                         <select class="w3-select" name="HLAMarkers_DRB2" required>
-                            <option value="" disabled selected>Select Marker</option>
+                            <option value="" disabled selected><?=$donor['HLAMarkers_DRB2']?></option>
                             <option value="1" label="Black">Black</option>
                             <option value="2" label="Blue">Blue</option>
                             <option value="3" label="White">White</option>
@@ -332,79 +317,3 @@ if(!empty($_GET))
     }
 }
 ?>
-
-
-<!--    FUNCTIONS    -->
-<script>
-    function ToggleElement(name)
-    {
-        var x = document.getElementById(name);
-        if (x.className.indexOf("w3-show") == -1)
-        {
-            x.className += " w3-show";
-            x.previousElementSibling.className += " w3-green";
-        }
-        else
-        {
-            x.className = x.className.replace(" w3-show", "");
-            x.previousElementSibling.className = x.previousElementSibling.className.replace(" w3-green", "");
-        }
-    }
-
-
-    function sortTable(tableName, n)
-    {
-        var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-        table = document.getElementById(tableName);
-        switching = true;
-        //Set the sorting direction to ascending:
-        dir = "asc";
-        /*Make a loop that will continue until
-         no switching has been done:*/
-        while (switching) {
-            //start by saying: no switching is done:
-            switching = false;
-            rows = table.getElementsByTagName("TR");
-            /*Loop through all table rows (except the
-             first, which contains table headers):*/
-            for (i = 1; i < (rows.length - 1); i++) {
-                //start by saying there should be no switching:
-                shouldSwitch = false;
-                /*Get the two elements you want to compare,
-                 one from current row and one from the next:*/
-                x = rows[i].getElementsByTagName("TD")[n];
-                y = rows[i + 1].getElementsByTagName("TD")[n];
-                /*check if the two rows should switch place,
-                 based on the direction, asc or desc:*/
-                if (dir == "asc") {
-                    if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-                        //if so, mark as a switch and break the loop:
-                        shouldSwitch= true;
-                        break;
-                    }
-                } else if (dir == "desc") {
-                    if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-                        //if so, mark as a switch and break the loop:
-                        shouldSwitch= true;
-                        break;
-                    }
-                }
-            }
-            if (shouldSwitch) {
-                /*If a switch has been marked, make the switch
-                 and mark that a switch has been done:*/
-                rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-                switching = true;
-                //Each time a switch is done, increase this count by 1:
-                switchcount ++;
-            } else {
-                /*If no switching has been done AND the direction is "asc",
-                 set the direction to "desc" and run the while loop again.*/
-                if (switchcount == 0 && dir == "asc") {
-                    dir = "desc";
-                    switching = true;
-                }
-            }
-        }
-    }
-</script>
