@@ -16,8 +16,11 @@
 	</div>
 		<ul>
 			<li>Anyone can be a donor, no matter the age. The medical condition of the donor will be evaluated and determine whether they are eligible to donate.</li>
+			<p></p>
 			<li>Only the information that will ensure the compatibility, such as blood type, HLA markers, and other pertinent medical information are important for receiving or donating an organ.</li>
+			<p></p>
 			<li>The list of organs and tissues that can be donated includes: bone, heart, lungs, kidneys, pancreas, liver, intestines, tendons, heart valves, corneas, and skin.</li>
+			<p></p>
 			<li>Even if you have registered as a donor, it is wise to inform your family so they may understand the decision.</li>
 		</ul>
 	<div class="w3-panel w3-green w3-round">
