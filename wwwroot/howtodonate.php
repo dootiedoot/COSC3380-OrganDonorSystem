@@ -31,9 +31,9 @@
 	<div class="w3-panel w3-green w3-round">
 		<h2>The organ donation process</h2>
 	</div>
-        <ul class="w3-ul w3-card-4">
+        <ul>
         	<li>There are several different ways that a person can become an organ donor in the United States. Anyone over the age of 18 is eligible to sign up, and in several states, people under the age of 18 can too. </li>
-		<li>There are several ways to sign up. The primary way that people sign up for organ donation is by registering online on their state website or by registering at a local motor vehicle department.</li>
+		<li>There are many ways to sign up. The primary way that people sign up for organ donation is by registering online on their state website or by registering at a local motor vehicle department.</li>
 		<li>When registering for donation most states give you the option to choose which organs and tissues you donate, or to donate everything that can be used.</li>
 		<li>If you ever want to take yourself off the organ donation list all you have to do is look for an option such as "updating your status" on your state's site and you will be able to remove yourself.</li>
 	    </ul>
