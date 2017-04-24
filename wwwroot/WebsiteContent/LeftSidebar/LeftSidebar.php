@@ -22,9 +22,9 @@
         $_SESSION['userRole'] == "Recipient")
     { ?>
 
-        <div class="w3-green w3-center w3-hover-white w3-bar-item w3-button w3-round" onclick="ToggleElement('dropmenu_Recipients')"> Messages <i class="fa fa-angle-down"></i></div>
+        <div class="w3-green w3-center w3-hover-white w3-bar-item w3-button w3-round" onclick="ToggleElement('dropmenu_Messages')"> Messages <i class="fa fa-angle-down"></i></div>
 
-        <div id="dropmenu_Recipients" class="w3-hide w3-show w3-white w3-card-4">
+        <div id="dropmenu_Messages" class="w3-hide w3-show w3-white w3-card-4">
             <a href="/page_emailmessages.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-server"></i> View Messages</a>
             <a href="/page_sendmessage.php" class="w3-bar-item w3-button w3-animate-left w3-round"> <i class="fa fa-comments"></i> Send Message</a>
         </div>
@@ -34,8 +34,7 @@
     <!--    ONLY SHOW IF SPECIFIC USER IS LOGGED IN -->
     <!--    DONORS TAB -->
     <?php
-    if ($_SESSION['userRole'] == "Admin" ||
-        $_SESSION['userRole'] == "Doctor")
+    if ($_SESSION['userRole'] == "Doctor")
     { ?>
 
         <div class="w3-green w3-center w3-hover-white w3-bar-item w3-button w3-round" onclick="ToggleElement('dropmenu_Donors')"> Donors <i class="fa fa-angle-down"></i></div>
@@ -51,8 +50,7 @@
 
     <!--    RECIPIENTS TAB -->
     <?php
-    if ($_SESSION['userRole'] == "Admin" ||
-        $_SESSION['userRole'] == "Doctor")
+    if ($_SESSION['userRole'] == "Doctor")
     { ?>
 
         <div class="w3-green w3-center w3-hover-white w3-bar-item w3-button w3-round" onclick="ToggleElement('dropmenu_Recipients')"> Recipients <i class="fa fa-angle-down"></i></div>
