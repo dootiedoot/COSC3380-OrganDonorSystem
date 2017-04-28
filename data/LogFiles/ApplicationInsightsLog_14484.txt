@@ -1,0 +1,6 @@
+Microsoft.ApplicationInsights.Extensibility.AzureWebSites.TraceSource Error: 16 : Performance counter is not available in the web app supported list. Counter is \Memory\Available Bytes.
+    ProcessId=14484
+    DateTime=2017-04-15T04:21:42.5119439Z
+Microsoft.ApplicationInsights.Extensibility.AzureWebSites.TraceSource Error: 16 : Performance counter is not available in the web app supported list. Counter is \Processor(_Total)\% Processor Time.
+    ProcessId=14484
+    DateTime=2017-04-15T04:21:42.7849379Z

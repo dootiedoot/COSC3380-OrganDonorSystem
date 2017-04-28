@@ -1,0 +1,106 @@
+3/24/2017 1:11:47 AM: [Verbose] Starting Application Insights installation and configuration...
+3/24/2017 1:11:47 AM: [Verbose] Loading assembly from D:\home\SiteExtensions\Microsoft.ApplicationInsights.AzureWebSites\Microsoft.ApplicationInsights.WebSiteManager.dll
+3/24/2017 1:11:48 AM: [Verbose] Loading assembly from D:\home\SiteExtensions\Microsoft.ApplicationInsights.AzureWebSites\Microsoft.ApplicationInsights.WebSiteManager.dll
+3/24/2017 1:11:48 AM: [Verbose] Starting Application Insights Profiler configuration...
+3/24/2017 1:11:48 AM: [Verbose] Current processor architecture: x86
+3/24/2017 1:11:48 AM: [Verbose] Starting to download/install 'Microsoft.ApplicationInsights.Agent_x86' nuget package from D:\home\SiteExtensions\Microsoft.ApplicationInsights.AzureWebSites\appinsights...
+3/24/2017 1:11:48 AM, [Verbose] Installing 'Microsoft.ApplicationInsights.Agent_x86', version '2.2.0' ...
+3/24/2017 1:11:49 AM, [Verbose] Installed 'Microsoft.ApplicationInsights.Agent_x86', version '2.2.0'.
+3/24/2017 1:11:49 AM: [Verbose] End of 'Microsoft.ApplicationInsights.Agent_x86' nuget package download/install.
+3/24/2017 1:11:49 AM: [Verbose] Ready to copy files from D:\home\SiteExtensions\Microsoft.ApplicationInsights.AzureWebSites\Packages\Microsoft.ApplicationInsights.Agent_x86.2.2.0\content\RTIA\x86 to D:\home\SiteExtensions\Microsoft.ApplicationInsights.AzureWebSites\Agent
+3/24/2017 1:11:49 AM: [Verbose] Microsoft.ApplicationInsights.Extensions.Base_x86.dll.Name was copied.
+3/24/2017 1:11:49 AM: [Verbose] Microsoft.ApplicationInsights.ExtensionsHost_x86.dll.Name was copied.
+3/24/2017 1:11:49 AM: [Verbose] Microsoft.Diagnostics.Instrumentation.Extensions.Base.dll.Name was copied.
+3/24/2017 1:11:49 AM: [Verbose] Microsoft.InstrumentationEngine.Extensions.config.Name was copied.
+3/24/2017 1:11:49 AM: [Verbose] MicrosoftInstrumentationEngine_x86.dll.Name was copied.
+3/24/2017 1:11:49 AM: [Verbose] End of Application Insights Profiler configuration.
+3/24/2017 1:11:49 AM: [Verbose] Application is not instrumented with Application Insights.
+3/24/2017 1:11:49 AM: [Verbose] Starting to download/install 'Microsoft.ApplicationInsights.Azure.WebSites' nuget package from D:\home\SiteExtensions\Microsoft.ApplicationInsights.AzureWebSites\appinsights...
+3/24/2017 1:11:50 AM, [Verbose] Installing 'Microsoft.ApplicationInsights', version '2.2.0' ...
+3/24/2017 1:11:50 AM, [Verbose] Installed 'Microsoft.ApplicationInsights', version '2.2.0'.
+3/24/2017 1:11:50 AM, [Verbose] Installing 'Microsoft.ApplicationInsights.Agent.Intercept', version '2.0.6' ...
+3/24/2017 1:11:51 AM, [Verbose] Installed 'Microsoft.ApplicationInsights.Agent.Intercept', version '2.0.6'.
+3/24/2017 1:11:51 AM, [Verbose] Installing 'Microsoft.ApplicationInsights.DependencyCollector', version '2.2.0' ...
+3/24/2017 1:11:51 AM, [Verbose] Installed 'Microsoft.ApplicationInsights.DependencyCollector', version '2.2.0'.
+3/24/2017 1:11:51 AM, [Verbose] Installing 'Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel', version '2.2.0' ...
+3/24/2017 1:11:51 AM, [Verbose] Installed 'Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel', version '2.2.0'.
+3/24/2017 1:11:51 AM, [Verbose] Installing 'Microsoft.ApplicationInsights.PerfCounterCollector', version '2.2.0' ...
+3/24/2017 1:11:51 AM, [Verbose] Installed 'Microsoft.ApplicationInsights.PerfCounterCollector', version '2.2.0'.
+3/24/2017 1:11:51 AM, [Verbose] Installing 'Microsoft.ApplicationInsights.WindowsServer', version '2.2.0' ...
+3/24/2017 1:11:51 AM, [Verbose] Installed 'Microsoft.ApplicationInsights.WindowsServer', version '2.2.0'.
+3/24/2017 1:11:51 AM, [Verbose] Installing 'Microsoft.ApplicationInsights.Web', version '2.2.0' ...
+3/24/2017 1:11:52 AM, [Verbose] Installed 'Microsoft.ApplicationInsights.Web', version '2.2.0'.
+3/24/2017 1:11:52 AM, [Verbose] Installing 'Microsoft.Web.Infrastructure', version '1.0.0.0' ...
+3/24/2017 1:11:52 AM, [Verbose] Installed 'Microsoft.Web.Infrastructure', version '1.0.0.0'.
+3/24/2017 1:11:52 AM, [Verbose] Installing 'Microsoft.ApplicationInsights.Azure.WebSites', version '2.2.0' ...
+3/24/2017 1:11:52 AM, [Verbose] Installed 'Microsoft.ApplicationInsights.Azure.WebSites', version '2.2.0'.
+3/24/2017 1:11:52 AM: [Verbose] End of 'Microsoft.ApplicationInsights.Azure.WebSites' nuget package download/install.
+3/24/2017 1:11:52 AM: [Verbose] Starting to install Microsoft.ApplicationInsights.Azure.WebSites nuget package from D:\home\SiteExtensions\Microsoft.ApplicationInsights.AzureWebSites\Packages to D:\home\site\wwwroot...
+3/24/2017 1:11:53 AM, [Info] Adding 'Microsoft.ApplicationInsights 2.2.0' to D:\home\site\wwwroot.
+3/24/2017 1:11:53 AM, [Verbose] For adding package 'Microsoft.ApplicationInsights 2.2.0' to project 'D:\home\site\wwwroot' that targets 'net45',
+3/24/2017 1:11:53 AM, [Verbose] >> Assembly references are being added from 'lib\net45'
+3/24/2017 1:11:56 AM, [Verbose] Added file 'Microsoft.ApplicationInsights.dll' to folder 'D:\home\site\wwwroot\bin'.
+3/24/2017 1:11:56 AM, [Info] Successfully added 'Microsoft.ApplicationInsights 2.2.0' to D:\home\site\wwwroot.
+3/24/2017 1:11:56 AM, [Info] Adding 'Microsoft.ApplicationInsights.Agent.Intercept 2.0.6' to D:\home\site\wwwroot.
+3/24/2017 1:11:56 AM, [Verbose] For adding package 'Microsoft.ApplicationInsights.Agent.Intercept 2.0.6' to project 'D:\home\site\wwwroot' that targets 'net45',
+3/24/2017 1:11:56 AM, [Verbose] >> Assembly references are being added from 'lib\net45'
+3/24/2017 1:11:56 AM, [Verbose] Added file 'Microsoft.AI.Agent.Intercept.dll' to folder 'D:\home\site\wwwroot\bin'.
+3/24/2017 1:11:56 AM, [Info] Successfully added 'Microsoft.ApplicationInsights.Agent.Intercept 2.0.6' to D:\home\site\wwwroot.
+3/24/2017 1:11:56 AM, [Info] Adding 'Microsoft.ApplicationInsights.DependencyCollector 2.2.0' to D:\home\site\wwwroot.
+3/24/2017 1:11:56 AM, [Verbose] For adding package 'Microsoft.ApplicationInsights.DependencyCollector 2.2.0' to project 'D:\home\site\wwwroot' that targets 'net45',
+3/24/2017 1:11:56 AM, [Verbose] >> Assembly references are being added from 'lib\net45'
+3/24/2017 1:11:56 AM, [Verbose] >> Content files are being added from 'content' (not framework-specific)
+3/24/2017 1:11:56 AM, [Verbose] Added file 'ApplicationInsights.config'.
+3/24/2017 1:11:56 AM, [Verbose] Added file 'ApplicationInsights.config'.
+3/24/2017 1:11:56 AM, [Verbose] Added file 'Microsoft.AI.DependencyCollector.dll' to folder 'D:\home\site\wwwroot\bin'.
+3/24/2017 1:11:57 AM, [Info] Successfully added 'Microsoft.ApplicationInsights.DependencyCollector 2.2.0' to D:\home\site\wwwroot.
+3/24/2017 1:11:57 AM, [Info] Adding 'Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel 2.2.0' to D:\home\site\wwwroot.
+3/24/2017 1:11:57 AM, [Verbose] For adding package 'Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel 2.2.0' to project 'D:\home\site\wwwroot' that targets 'net45',
+3/24/2017 1:11:57 AM, [Verbose] >> Assembly references are being added from 'lib\net45'
+3/24/2017 1:11:57 AM, [Verbose] >> Content files are being added from 'content' (not framework-specific)
+3/24/2017 1:11:57 AM, [Verbose] Added file 'ApplicationInsights.config'.
+3/24/2017 1:11:57 AM, [Verbose] Added file 'ApplicationInsights.config'.
+3/24/2017 1:11:57 AM, [Verbose] Added file 'Microsoft.AI.ServerTelemetryChannel.dll' to folder 'D:\home\site\wwwroot\bin'.
+3/24/2017 1:11:57 AM, [Info] Successfully added 'Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel 2.2.0' to D:\home\site\wwwroot.
+3/24/2017 1:11:57 AM, [Info] Adding 'Microsoft.ApplicationInsights.PerfCounterCollector 2.2.0' to D:\home\site\wwwroot.
+3/24/2017 1:11:57 AM, [Verbose] For adding package 'Microsoft.ApplicationInsights.PerfCounterCollector 2.2.0' to project 'D:\home\site\wwwroot' that targets 'net45',
+3/24/2017 1:11:57 AM, [Verbose] >> Assembly references are being added from 'lib\net45'
+3/24/2017 1:11:57 AM, [Verbose] >> Content files are being added from 'content' (not framework-specific)
+3/24/2017 1:11:57 AM, [Verbose] Added file 'ApplicationInsights.config'.
+3/24/2017 1:11:57 AM, [Verbose] Added file 'ApplicationInsights.config'.
+3/24/2017 1:11:57 AM, [Verbose] Added file 'Microsoft.AI.PerfCounterCollector.dll' to folder 'D:\home\site\wwwroot\bin'.
+3/24/2017 1:11:57 AM, [Info] Successfully added 'Microsoft.ApplicationInsights.PerfCounterCollector 2.2.0' to D:\home\site\wwwroot.
+3/24/2017 1:11:57 AM, [Info] Adding 'Microsoft.ApplicationInsights.WindowsServer 2.2.0' to D:\home\site\wwwroot.
+3/24/2017 1:11:57 AM, [Verbose] For adding package 'Microsoft.ApplicationInsights.WindowsServer 2.2.0' to project 'D:\home\site\wwwroot' that targets 'net45',
+3/24/2017 1:11:57 AM, [Verbose] >> Assembly references are being added from 'lib\net45'
+3/24/2017 1:11:57 AM, [Verbose] >> Content files are being added from 'content' (not framework-specific)
+3/24/2017 1:11:57 AM, [Verbose] Added file 'ApplicationInsights.config'.
+3/24/2017 1:11:57 AM, [Verbose] Added file 'ApplicationInsights.config'.
+3/24/2017 1:11:57 AM, [Verbose] Added file 'Microsoft.AI.WindowsServer.dll' to folder 'D:\home\site\wwwroot\bin'.
+3/24/2017 1:11:57 AM, [Info] Successfully added 'Microsoft.ApplicationInsights.WindowsServer 2.2.0' to D:\home\site\wwwroot.
+3/24/2017 1:11:57 AM, [Info] Adding 'Microsoft.ApplicationInsights.Web 2.2.0' to D:\home\site\wwwroot.
+3/24/2017 1:11:57 AM, [Verbose] For adding package 'Microsoft.ApplicationInsights.Web 2.2.0' to project 'D:\home\site\wwwroot' that targets 'net45',
+3/24/2017 1:11:57 AM, [Verbose] >> Assembly references are being added from 'lib\net45'
+3/24/2017 1:11:57 AM, [Verbose] >> Content files are being added from 'content\net45'
+3/24/2017 1:11:57 AM, [Verbose] Added file 'ApplicationInsights.config'.
+3/24/2017 1:11:57 AM, [Verbose] Added file 'ApplicationInsights.config'.
+3/24/2017 1:11:57 AM, [Verbose] Added file 'Microsoft.AI.Web.dll' to folder 'D:\home\site\wwwroot\bin'.
+3/24/2017 1:11:57 AM, [Info] Successfully added 'Microsoft.ApplicationInsights.Web 2.2.0' to D:\home\site\wwwroot.
+3/24/2017 1:11:57 AM, [Info] Adding 'Microsoft.Web.Infrastructure 1.0.0.0' to D:\home\site\wwwroot.
+3/24/2017 1:11:57 AM, [Verbose] For adding package 'Microsoft.Web.Infrastructure 1.0.0.0' to project 'D:\home\site\wwwroot' that targets 'net45',
+3/24/2017 1:11:57 AM, [Verbose] >> Assembly references are being added from 'lib\net40'
+3/24/2017 1:11:57 AM, [Verbose] Added file 'Microsoft.Web.Infrastructure.dll' to folder 'D:\home\site\wwwroot\bin'.
+3/24/2017 1:11:57 AM, [Info] Successfully added 'Microsoft.Web.Infrastructure 1.0.0.0' to D:\home\site\wwwroot.
+3/24/2017 1:11:57 AM, [Info] Adding 'Microsoft.ApplicationInsights.Azure.WebSites 2.2.0' to D:\home\site\wwwroot.
+3/24/2017 1:11:57 AM, [Verbose] For adding package 'Microsoft.ApplicationInsights.Azure.WebSites 2.2.0' to project 'D:\home\site\wwwroot' that targets 'net45',
+3/24/2017 1:11:57 AM, [Verbose] >> Assembly references are being added from 'lib\net45'
+3/24/2017 1:11:57 AM, [Verbose] >> Content files are being added from 'content' (not framework-specific)
+3/24/2017 1:11:57 AM, [Verbose] Added file 'ApplicationInsights.config'.
+3/24/2017 1:11:57 AM, [Verbose] Added file 'Microsoft.AI.HttpModule.dll' to folder 'D:\home\site\wwwroot\bin'.
+3/24/2017 1:11:57 AM, [Verbose] Added file 'Microsoft.ApplicationInsights.AzureWebSites.dll' to folder 'D:\home\site\wwwroot\bin'.
+3/24/2017 1:11:58 AM, [Info] Successfully added 'Microsoft.ApplicationInsights.Azure.WebSites 2.2.0' to D:\home\site\wwwroot.
+3/24/2017 1:11:58 AM: [Verbose] End of Microsoft.ApplicationInsights.Azure.WebSites nuget package installation.
+3/24/2017 1:11:58 AM: [Verbose] End of Application Insights installation and configuration.
+
+
+

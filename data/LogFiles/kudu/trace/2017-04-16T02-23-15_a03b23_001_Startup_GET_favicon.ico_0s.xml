@@ -1,0 +1,3 @@
+<step title="Startup Request" date="2017-04-16T02:23:15.627" instance="a03b23" url="/favicon.ico" method="GET" type="request" pid="12980,3,20" ScmType="None" >
+  <step title="Cleanup Xml Logs" date="2017-04-16T02:23:15.627" /><!-- duration: 0ms -->
+</step><!-- duration: 0ms -->

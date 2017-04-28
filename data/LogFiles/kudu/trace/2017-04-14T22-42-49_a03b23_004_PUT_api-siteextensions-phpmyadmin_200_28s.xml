@@ -1,0 +1,16 @@
+<step title="Incoming Request" date="2017-04-14T22:42:49.110" instance="a03b23" url="/api/siteextensions/phpmyadmin" method="PUT" type="request" pid="12464,2,16" Connection="Keep-Alive" Content-Length="0" Content-Type="application/json" Accept="application/json" Accept-Language="en" Authorization="Bas..." Host="organdonorsystem.scm.azurewebsites.net" User-Agent="Portal-Exp/5.12.32.95 (Kudu) Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML%2C like Gecko) Chrome/57.0.2987.133 Safari/537.36" x-ms-client-request-id="e89b0f54-95b9-4835-8e19-3b8497139046" x-ms-client-session-id="42b163321ea34968827d7b79be1a4b2d" X-ARR-LOG-ID="58748a1a-ff35-471a-bf6c-0db2ab535952" X-SITE-DEPLOYMENT-ID="OrganDonorSystem" WAS-DEFAULT-HOSTNAME="organdonorsystem.scm.azurewebsites.net" X-MS-CLIENT-PRINCIPAL-NAME="$Or..." >
+  <step title="Cleanup Xml Logs" date="2017-04-14T22:42:49.110" /><!-- duration: 0ms -->
+  <step title="Installing phpmyadmin, version:  from feed: " date="2017-04-14T22:42:49.126" /><!-- duration: 0ms -->
+  <step title="Installing &apos;phpmyadmin&apos; version &apos;&apos; from &apos;&apos;" date="2017-04-14T22:42:49.282" >
+    <step title="Version is null, search latest package by id: phpmyadmin, will not search for unlisted package." date="2017-04-14T22:42:49.423" /><!-- duration: 78ms -->
+    <step title="Install package: phpmyadmin." date="2017-04-14T22:42:49.501" >
+      <step title="Download site extension: phpmyadmin.4.6.6.1" date="2017-04-14T22:42:49.517" /><!-- duration: 27121ms -->
+      <step title="Check if applicationhost.xdt file existed." date="2017-04-14T22:43:16.638" >
+        <step title="Missing xdt file, creating one." date="2017-04-14T22:43:16.653" /><!-- duration: 0ms -->
+      </step><!-- duration: 47ms -->
+      <step title="Trigger site extension job" date="2017-04-14T22:43:16.685" /><!-- duration: 16ms -->
+    </step><!-- duration: 27498ms -->
+    <step title="Update arm settings for phpmyadmin installation. Status: OK" date="2017-04-14T22:43:17.124" /><!-- duration: 142ms -->
+  </step><!-- duration: 28000ms -->
+  <step title="Outgoing response" date="2017-04-14T22:43:17.313" type="response" statusCode="200" statusText="OK" Server="Microsoft-IIS/8.0" x-ms-request-id="58748a1a-ff35-471a-bf6c-0db2ab535952" Cache-Control="private" X-AspNet-Version="4.0.30319" Content-Type="application/json; charset=utf-8" /><!-- duration: 0ms -->
+</step><!-- duration: 28203ms -->

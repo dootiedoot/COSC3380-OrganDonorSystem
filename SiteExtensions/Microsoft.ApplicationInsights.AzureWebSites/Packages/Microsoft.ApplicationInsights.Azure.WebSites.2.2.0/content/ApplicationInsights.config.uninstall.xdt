@@ -1,0 +1,14 @@
+﻿<ApplicationInsights xmlns="http://schemas.microsoft.com/ApplicationInsights/2013/Settings" xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+  
+  <TelemetryModules>
+    <Add xdt:Transform="Remove" xdt:Locator="Match(Type)" Type="Microsoft.ApplicationInsights.Extensibility.AzureWebSites.DiagnosticsTelemetryModule, Microsoft.ApplicationInsights.AzureWebSites"/>
+  </TelemetryModules>
+  <TelemetryModules xdt:Transform="Remove" xdt:Locator="Condition(count(*)=0)"/>
+   
+  <TelemetryInitializers>
+    <Add xdt:Transform="Remove" xdt:Locator="Match(Type)" Type="Microsoft.ApplicationInsights.Extensibility.AzureWebSites.SdkSourceTelemetryInitializer, Microsoft.ApplicationInsights.AzureWebSites"/>
+  </TelemetryInitializers>
+  <TelemetryInitializers xdt:Transform="Remove" xdt:Locator="Condition(count(*)=0)"/>
+
+  <AzureWebSiteExtension xdt:Transform="Remove"/>
+</ApplicationInsights>

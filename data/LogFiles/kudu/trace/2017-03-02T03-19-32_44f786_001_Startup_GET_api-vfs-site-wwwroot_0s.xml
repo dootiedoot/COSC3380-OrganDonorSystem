@@ -1,0 +1,3 @@
+<step title="Startup Request" date="2017-03-02T03:19:32.502" instance="44f786" url="/api/vfs/site/wwwroot/?_=1488424213313" method="GET" type="request" pid="11380,2,8" ScmType="None" >
+  <step title="Cleanup Xml Logs" date="2017-03-02T03:19:32.502" /><!-- duration: 16ms -->
+</step><!-- duration: 16ms -->

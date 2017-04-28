@@ -1,0 +1,16 @@
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	br = branch
+	hist = log --pretty=format:\"%Cgreen%h%Creset %ad |%C(cyan)%d%Creset %s %Cred<%an>%Creset\" --graph --date=relative --date-order -25
+
+[color]
+	status = always
+
+[core]
+	preloadindex = true
+
+[credential]
+	useHttpPath = true
+	helper = !\"$HOME/bin/cred.sh\"

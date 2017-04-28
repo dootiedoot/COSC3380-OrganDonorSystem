@@ -1,0 +1,106 @@
+{"level":5,"message":"Serving workspaces from \"D:\\home\\site\"","timestamp":1488425927845}
+{"level":5,"message":"Creating D:\\home\\site\\Diagnostics\\settings.json with defaults","timestamp":1488425928423}
+{"level":5,"message":"File watcher installed on path: D:\\home\\site","timestamp":1488425928438}
+{"level":2,"message":"at    16ms\tcreateServer() - start","timestamp":1488425928720}
+{"level":2,"message":"at    16ms\ttime    63ms\tcontributionManager init()","timestamp":1488425928720}
+{"level":2,"message":"at   938ms\ttime     0ms\tcontributionManager registerExtensions()","timestamp":1488425928720}
+{"level":2,"message":"at   938ms\ttime   684ms\tconfig.configure()","timestamp":1488425928720}
+{"level":2,"message":"at  1670ms\ttime   250ms\tcom.microsoft.vs.git configure()","timestamp":1488425928720}
+{"level":2,"message":"at  1670ms\ttime   530ms\tcom.microsoft.vs.http configure()","timestamp":1488425928720}
+{"level":2,"message":"at  1670ms\ttime   530ms\tcom.microsoft.vs.feedback configure()","timestamp":1488425928720}
+{"level":2,"message":"at  1670ms\ttime   530ms\tcom.microsoft.vs.ipc configure()","timestamp":1488425928720}
+{"level":2,"message":"at  1670ms\ttime   530ms\tcom.microsoft.vs.telemetryService configure()","timestamp":1488425928720}
+{"level":2,"message":"at  1670ms\ttime   530ms\tcom.microsoft.vs.telemetry configure()","timestamp":1488425928720}
+{"level":2,"message":"at  1670ms\ttime   530ms\tcom.microsoft.vs.tfs configure()","timestamp":1488425928720}
+{"level":2,"message":"at  1670ms\ttime   530ms\tcom.microsoft.vs.process configure()","timestamp":1488425928720}
+{"level":2,"message":"at  1670ms\ttime   530ms\tcom.microsoft.vs.file configure()","timestamp":1488425928720}
+{"level":2,"message":"at  1670ms\ttime   530ms\tcom.microsoft.vs.search configure()","timestamp":1488425928720}
+{"level":2,"message":"at  1670ms\ttime   561ms\tcom.microsoft.vs.output configure()","timestamp":1488425928720}
+{"level":2,"message":"at  1670ms\ttime   561ms\tcontributionManager configure()","timestamp":1488425928720}
+{"level":2,"message":"at  2231ms\ttime   234ms\tserver.configure()","timestamp":1488425928720}
+{"level":2,"message":"at  2465ms\ttime     0ms\tmiddleware.plugin()","timestamp":1488425928720}
+{"level":2,"message":"at  2465ms\ttime    32ms\troutes.route()","timestamp":1488425928720}
+{"level":2,"message":"at  2497ms\tcreateServer() - end","timestamp":1488425928720}
+{"level":5,"message":"Monaco server running at port \\\\.\\pipe\\02751676-de00-4092-b9d8-675c66ec8a2a from D:\\Program Files (x86)\\SiteExtensions\\Monaco\\1.0.0-20170123\\server using node v0.10.29","timestamp":1488425928938}
+{"level":5,"message":"Detected project type: Unknown","timestamp":1488425928938}
+{"level":1,"message":"request","timestamp":1488425929406,"responseTime":16,"method":"GET","path":"/dev","statusCode":302}
+{"level":1,"message":"request","timestamp":1488425929583,"responseTime":99,"method":"GET","path":"/dev/wwwroot/","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425929719,"responseTime":32,"method":"GET","path":"/dev/public/0236a99c/vs/loader.js","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425929583,"responseTime":99,"method":"GET","path":"/dev/wwwroot/","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425929719,"responseTime":32,"method":"GET","path":"/dev/public/0236a99c/vs/loader.js","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425929583,"responseTime":99,"method":"GET","path":"/dev/wwwroot/","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425929719,"responseTime":32,"method":"GET","path":"/dev/public/0236a99c/vs/loader.js","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425929583,"responseTime":99,"method":"GET","path":"/dev/wwwroot/","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425929719,"responseTime":32,"method":"GET","path":"/dev/public/0236a99c/vs/loader.js","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425929583,"responseTime":99,"method":"GET","path":"/dev/wwwroot/","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425929719,"responseTime":32,"method":"GET","path":"/dev/public/0236a99c/vs/loader.js","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425929583,"responseTime":99,"method":"GET","path":"/dev/wwwroot/","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425929719,"responseTime":32,"method":"GET","path":"/dev/public/0236a99c/vs/loader.js","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425929583,"responseTime":99,"method":"GET","path":"/dev/wwwroot/","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425929719,"responseTime":32,"method":"GET","path":"/dev/public/0236a99c/vs/loader.js","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425929583,"responseTime":99,"method":"GET","path":"/dev/wwwroot/","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425929719,"responseTime":32,"method":"GET","path":"/dev/public/0236a99c/vs/loader.js","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425929583,"responseTime":99,"method":"GET","path":"/dev/wwwroot/","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425929719,"responseTime":32,"method":"GET","path":"/dev/public/0236a99c/vs/loader.js","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425929583,"responseTime":99,"method":"GET","path":"/dev/wwwroot/","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425929719,"responseTime":32,"method":"GET","path":"/dev/public/0236a99c/vs/loader.js","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425929583,"responseTime":99,"method":"GET","path":"/dev/wwwroot/","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425929719,"responseTime":32,"method":"GET","path":"/dev/public/0236a99c/vs/loader.js","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425929583,"responseTime":99,"method":"GET","path":"/dev/wwwroot/","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425929719,"responseTime":32,"method":"GET","path":"/dev/public/0236a99c/vs/loader.js","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425929583,"responseTime":99,"method":"GET","path":"/dev/wwwroot/","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425929719,"responseTime":32,"method":"GET","path":"/dev/public/0236a99c/vs/loader.js","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425929583,"responseTime":99,"method":"GET","path":"/dev/wwwroot/","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425929719,"responseTime":32,"method":"GET","path":"/dev/public/0236a99c/vs/loader.js","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425929583,"responseTime":99,"method":"GET","path":"/dev/wwwroot/","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425929719,"responseTime":32,"method":"GET","path":"/dev/public/0236a99c/vs/loader.js","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425929583,"responseTime":99,"method":"GET","path":"/dev/wwwroot/","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425929719,"responseTime":32,"method":"GET","path":"/dev/public/0236a99c/vs/loader.js","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425929583,"responseTime":99,"method":"GET","path":"/dev/wwwroot/","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425929719,"responseTime":32,"method":"GET","path":"/dev/public/0236a99c/vs/loader.js","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425929583,"responseTime":99,"method":"GET","path":"/dev/wwwroot/","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425929719,"responseTime":32,"method":"GET","path":"/dev/public/0236a99c/vs/loader.js","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425929583,"responseTime":99,"method":"GET","path":"/dev/wwwroot/","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425929719,"responseTime":32,"method":"GET","path":"/dev/public/0236a99c/vs/loader.js","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425929583,"responseTime":99,"method":"GET","path":"/dev/wwwroot/","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425929719,"responseTime":32,"method":"GET","path":"/dev/public/0236a99c/vs/loader.js","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425933572,"responseTime":1266,"method":"GET","path":"/dev/public/0236a99c/vs/monaco/ui/workbench/web/workbench.main.js","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425934182,"responseTime":63,"method":"GET","path":"/dev/public/0236a99c/vs/monaco/ui/workbench/web/workbench.main.nls.js","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425934338,"responseTime":16,"method":"GET","path":"/dev/public/0236a99c/vs/monaco/ui/workbench/web/workbench.main.css","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425935629,"responseTime":0,"method":"POST","path":"/dev/api/events/wwwroot/connect","statusCode":200}
+{"level":1,"message":"Missing access token.","timestamp":1488425935692,"method":"GET","path":"/dev/api/tfs/wwwroot/status","statusCode":412}
+{"level":1,"message":"Not found","timestamp":1488425935707,"method":"GET","path":"/dev/api/files/wwwroot/.settings","statusCode":404}
+{"level":1,"message":"request","timestamp":1488425935770,"responseTime":0,"method":"GET","path":"/dev/api/files/wwwroot/","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425935801,"responseTime":0,"method":"GET","path":"/dev/public/0236a99c/vs/workbench/contrib/git/media/git-dark.svg","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425935848,"responseTime":0,"method":"GET","path":"/dev/public/0236a99c/vs/workbench/contrib/output/media/runworkspace-global.svg","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425935879,"responseTime":0,"method":"GET","path":"/dev/public/0236a99c/vs/workbench/contrib/output/media/output-global.svg","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425935926,"responseTime":0,"method":"GET","path":"/dev/public/0236a99c/vs/workbench/contrib/files/media/files-dark.svg","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425935942,"responseTime":0,"method":"GET","path":"/dev/public/0236a99c/vs/base/ui/widgets/shell/media/settings.svg","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425935973,"responseTime":16,"method":"GET","path":"/dev/public/0236a99c/vs/workbench/ui/parts/editor/media/forward.svg","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425936020,"responseTime":16,"method":"GET","path":"/dev/public/0236a99c/vs/workbench/contrib/terminal/media/console-global.svg","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425936036,"responseTime":0,"method":"POST","path":"/dev/api/events/wwwroot/","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425936098,"responseTime":0,"method":"GET","path":"/dev/public/0236a99c/vs/base/ui/widgets/arrow-expand.svg","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425936129,"responseTime":0,"method":"GET","path":"/dev/public/0236a99c/vs/base/ui/widgets/shell/media/logo.svg","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425936129,"responseTime":0,"method":"GET","path":"/dev/public/0236a99c/vs/monaco/contrib/feedback/smiley.svg","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425936223,"responseTime":16,"method":"GET","path":"/dev/public/0236a99c/vs/base/ui/widgets/shell/media/help.svg","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425936582,"responseTime":0,"method":"GET","path":"/dev/public/0236a99c/vs/workbench/ui/parts/editor/media/letterpress.png","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425936598,"responseTime":0,"method":"GET","path":"/dev/public/0236a99c/vs/base/worker/workerMain.js","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425936661,"responseTime":0,"method":"GET","path":"/dev/public/0236a99c/vs/base/worker/workerMain.js","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425936676,"responseTime":0,"method":"GET","path":"/dev/public/0236a99c/vs/base/worker/workerMain.js","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425936661,"responseTime":0,"method":"GET","path":"/dev/public/0236a99c/vs/base/worker/workerMain.js","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425936676,"responseTime":0,"method":"GET","path":"/dev/public/0236a99c/vs/base/worker/workerMain.js","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425936866,"responseTime":62,"method":"GET","path":"/dev/public/0236a99c/vs/base/worker/workerServer.js","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425936993,"responseTime":16,"method":"GET","path":"/dev/public/0236a99c/vs/base/worker/workerServer.nls.js","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425937056,"responseTime":16,"method":"GET","path":"/dev/public/0236a99c/vs/workbench/contrib/actions/media/quickopen-global.svg","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425937196,"responseTime":455,"method":"GET","path":"/dev/api/git/wwwroot/status","statusCode":204}
+{"level":1,"message":"request","timestamp":1488425937259,"responseTime":172,"method":"GET","path":"/dev/public/0236a99c/vs/editor/worker/editorWorkerServer.js","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425937368,"responseTime":15,"method":"GET","path":"/dev/public/0236a99c/vs/workbench/contrib/search/media/search-dark.svg","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425937462,"responseTime":0,"method":"GET","path":"/dev/public/0236a99c/vs/base/ui/widgets/toolbar/ellipsis.svg","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425937462,"responseTime":0,"method":"GET","path":"/dev/public/0236a99c/vs/workbench/contrib/files/media/Refresh.svg","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425937462,"responseTime":0,"method":"GET","path":"/dev/public/0236a99c/vs/workbench/contrib/files/media/AddFile.svg","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425937478,"responseTime":16,"method":"GET","path":"/dev/public/0236a99c/vs/workbench/contrib/files/media/AddFolder.svg","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425937493,"responseTime":15,"method":"GET","path":"/dev/public/0236a99c/vs/editor/worker/editorWorkerServer.nls.js","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425937540,"responseTime":0,"method":"GET","path":"/dev/public/0236a99c/vs/workbench/contrib/files/media/closeall.svg","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425938118,"responseTime":15,"method":"GET","path":"/dev/public/0236a99c/vs/base/ui/widgets/arrow-collapse.svg","statusCode":200}
+{"level":1,"message":"request","timestamp":1488425966644,"responseTime":0,"method":"POST","path":"/dev/api/telemetry/wwwroot/","statusCode":201}
+{"level":1,"message":"request","timestamp":1488426108471,"responseTime":0,"method":"POST","path":"/dev/api/telemetry/wwwroot/","statusCode":201}

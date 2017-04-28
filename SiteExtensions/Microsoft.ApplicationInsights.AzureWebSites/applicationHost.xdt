@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+  <location path="%XDT_SITENAME%" xdt:Locator="Match(path)">
+    <system.webServer xdt:Transform="InsertIfMissing">
+      <runtime xdt:Transform="InsertIfMissing" >
+        <environmentVariables xdt:Transform="InsertIfMissing">
+          <add name="COR_ENABLE_PROFILING" value="1" xdt:Locator="Match(name)" xdt:Transform="InsertIfMissing" />
+          <add name="COR_PROFILER" value="{324F817A-7420-4E6D-B3C1-143FBED6D855}" xdt:Locator="Match(name)" xdt:Transform="InsertIfMissing" />
+          <add name="COR_PROFILER_PATH" value="%XDT_EXTENSIONPATH%\Agent\MicrosoftInstrumentationEngine.dll" xdt:Locator="Match(name)" xdt:Transform="InsertIfMissing"/>
+          <add name="MicrosoftInstrumentationEngine_Host" value="{CA487940-57D2-10BF-11B2-A3AD5A13CBC0}" xdt:Locator="Match(name)" xdt:Transform="InsertIfMissing"/>
+          <add name="MicrosoftInstrumentationEngine_HostPath" value="%XDT_EXTENSIONPATH%\Agent\Microsoft.ApplicationInsights.ExtensionsHost.dll" xdt:Locator="Match(name)" xdt:Transform="InsertIfMissing"/>
+        </environmentVariables>
+      </runtime>
+    </system.webServer>
+  </location>
+</configuration>

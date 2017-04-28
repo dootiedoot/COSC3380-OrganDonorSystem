@@ -1,0 +1,48 @@
+2017-04-16T00:15:43 sandboxproc.exe C:\DWASFiles\Sites\OrganDonorSystem\Temp\applicationhost.config True True
+2017-04-16T00:15:43 env XPROC_TYPENAME=Microsoft.Web.Hosting.Transformers.ApplicationHost.SiteExtensionHelper, Microsoft.Web.Hosting, Version=7.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2017-04-16T00:15:43 env XPROC_METHODNAME=Transform
+2017-04-16T00:15:43 Start 'Microsoft.ApplicationInsights.AzureWebSites' site extension transform
+2017-04-16T00:15:44 StartSection Executing InsertIfMissing (transform line 4, 23)
+2017-04-16T00:15:44 on /configuration/location[@path='OrganDonorSystem']/system.webServer
+2017-04-16T00:15:44 Applying to 'location' element (no source line info)
+2017-04-16T00:15:44 EndSection Done executing InsertIfMissing
+2017-04-16T00:15:44 StartSection Executing InsertIfMissing (transform line 5, 16)
+2017-04-16T00:15:44 on /configuration/location[@path='OrganDonorSystem']/system.webServer/runtime
+2017-04-16T00:15:44 Applying to 'system.webServer' element (no source line info)
+2017-04-16T00:15:44 Inserted 'runtime' element
+2017-04-16T00:15:44 EndSection Done executing InsertIfMissing
+2017-04-16T00:15:44 StartSection Executing InsertIfMissing (transform line 6, 31)
+2017-04-16T00:15:44 on /configuration/location[@path='OrganDonorSystem']/system.webServer/runtime/environmentVariables
+2017-04-16T00:15:44 Applying to 'runtime' element (no source line info)
+2017-04-16T00:15:44 EndSection Done executing InsertIfMissing
+2017-04-16T00:15:44 StartSection Executing InsertIfMissing (transform line 7, 80)
+2017-04-16T00:15:44 on /configuration/location[@path='OrganDonorSystem']/system.webServer/runtime/environmentVariables/add[@name='COR_ENABLE_PROFILING']
+2017-04-16T00:15:44 Applying to 'environmentVariables' element (no source line info)
+2017-04-16T00:15:44 EndSection Done executing InsertIfMissing
+2017-04-16T00:15:44 StartSection Executing InsertIfMissing (transform line 8, 109)
+2017-04-16T00:15:44 on /configuration/location[@path='OrganDonorSystem']/system.webServer/runtime/environmentVariables/add[@name='COR_PROFILER']
+2017-04-16T00:15:44 Applying to 'environmentVariables' element (no source line info)
+2017-04-16T00:15:44 EndSection Done executing InsertIfMissing
+2017-04-16T00:15:44 StartSection Executing InsertIfMissing (transform line 9, 183)
+2017-04-16T00:15:44 on /configuration/location[@path='OrganDonorSystem']/system.webServer/runtime/environmentVariables/add[@name='COR_PROFILER_PATH']
+2017-04-16T00:15:44 Applying to 'environmentVariables' element (no source line info)
+2017-04-16T00:15:44 EndSection Done executing InsertIfMissing
+2017-04-16T00:15:44 StartSection Executing InsertIfMissing (transform line 10, 132)
+2017-04-16T00:15:44 on /configuration/location[@path='OrganDonorSystem']/system.webServer/runtime/environmentVariables/add[@name='MicrosoftInstrumentationEngine_Host']
+2017-04-16T00:15:44 Applying to 'environmentVariables' element (no source line info)
+2017-04-16T00:15:44 EndSection Done executing InsertIfMissing
+2017-04-16T00:15:44 StartSection Executing InsertIfMissing (transform line 11, 219)
+2017-04-16T00:15:44 on /configuration/location[@path='OrganDonorSystem']/system.webServer/runtime/environmentVariables/add[@name='MicrosoftInstrumentationEngine_HostPath']
+2017-04-16T00:15:44 Applying to 'environmentVariables' element (no source line info)
+2017-04-16T00:15:44 EndSection Done executing InsertIfMissing
+2017-04-16T00:15:44 Successful 'D:\home\SiteExtensions\Microsoft.ApplicationInsights.AzureWebSites\applicationHost.xdt' site extension transform
+2017-04-16T00:15:44 Start 'phpmyadmin' site extension transform
+2017-04-16T00:15:44 :(6,10), No element in the source document matches '/configuration/system.applicationHost/sites/site[@name='~1OrganDonorSystem']/application[@path='/phpmyadmin']'
+2017-04-16T00:15:44 Not executing Remove (transform line 6, 67)
+2017-04-16T00:15:44 StartSection Executing Insert (transform line 7, 77)
+2017-04-16T00:15:44 on /configuration/system.applicationHost/sites/site[@name='~1OrganDonorSystem']/application
+2017-04-16T00:15:44 Applying to 'site' element (no source line info)
+2017-04-16T00:15:44 Inserted 'application' element
+2017-04-16T00:15:44 EndSection Done executing Insert
+2017-04-16T00:15:44 Successful 'D:\home\SiteExtensions\phpmyadmin\applicationHost.xdt' site extension transform
+2017-04-16T00:15:44 sandboxproc.exe complete successfully. Ellapsed = 383.00 ms
